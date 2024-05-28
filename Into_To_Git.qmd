@@ -5,11 +5,13 @@ author: "<span style='color: white;'>James Emberton, Amy Pike and Marion Weinzie
 format:
     revealjs:
         title-slide-attributes: 
-            data-background-image: /images/ICCS_title_slide.png
+            data-background-image: images/ICCS_title_slide.png
         incremental: true
+        auto-stretch: true
+        data-background-image: images/ICCS_content_slide.png
 ---
 
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 First! A few questions about Git and Github
@@ -28,7 +30,7 @@ Tools like Git and Github exist as solutions to the problem of how to save, shar
 Useful whether you are working alone or in a team!
 :::
 :::
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 Why Git?
@@ -42,7 +44,7 @@ Why Git?
 - Fine grained control over committing, viewing history and reverting
 :::
 
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 80px;", size = "16">
 Exercise 1a:
@@ -65,7 +67,7 @@ $ git init
 A hidden ".git" folder has been created in your folder. This contains everything Git needs to work.
 :::
 
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
 Exercise 1b:
@@ -86,7 +88,7 @@ $ git status
 </code></pre>
 </div>
 
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
@@ -111,7 +113,7 @@ Highlights your working branch -> main
 <br>Proposes adding these to git with 'git add'
 :::
 
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 80px;", size = "16">
 Exercise 2:
@@ -131,7 +133,7 @@ $ git status
 </div>
 
 
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -154,7 +156,7 @@ Moves file(s) into "Staging area" ready for commit
 <br>
 :::
 
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
 Exercise 3:
@@ -171,7 +173,7 @@ $ git commit -m "Created new.txt"
 <br>
 <br>'-m "Comment"' >>>> adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.
 
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -194,7 +196,7 @@ nothing to commit, working tree clean
 </code></pre>
 </div>
 
-## {data-background-image=/images/ICCS_content_slide.png}
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -214,8 +216,24 @@ Displays commits in reverse chronological order.
 
 Includes full identifier, author and date
 :::
+## {data-background-image=images/ICCS_content_slide.png}
 
-## {data-background-image=/images/ICCS_content_slide.png}
+<div style="margin-top: 85px;", size = "16">
+Pushing your local code to your own github repo
+</div>
+::: {.callout-warning}
+You must have already created a github account and connected your local git repo to it before you can do these exercises
+:::
+
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px;", size = "16">
+Exercise 4
+</div>
+
+
+
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
 Collaborative git with GitHub
@@ -228,3 +246,7 @@ You must have already created a github account and connected your local git repo
 Navigate to www.github.com/j-emberton and find the Github demo repository
 
 We will fork this repo to our local computers, make edits and then try merging these back into the original repo.
+
+## {data-background-image=images/ICCS_content_slide.png}
+
+
