@@ -1,0 +1,37 @@
+---
+title: "<span style='color: white;'>Git for beginners</span>"
+subtitle: "<span style='color: white;'>...or how I learned to stop worrying and love version control</span>"
+author: "<span style='color: white;'>James Emberton, Amy Pike and Marion Weinzerl</span>"
+format:
+    revealjs:
+        title-slide-attributes: 
+            data-background-image: /images/ICCS_title_slide.png
+        incremental: true
+---
+
+## {data-background-image=/images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "18">
+First! A few questions about Git and Github
+</div>
+::: {.incremental}
+- Who has used any sort of code version control before?
+- Who has used Git or Github
+- Who wants to do better version control in their projects?
+:::
+
+::: {.fragment}
+
+::: {.callout-tip title="Version Control"}
+Tools like Git and Github exist as solutions to the problem of how to save, share, and collaborate in a structured and safe way
+:::
+:::
+## {data-background-image=/images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "18">
+First! A few questions about Git and Github
+</div>
+
+
+
+
