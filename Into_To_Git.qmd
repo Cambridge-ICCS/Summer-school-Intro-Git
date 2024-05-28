@@ -1,7 +1,7 @@
 ---
 title: "<span style='color: white;'>Git for beginners</span>"
-subtitle: "<span style='color: white;'>...or how I learned to stop worrying and love version control</span>"
-author: "<span style='color: white;'>James Emberton, Amy Pike and Marion Weinzerl</span>"
+subtitle: "<span style='color: white;'>... *or how I learned to stop worrying and love version control*</span>"
+author: "<span style='color: white;'>James Emberton, Amy Pike and Marion Weinzierl</span>"
 format:
     revealjs:
         title-slide-attributes: 
@@ -23,15 +23,208 @@ First! A few questions about Git and Github
 ::: {.fragment}
 
 ::: {.callout-tip title="Version Control"}
-Tools like Git and Github exist as solutions to the problem of how to save, share, and collaborate in a structured and safe way
+Tools like Git and Github exist as solutions to the problem of how to save, share, and collaborate in a structured and safe way.
+
+Useful whether you are working alone or in a team!
 :::
 :::
 ## {data-background-image=/images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
-First! A few questions about Git and Github
+Why Git?
+</div>
+::: {.incremental}
+- Distributed version control
+- Lightweight but powerful branching and merging
+- High performance/Scalable
+- Excellent data integrity protection
+- Open source with a rich ecosystem, flexible and customisable
+- Fine grained control over committing, viewing history and reverting
+:::
+
+## {data-background-image=/images/ICCS_content_slide.png}
+
+<div style="margin-top: 80px;", size = "16">
+Exercise 1a:
+<br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:
+</div>
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ cd your_dir
+$ mkdir your_folder
+$ cd your_folder
+</code></pre>
+</div>
+Then initialise the folder
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git init
+</code></pre>
+</div>
+::: {.callout-tip title=".git"}
+A hidden ".git" folder has been created in your folder. This contains everything Git needs to work.
+:::
+
+## {data-background-image=/images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px;", size = "16">
+Exercise 1b:
+<br>- Create a new file and save it in git.
+</div>
+
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ touch new.txt
+$ code new.txt
+</code></pre>
+</div>
+<br>
+Lets check what git can see...
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+</code></pre>
+</div>
+
+## {data-background-image=/images/ICCS_content_slide.png}
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+
+No commits yet
+
+Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+
+	new.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+</code></pre>
+</div>
+
+::: {.callout-tip title="git status"}
+Highlights your working branch -> main
+<br> Reports commit status -> none yet
+<br>Highlights untracked files -> new.txt
+<br>Proposes adding these to git with 'git add'
+:::
+
+## {data-background-image=/images/ICCS_content_slide.png}
+
+<div style="margin-top: 80px;", size = "16">
+Exercise 2:
+<br> Try these commands...
+</div>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git add .
+</code></pre>
+</div>
+<br>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+</code></pre>
 </div>
 
 
+## {data-background-image=/images/ICCS_content_slide.png}
 
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
 
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   new.txt
+
+</code></pre>
+</div>
+
+::: {.callout-tip title="git add"}
+Moves file(s) into "Staging area" ready for commit
+<br>
+:::
+
+## {data-background-image=/images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px;", size = "16">
+Exercise 3:
+<br>- Commit your file to the local git repo
+</div>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git commit -m "Created new.txt"
+
+</code></pre>
+</div>
+
+'git commit' >>>> tells git you want to commit
+<br>
+<br>'-m "Comment"' >>>> adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.
+
+## {data-background-image=/images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git commit -m "Created new.txt"
+
+[main (root-commit) f22b25e] Created new.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+
+</code></pre>
+</div>
+
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+nothing to commit, working tree clean
+
+</code></pre>
+</div>
+
+## {data-background-image=/images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git log
+
+commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
+Author: James Emberton <je484@cam.ac.uk>
+Date:   Tues May 27 09:51:46 2024 -0400
+
+    Create new.txt
+
+</code></pre>
+</div>
+
+::: {.callout-tip title="git log"}
+Displays commits in reverse chronological order.
+
+Includes full identifier, author and date
+:::
+
+## {data-background-image=/images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px;", size = "16">
+Collaborative git with GitHub
+</div>
+
+::: {.callout-warning}
+You must have already created a github account and connected your local git repo to it before you can do these exercises
+:::
+
+Navigate to www.github.com/j-emberton and find the Github demo repository
+
+We will fork this repo to our local computers, make edits and then try merging these back into the original repo.

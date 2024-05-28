@@ -10,7 +10,7 @@
 <link href="Into_To_Git_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.554">
 
-  <meta name="author" content="James Emberton, Amy Pike and Marion Weinzerl">
+  <meta name="author" content="James Emberton, Amy Pike and Marion Weinzierl">
   <title>Git for beginners</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -327,12 +327,12 @@
 
 <section id="title-slide" data-background-image="/images/ICCS_title_slide.png" class="quarto-title-block center">
   <h1 class="title"><span style="color: white;">Git for beginners</span></h1>
-  <p class="subtitle"><span style="color: white;">…or how I learned to stop worrying and love version control</span></p>
+  <p class="subtitle"><span style="color: white;">… <em>or how I learned to stop worrying and love version control</em></span></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<span style="color: white;">James Emberton, Amy Pike and Marion Weinzerl</span> 
+<span style="color: white;">James Emberton, Amy Pike and Marion Weinzierl</span> 
 </div>
 </div>
 </div>
@@ -361,7 +361,8 @@ First! A few questions about Git and Github
 <p><strong>Version Control</strong></p>
 </div>
 <div class="callout-content">
-<p>Tools like Git and Github exist as solutions to the problem of how to save, share, and collaborate in a structured and safe way</p>
+<p>Tools like Git and Github exist as solutions to the problem of how to save, share, and collaborate in a structured and safe way.</p>
+<p>Useful whether you are working alone or in a team!</p>
 </div>
 </div>
 </div>
@@ -371,8 +372,246 @@ First! A few questions about Git and Github
 <section id="section-1" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
-First! A few questions about Git and Github
+Why Git?
 </div>
+<div>
+<ul>
+<li class="fragment">Distributed version control</li>
+<li class="fragment">Lightweight but powerful branching and merging</li>
+<li class="fragment">High performance/Scalable</li>
+<li class="fragment">Excellent data integrity protection</li>
+<li class="fragment">Open source with a rich ecosystem, flexible and customisable</li>
+<li class="fragment">Fine grained control over committing, viewing history and reverting</li>
+</ul>
+</div>
+</section>
+<section id="section-2" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 80px;" ,="" size="16">
+Exercise 1a:
+<br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:
+</div>
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ cd your_dir
+$ mkdir your_folder
+$ cd your_folder
+</code></pre>
+</div>
+Then initialise the folder
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git init
+</code></pre>
+</div>
+<div title=".git">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>.git</strong></p>
+</div>
+<div class="callout-content">
+<p>A hidden “.git” folder has been created in your folder. This contains everything Git needs to work.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="section-3" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px;" ,="" size="16">
+Exercise 1b:
+<br>- Create a new file and save it in git.
+</div>
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ touch new.txt
+$ code new.txt
+</code></pre>
+</div>
+<br> Lets check what git can see…
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+</code></pre>
+</div>
+</section>
+<section id="section-4" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+
+No commits yet
+
+Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+
+    new.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+</file></code></pre>
+</div>
+<div title="git status">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>git status</strong></p>
+</div>
+<div class="callout-content">
+<p>Highlights your working branch -&gt; main <br> Reports commit status -&gt; none yet <br>Highlights untracked files -&gt; new.txt <br>Proposes adding these to git with ‘git add’</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="section-5" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 80px;" ,="" size="16">
+Exercise 2:
+<br> Try these commands...
+</div>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git add .
+</code></pre>
+</div>
+<br>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+</code></pre>
+</div>
+</section>
+<section id="section-6" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+    new file:   new.txt
+
+</file></code></pre>
+</div>
+<div title="git add">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>git add</strong></p>
+</div>
+<div class="callout-content">
+<p>Moves file(s) into “Staging area” ready for commit <br></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="section-7" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px;" ,="" size="16">
+Exercise 3:
+<br>- Commit your file to the local git repo
+</div>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git commit -m "Created new.txt"
+
+</code></pre>
+</div>
+<p>‘git commit’ &gt;&gt;&gt;&gt; tells git you want to commit <br> <br>‘-m “Comment”’ &gt;&gt;&gt;&gt; adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.</p>
+</section>
+<section id="section-8" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git commit -m "Created new.txt"
+
+[main (root-commit) f22b25e] Created new.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+
+</code></pre>
+</div>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+nothing to commit, working tree clean
+
+</code></pre>
+</div>
+</section>
+<section id="section-9" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git log
+
+commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
+Author: James Emberton <je484@cam.ac.uk>
+Date:   Tues May 27 09:51:46 2024 -0400
+
+    Create new.txt
+
+</je484@cam.ac.uk></code></pre>
+</div>
+<div title="git log">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>git log</strong></p>
+</div>
+<div class="callout-content">
+<p>Displays commits in reverse chronological order.</p>
+<p>Includes full identifier, author and date</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="section-10" class="slide level2" data-background-image="/images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px;" ,="" size="16">
+Collaborative git with GitHub
+</div>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>You must have already created a github account and connected your local git repo to it before you can do these exercises</p>
+</div>
+</div>
+</div>
+<p>Navigate to www.github.com/j-emberton and find the Github demo repository</p>
+<p>We will fork this repo to our local computers, make edits and then try merging these back into the original repo.</p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
