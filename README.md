@@ -2,7 +2,6 @@
 
 #Setup Quarto
  - Install quarto to your machine
- - Install the revealjs plugin for quarto
  - Install any quarto plugins you might want for your IDE/editor
 
 #Edit presentation
