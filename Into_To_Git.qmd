@@ -18,8 +18,8 @@ First! A few questions about Git and Github
 </div>
 ::: {.incremental}
 - Who has used any sort of code version control before?
-- Has anybody used Git before?
-- Has anybody used GitHub before?
+- Who has used Git or Github
+- Who wants to do better version control in their projects?
 :::
 
 ::: {.fragment}
