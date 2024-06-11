@@ -46,8 +46,27 @@ Why Git?
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
+<div style="margin-top: 100px;", size = "18">
+In today's course we will:
+</div>
+- Create a local git repository
+- Create a git commit in your repository
+- Create a git branch in your repository
+- Fork a remote repository and check it out on your local machine
+
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "18">
+What is a Git repository?
+</div>
+ - A place where you can store your code, your files, and each file's revision history.
+ - Contains a .git folder at the root which does all the git magic behind the scenes.
+ - TODO: picture example of repository file structure here.
+
+## {data-background-image=images/ICCS_content_slide.png}
+
 <div style="margin-top: 80px;", size = "16">
-Exercise 1a:
+Exercise 1a, creating a git repository:
 <br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:
 </div>
 <div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -69,8 +88,27 @@ A hidden ".git" folder has been created in your folder. This contains everything
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
+<div style="margin-top: 100px;", size = "18">
+What is a Git commit?
+</div>
+- You can think of a commit as a snapshot of your work at a particular time
+- Rather than saving all the files in a project every time, git is clever and only saves
+the diff between the previous commit and your current one
+- So a commit is effectively a record of its parent commit and the diff with the parent commit
+- You can navigate between commits easily with git
+
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "18">
+What is the staging area?
+</div>
+- #TODO add detail here
+- git will only track the files you tell it to.
+
+## {data-background-image=images/ICCS_content_slide.png}
+
 <div style="margin-top: 85px;", size = "16">
-Exercise 1b:
+Exercise 1b, create an untracked file:
 <br>- Create a new file and save it in git.
 </div>
 
@@ -116,7 +154,7 @@ Highlights your working branch -> main
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 80px;", size = "16">
-Exercise 2:
+Exercise 2, add the untracked file to the staging area:
 <br> Try these commands...
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -159,7 +197,7 @@ Moves file(s) into "Staging area" ready for commit
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
-Exercise 3:
+Exercise 3, commiting your changes:
 <br>- Commit your file to the local git repo
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -219,6 +257,18 @@ Includes full identifier, author and date
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
+Exercise 4, creating a git branch and checking it out
+</div>
+
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px;", size = "16">
+Exercise 5, switching between branches
+</div>
+
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px;", size = "16">
 Working with your own github repo
 </div>
 ::: {.callout-warning}
@@ -228,10 +278,8 @@ You must have already created a github account and connected your local git repo
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
-Exercise 4
+Exercise 6, forking a repo from GitHub
 </div>
-
-
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
@@ -250,7 +298,7 @@ We will fork this repo to our local computers, make edits and then try merging t
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
-Exercise 5:
+Exercise 7:
 <br> - From Github, Fork j-emberton/Intro-to-Github
 </div>
 
