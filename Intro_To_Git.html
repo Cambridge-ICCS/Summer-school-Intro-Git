@@ -405,13 +405,12 @@ What is a Git repository?
 <ul>
 <li class="fragment">A place where you can store your code, your files, and each file’s revision history.</li>
 <li class="fragment">Contains a .git folder at the root which does all the git magic behind the scenes.</li>
-<li class="fragment">TODO: picture example of repository file structure here.</li>
 </ul>
 </section>
 <section id="section-4" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 80px;" ,="" size="16">
-Exercise 1a, creating a git repository:
+Exercise 1, creating a git repository:
 <br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:
 </div>
 <div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -450,28 +449,49 @@ What is a Git commit?
 </div>
 <ul>
 <li class="fragment">You can think of a commit as a snapshot of your work at a particular time</li>
-<li class="fragment">Rather than saving all the files in a project every time, git is clever and only saves the diff between the previous commit and your current one</li>
-<li class="fragment">So a commit is effectively a record of its parent commit and the diff with the parent commit</li>
 <li class="fragment">You can navigate between commits easily with git</li>
+<li class="fragment">This allows you to switch easily between different versions of your work</li>
+<li class="fragment">When you commit, rather than saving all the files in a project every time, git is efficient and only stores the files which have been changed between the previous commit and your current one</li>
 </ul>
 </section>
 <section id="section-6" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
-What is the staging area?
+Commiting is a three part process:
 </div>
-<ul>
-<li class="fragment">#TODO add detail here</li>
-<li class="fragment">git will only track the files you tell it to.</li>
-</ul>
+<ol type="1">
+<li class="fragment">Modify: change the file in your working tree, ie go in and edit the file as usual</li>
+<li class="fragment">Stage: Tell git that you would like this file to be included in your next commit</li>
+<li class="fragment">Commit: Tell git to take a snapshot of the files you staged</li>
+</ol>
 </section>
 <section id="section-7" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
-<div style="margin-top: 85px;" ,="" size="16">
-Exercise 1b, create an untracked file:
-<br>- Create a new file and save it in git.
+<div style="margin-top: 100px;" ,="" size="18">
+At each step in the process, the file is stored in a different area:
 </div>
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+
+<img data-src="images/show_different_file_states.png" class="r-stretch quarto-figure-center"><p class="caption">Show different file states</p></section>
+<section id="section-8" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="18">
+This means that Git has four main states that your files can be in:
+</div>
+<ul>
+<li class="fragment">Untracked: You’ve created a new file and not told git to keep track of it.</li>
+<li class="fragment">Modified: You’ve changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.</li>
+<li class="fragment">Staged: You’ve told git to include the file next time you do a commit. We say these files are in the staging area.</li>
+<li class="fragment">Committed: The file is saved in it’s present state in the most recent commit.</li>
+</ul>
+</section>
+<section id="section-9" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px;" ,="" size="16">
+Exercise 2a, create an untracked file:
+<br>- Create a new file in your repository.
+</div>
+
+<img data-src="images/create_untracked_file.png" class="r-stretch quarto-figure-center"><p class="caption">Create an untracked file</p><div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ touch new.txt
 $ code new.txt
@@ -484,7 +504,7 @@ $ git status
 </code></pre>
 </div>
 </section>
-<section id="section-8" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-10" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -518,10 +538,12 @@ nothing added to commit but untracked files present (use "git add" to track)
 </div>
 </div>
 </section>
-<section id="section-9" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-11" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 80px;" ,="" size="16">
-Exercise 2, add the untracked file to the staging area:
+Exercise 2b, add the untracked file to the staging area:
+
+![Add a file to the staging area](images/add_to_staging_area.png)
 <br> Try these commands...
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -537,7 +559,7 @@ $ git status
 </code></pre>
 </div>
 </section>
-<section id="section-10" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-12" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -570,10 +592,13 @@ Changes to be committed:
 </div>
 </div>
 </section>
-<section id="section-11" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-13" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
-Exercise 3, commiting your changes:
+Exercise 2c, commiting your changes:
+
+![Commit to repository](images/commit_to_repository.png)
+
 <br>- Commit your file to the local git repo
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -584,7 +609,7 @@ $ git commit -m "Created new.txt"
 </div>
 <p>‘git commit’ &gt;&gt;&gt;&gt; tells git you want to commit <br> <br>‘-m “Comment”’ &gt;&gt;&gt;&gt; adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.</p>
 </section>
-<section id="section-12" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-14" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -606,7 +631,7 @@ nothing to commit, working tree clean
 </code></pre>
 </div>
 </section>
-<section id="section-13" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-15" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -637,19 +662,19 @@ Date:   Tues May 27 09:51:46 2024 -0400
 </div>
 </div>
 </section>
-<section id="section-14" class="slide level2" data-background-image="images/ICCS_content_slide.png">
-<h2></h2>
-<div style="margin-top: 85px;" ,="" size="16">
-Exercise 4, creating a git branch and checking it out
-</div>
-</section>
-<section id="section-15" class="slide level2" data-background-image="images/ICCS_content_slide.png">
-<h2></h2>
-<div style="margin-top: 85px;" ,="" size="16">
-Exercise 5, switching between branches
-</div>
-</section>
 <section id="section-16" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px;" ,="" size="16">
+Exercise 3, creating a git branch and checking it out
+</div>
+</section>
+<section id="section-17" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px;" ,="" size="16">
+Exercise 4, switching between branches
+</div>
+</section>
+<section id="section-18" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Working with your own github repo
@@ -668,13 +693,13 @@ Working with your own github repo
 </div>
 </div>
 </section>
-<section id="section-17" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-19" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
-Exercise 6, forking a repo from GitHub
+Exercise 5, forking a repo from GitHub
 </div>
 </section>
-<section id="section-18" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-20" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Collaborative git with GitHub
@@ -695,10 +720,10 @@ Collaborative git with GitHub
 <p>Navigate to www.github.com/j-emberton and find the ‘Intro-to-Github’ repo</p>
 <p>We will fork this repo to our local computers, make edits and then try merging these back into the original repo.</p>
 </section>
-<section id="section-19" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-21" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
-Exercise 7:
+Exercise 6:
 <br> - From Github, Fork j-emberton/Intro-to-Github
 </div>
 <div class="columns">
@@ -719,7 +744,7 @@ Exercise 7:
 </div>
 </div>
 </section>
-<section id="section-20" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-22" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 Your forked repo only exists in Github. To work on it locally it needs to be copied to your local computer.
@@ -745,7 +770,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 </div>
 <p>Choose/create a file to edit, and then commit, and then push the changes to your remote github repo.</p>
 </section>
-<section id="section-21" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-23" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 The final step is to put in a pull request (PR) to the original repo that we forked from.
@@ -760,7 +785,7 @@ Depending on the code and the repo, you may not be able to merge directly.
 <br>Pass testing
 </div>
 </section>
-<section id="section-22" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-24" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">

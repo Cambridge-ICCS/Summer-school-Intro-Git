@@ -105,7 +105,11 @@ Commiting is a three part process:
 2. Stage: Tell git that you would like this file to be included in your next commit
 3. Commit: Tell git to take a snapshot of the files you staged
 
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "18">
 At each step in the process, the file is stored in a different area:
+</div>
 ![Show different file states](images/show_different_file_states.png)
 
 ## {data-background-image=images/ICCS_content_slide.png}
