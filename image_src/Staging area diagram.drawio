@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" modified="2024-06-12T11:04:56.714Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0" etag="sEGpZXbLTIsO1P5VplJq" version="24.3.1" type="device">
+  <diagram name="Page-1" id="wqiXRBARo1lWrA34wNyL">
+    <mxGraphModel dx="948" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-1" value="Working Tree" style="rounded=1;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="150" y="150" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-2" value="Staging Area" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="330" y="150" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-3" value="Repository" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="510" y="150" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-4" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="195" y="260" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-5" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="375" y="260" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-6" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="555" y="260" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-7" value="Working Tree" style="rounded=1;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="160" y="450" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-8" value="Staging Area" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="340" y="450" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-9" value="Repository" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="520" y="450" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-10" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="205" y="560" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-13" value="Working Tree" style="rounded=1;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="170" y="780" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-14" value="Staging Area" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="350" y="780" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-15" value="Repository" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="530" y="780" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-16" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="215" y="890" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-17" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="395" y="890" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-19" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FvZDntOlqZ7J8gMBM6OJ-16" target="FvZDntOlqZ7J8gMBM6OJ-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="920" as="sourcePoint" />
+            <mxPoint x="450" y="870" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="850" />
+              <mxPoint x="350" y="820" />
+              <mxPoint x="410" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-20" value="touch new.txt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="410" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-21" value="git add new.txt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="740" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-22" value="Working Tree" style="rounded=1;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1110" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-23" value="Staging Area" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1110" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-24" value="Repository" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1110" width="150" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-25" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="420" y="1220" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-26" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="600" y="1220" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-27" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FvZDntOlqZ7J8gMBM6OJ-25" target="FvZDntOlqZ7J8gMBM6OJ-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="1250" as="sourcePoint" />
+            <mxPoint x="460" y="1200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="1170" />
+              <mxPoint x="600" y="1180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FvZDntOlqZ7J8gMBM6OJ-28" value="git commit new.txt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1070" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

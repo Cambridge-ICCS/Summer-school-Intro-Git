@@ -65,7 +65,7 @@ What is a Git repository?
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 80px;", size = "16">
-Exercise 1a, creating a git repository:
+Exercise 1, creating a git repository:
 <br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:
 </div>
 <div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -99,17 +99,35 @@ and only stores the files which have been changed between the previous commit an
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
-What is the staging area?
+Commiting is a three part process:
 </div>
--
-- git will only track the files you tell it to.
+1. Modify: change the file in your working tree, ie go in and edit the file as usual
+2. Stage: Tell git that you would like this file to be included in your next commit
+3. Commit: Tell git to take a snapshot of the files you staged
+
+At each step in the process, the file is stored in a different area:
+![Show different file states](images/show_different_file_states.png)
+
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "18">
+This means that Git has four main states that your files can be in:
+</div>
+- Untracked: You've created a new file and not told git to keep track of it.
+- Modified: You've changed a file that git already has a record of, but have not told
+git to include these changes in your next commit.
+We say these files are in the working tree.
+- Staged: You've told git to include the file next time you do a commit.
+We say these files are in the staging area.
+- Committed: The file is saved in it's present state in the most recent commit.
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
-Exercise 1b, create an untracked file:
-<br>- Create a new file and save it in git.
+Exercise 2a, create an untracked file:
+<br>- Create a new file in your repository.
 </div>
+![Create an untracked file](images/create_untracked_file.png)
 
 <div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -153,7 +171,9 @@ Highlights your working branch -> main
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 80px;", size = "16">
-Exercise 2, add the untracked file to the staging area:
+Exercise 2b, add the untracked file to the staging area:
+
+![Add a file to the staging area](images/add_to_staging_area.png)
 <br> Try these commands...
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -196,7 +216,10 @@ Moves file(s) into "Staging area" ready for commit
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
-Exercise 3, commiting your changes:
+Exercise 2c, commiting your changes:
+
+![Commit to repository](images/commit_to_repository.png)
+
 <br>- Commit your file to the local git repo
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -256,13 +279,13 @@ Includes full identifier, author and date
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
-Exercise 4, creating a git branch and checking it out
+Exercise 3, creating a git branch and checking it out
 </div>
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
-Exercise 5, switching between branches
+Exercise 4, switching between branches
 </div>
 
 ## {data-background-image=images/ICCS_content_slide.png}
@@ -277,7 +300,7 @@ You must have already created a github account and connected your local git repo
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
-Exercise 6, forking a repo from GitHub
+Exercise 5, forking a repo from GitHub
 </div>
 
 ## {data-background-image=images/ICCS_content_slide.png}
@@ -297,7 +320,7 @@ We will fork this repo to our local computers, make edits and then try merging t
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
-Exercise 7:
+Exercise 6:
 <br> - From Github, Fork j-emberton/Intro-to-Github
 </div>
 
