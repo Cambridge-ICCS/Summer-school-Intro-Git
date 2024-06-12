@@ -110,7 +110,7 @@ Commiting is a three part process:
 <div style="margin-top: 100px;", size = "18">
 At each step in the process, the file is stored in a different area:
 </div>
-![Show different file states](images/show_different_file_states.png)
+![](images/show_different_file_states.png)
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
@@ -129,9 +129,15 @@ We say these files are in the staging area.
 
 <div style="margin-top: 85px;", size = "16">
 Exercise 2a, create an untracked file:
+</div>
+![](images/create_untracked_file.png)
+
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px;", size = "16">
+Exercise 2a, create an untracked file:
 <br>- Create a new file in your repository.
 </div>
-![Create an untracked file](images/create_untracked_file.png)
 
 <div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -176,8 +182,13 @@ Highlights your working branch -> main
 
 <div style="margin-top: 80px;", size = "16">
 Exercise 2b, add the untracked file to the staging area:
+</div>
+![](images/add_to_staging_area.png)
 
-![Add a file to the staging area](images/add_to_staging_area.png)
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 80px;", size = "16">
+Exercise 2b, add the untracked file to the staging area:
 <br> Try these commands...
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -192,7 +203,6 @@ $ git status
 
 </code></pre>
 </div>
-
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
@@ -221,9 +231,13 @@ Moves file(s) into "Staging area" ready for commit
 
 <div style="margin-top: 85px;", size = "16">
 Exercise 2c, commiting your changes:
+</div>
+![](images/commit_to_repository.png)
 
-![Commit to repository](images/commit_to_repository.png)
+## {data-background-image=images/ICCS_content_slide.png}
 
+<div style="margin-top: 85px;", size = "16">
+Exercise 2c, commiting your changes:
 <br>- Commit your file to the local git repo
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">

@@ -471,7 +471,7 @@ Commiting is a three part process:
 At each step in the process, the file is stored in a different area:
 </div>
 
-<img data-src="images/show_different_file_states.png" class="r-stretch quarto-figure-center"><p class="caption">Show different file states</p></section>
+<img data-src="images/show_different_file_states.png" class="r-stretch"></section>
 <section id="section-8" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
@@ -488,10 +488,16 @@ This means that Git has four main states that your files can be in:
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Exercise 2a, create an untracked file:
-<br>- Create a new file in your repository.
 </div>
 
-<img data-src="images/create_untracked_file.png" class="r-stretch quarto-figure-center"><p class="caption">Create an untracked file</p><div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<img data-src="images/create_untracked_file.png" class="r-stretch"></section>
+<section id="section-10" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px;" ,="" size="16">
+Exercise 2a, create an untracked file:
+<br>- Create a new file in your repository.
+</div>
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ touch new.txt
 $ code new.txt
@@ -504,7 +510,7 @@ $ git status
 </code></pre>
 </div>
 </section>
-<section id="section-10" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-11" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -538,12 +544,17 @@ nothing added to commit but untracked files present (use "git add" to track)
 </div>
 </div>
 </section>
-<section id="section-11" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-12" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 80px;" ,="" size="16">
 Exercise 2b, add the untracked file to the staging area:
+</div>
 
-![Add a file to the staging area](images/add_to_staging_area.png)
+<img data-src="images/add_to_staging_area.png" class="r-stretch"></section>
+<section id="section-13" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 80px;" ,="" size="16">
+Exercise 2b, add the untracked file to the staging area:
 <br> Try these commands...
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -559,7 +570,7 @@ $ git status
 </code></pre>
 </div>
 </section>
-<section id="section-12" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-14" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -592,13 +603,17 @@ Changes to be committed:
 </div>
 </div>
 </section>
-<section id="section-13" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-15" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Exercise 2c, commiting your changes:
+</div>
 
-![Commit to repository](images/commit_to_repository.png)
-
+<img data-src="images/commit_to_repository.png" class="r-stretch"></section>
+<section id="section-16" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px;" ,="" size="16">
+Exercise 2c, commiting your changes:
 <br>- Commit your file to the local git repo
 </div>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -609,7 +624,7 @@ $ git commit -m "Created new.txt"
 </div>
 <p>‘git commit’ &gt;&gt;&gt;&gt; tells git you want to commit <br> <br>‘-m “Comment”’ &gt;&gt;&gt;&gt; adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.</p>
 </section>
-<section id="section-14" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-17" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -631,7 +646,7 @@ nothing to commit, working tree clean
 </code></pre>
 </div>
 </section>
-<section id="section-15" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-18" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -662,19 +677,19 @@ Date:   Tues May 27 09:51:46 2024 -0400
 </div>
 </div>
 </section>
-<section id="section-16" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-19" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Exercise 3, creating a git branch and checking it out
 </div>
 </section>
-<section id="section-17" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-20" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Exercise 4, switching between branches
 </div>
 </section>
-<section id="section-18" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-21" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Working with your own github repo
@@ -693,13 +708,13 @@ Working with your own github repo
 </div>
 </div>
 </section>
-<section id="section-19" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-22" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Exercise 5, forking a repo from GitHub
 </div>
 </section>
-<section id="section-20" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-23" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Collaborative git with GitHub
@@ -720,7 +735,7 @@ Collaborative git with GitHub
 <p>Navigate to www.github.com/j-emberton and find the ‘Intro-to-Github’ repo</p>
 <p>We will fork this repo to our local computers, make edits and then try merging these back into the original repo.</p>
 </section>
-<section id="section-21" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-24" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 Exercise 6:
@@ -744,7 +759,7 @@ Exercise 6:
 </div>
 </div>
 </section>
-<section id="section-22" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-25" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 Your forked repo only exists in Github. To work on it locally it needs to be copied to your local computer.
@@ -770,7 +785,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 </div>
 <p>Choose/create a file to edit, and then commit, and then push the changes to your remote github repo.</p>
 </section>
-<section id="section-23" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-26" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 The final step is to put in a pull request (PR) to the original repo that we forked from.
@@ -785,7 +800,7 @@ Depending on the code and the repo, you may not be able to merge directly.
 <br>Pass testing
 </div>
 </section>
-<section id="section-24" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-27" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
