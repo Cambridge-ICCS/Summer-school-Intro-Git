@@ -383,7 +383,7 @@ You must have already created a github account and connected your local git repo
 
 Navigate to https://github.com/Cambridge-ICCS and find the 'git-intro-iccs-summer-school-2024' repo
 
-We will fork this repo to our local computers, make edits and then try merging these back into the original repo.
+We will fork this repo, clone the fork to our local computers, make edits and then try merging these back into the original repo.
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
