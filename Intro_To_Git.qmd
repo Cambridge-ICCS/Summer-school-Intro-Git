@@ -136,7 +136,7 @@ Exercise 2a, create an untracked file:
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Exercise 2a, create an untracked file:
 <br>- Create a new file in your repository.
 </div>
@@ -156,7 +156,7 @@ $ git status
 </div>
 
 ## {data-background-image=images/ICCS_content_slide.png}
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
 
@@ -189,17 +189,17 @@ Exercise 2b, add the untracked file to the staging area:
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 80px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Exercise 2b, add the untracked file to the staging area:
 <br> Try these commands...
 </div>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git add .
 </code></pre>
 </div>
 <br>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
 
@@ -208,7 +208,7 @@ $ git status
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
 
@@ -231,18 +231,18 @@ Moves file(s) into "Staging area" ready for commit
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Exercise 2c, commiting your changes:
 </div>
 ![](images/commit_to_repository.png)
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Exercise 2c, commiting your changes:
 <br>- Commit your file to the local git repo
 </div>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git commit -m "Created new.txt"
 
@@ -255,7 +255,7 @@ $ git commit -m "Created new.txt"
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git commit -m "Created new.txt"
 
@@ -266,7 +266,7 @@ $ git commit -m "Created new.txt"
 </code></pre>
 </div>
 
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
 
@@ -278,7 +278,7 @@ nothing to commit, working tree clean
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git log
 
@@ -309,14 +309,14 @@ What is a Git branch?
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Exercise 3, creating a git branch, checking it out and commiting
 </div>
 ![](images/creating_branch_and_checking_out.png)
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Exercise 3, creating a git branch and checking it out
 </div>
 - Create a new branch using: `git branch my-shiny-new-branch`
@@ -327,14 +327,14 @@ Note: you can combine the first two steps into one using `git checkout -b my-shi
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Exercise 4, switching between branches
 </div>
 ![](images/switching_between_branches.png)
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Exercise 4, switching between branches
 </div>
 - return to the main branch using `git checkout main`
@@ -347,7 +347,7 @@ Note: you can use `git checkout -` as a shortcut for returning to the previous b
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Ways of working with a remote repository
 </div>
 <div>
@@ -361,20 +361,20 @@ which you can then clone.
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Working with remote repositories
 </div>
 ![](images/fork_vs_clone.png)
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Exercise 5, forking a repo from GitHub
 </div>
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
-<div style="margin-top: 85px;", size = "16">
+<div style="margin-top: 100px;", size = "16">
 Collaborative git with GitHub
 </div>
 
