@@ -9,6 +9,7 @@ format:
         incremental: true
         auto-stretch: true
         data-background-image: images/ICCS_content_slide.png
+        smaller: true
 ---
 
 ## {data-background-image=images/ICCS_content_slide.png}
