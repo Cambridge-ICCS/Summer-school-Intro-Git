@@ -343,16 +343,28 @@ Exercise 4, switching between branches
 - commit this new file to the main branch
 - switch back to your other branch and inspect the files again
 
-Note: you can use `git checkout -` as a shortcut for returning to the previous commit you checked out
+Note: you can use `git checkout -` as a shortcut for returning to the previous branch you checked out.
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
-Working with your own github repo
+Ways of working with a remote repository
 </div>
-::: {.callout-warning}
-You must have already created a github account and connected your local git repo to it before you can do these exercises
-:::
+<div>
+A remote repository is one stored in the cloud. We will be using GitHub to do this today. \
+There are two different ways to copy a remote repository so that you can work on it locally:
+</div>
+- clone: This is only recommended when you are the owner of the repo. This makes a copy
+which is closely linked to the remote version.
+- fork: This makes another separate version of the repo remotely that you own,
+which you can then clone.
+
+## {data-background-image=images/ICCS_content_slide.png}
+
+<div style="margin-top: 85px;", size = "16">
+Working with remote repositories
+</div>
+![](images/fork_vs_clone.png)
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
@@ -370,15 +382,15 @@ Collaborative git with GitHub
 You must have already created a github account and connected your local git repo to it before you can do these exercises
 :::
 
-Navigate to www.github.com/j-emberton and find the 'Intro-to-Github' repo
+Navigate to https://github.com/Cambridge-ICCS and find the 'git-intro-iccs-summer-school-2024' repo
 
-We will fork this repo to our local computers, make edits and then try merging these back into the original repo.
+We will fork this repo, clone the fork to our local computers, make edits and then try merging these back into the original repo.
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 Exercise 6:
-<br> - From Github, Fork j-emberton/Intro-to-Github
+<br> - From Github, Cambridge-ICCS/git-intro-iccs-summer-school-2024
 </div>
 
 :::: {.columns}

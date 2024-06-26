@@ -727,34 +727,36 @@ Exercise 4, switching between branches
 <li class="fragment">commit this new file to the main branch</li>
 <li class="fragment">switch back to your other branch and inspect the files again</li>
 </ul>
-<p>Note: you can use <code>git checkout -</code> as a shortcut for returning to the previous commit you checked out</p>
+<p>Note: you can use <code>git checkout -</code> as a shortcut for returning to the previous branch you checked out.</p>
 </section>
 <section id="section-24" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
-Working with your own github repo
+Ways of working with a remote repository
 </div>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div>
+<p>A remote repository is one stored in the cloud. We will be using GitHub to do this today.<br>
+There are two different ways to copy a remote repository so that you can work on it locally:</p>
 </div>
-<p><strong>Warning</strong></p>
-</div>
-<div class="callout-content">
-<p>You must have already created a github account and connected your local git repo to it before you can do these exercises</p>
-</div>
-</div>
-</div>
+<ul>
+<li class="fragment">clone: This is only recommended when you are the owner of the repo. This makes a copy which is closely linked to the remote version.</li>
+<li class="fragment">fork: This makes another separate version of the repo remotely that you own, which you can then clone.</li>
+</ul>
 </section>
 <section id="section-25" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 85px;" ,="" size="16">
+Working with remote repositories
+</div>
+
+<img data-src="images/fork_vs_clone.png" class="r-stretch"></section>
+<section id="section-26" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Exercise 5, forking a repo from GitHub
 </div>
 </section>
-<section id="section-26" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-27" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
 Collaborative git with GitHub
@@ -775,7 +777,7 @@ Collaborative git with GitHub
 <p>Navigate to www.github.com/j-emberton and find the ‘Intro-to-Github’ repo</p>
 <p>We will fork this repo to our local computers, make edits and then try merging these back into the original repo.</p>
 </section>
-<section id="section-27" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-28" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 Exercise 6:
@@ -799,7 +801,7 @@ Exercise 6:
 </div>
 </div>
 </section>
-<section id="section-28" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-29" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 Your forked repo only exists in Github. To work on it locally it needs to be copied to your local computer.
@@ -825,7 +827,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 </div>
 <p>Choose/create a file to edit, and then commit, and then push the changes to your remote github repo.</p>
 </section>
-<section id="section-29" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-30" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 The final step is to put in a pull request (PR) to the original repo that we forked from.
@@ -840,7 +842,7 @@ Depending on the code and the repo, you may not be able to merge directly.
 <br>Pass testing
 </div>
 </section>
-<section id="section-30" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-31" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
