@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="Into_To_Git_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Into_To_Git_files/libs/quarto-html/tabby.min.js"></script>
-<script src="Into_To_Git_files/libs/quarto-html/popper.min.js"></script>
-<script src="Into_To_Git_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="Into_To_Git_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Into_To_Git_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Into_To_Git_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="Into_To_Git_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="Intro_To_Git_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Intro_To_Git_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Intro_To_Git_files/libs/quarto-html/popper.min.js"></script>
+<script src="Intro_To_Git_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Intro_To_Git_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Intro_To_Git_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Intro_To_Git_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="Intro_To_Git_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.554">
 
   <meta name="author" content="James Emberton, Amy Pike and Marion Weinzierl">
@@ -15,8 +15,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="Into_To_Git_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="Into_To_Git_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="Intro_To_Git_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Intro_To_Git_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -30,11 +30,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="Into_To_Git_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="Into_To_Git_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="Into_To_Git_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="Into_To_Git_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="Into_To_Git_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="Intro_To_Git_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="Intro_To_Git_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Intro_To_Git_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Intro_To_Git_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Intro_To_Git_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -387,8 +387,30 @@ Why Git?
 </section>
 <section id="section-2" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
+<div style="margin-top: 100px;" ,="" size="18">
+In today's course we will:
+</div>
+<ul>
+<li class="fragment">Create a local git repository</li>
+<li class="fragment">Create a git commit in your repository</li>
+<li class="fragment">Create a git branch in your repository</li>
+<li class="fragment">Fork a remote repository and check it out on your local machine</li>
+</ul>
+</section>
+<section id="section-3" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="18">
+What is a Git repository?
+</div>
+<ul>
+<li class="fragment">A place where you can store your code, your files, and each file’s revision history.</li>
+<li class="fragment">Contains a .git folder at the root which does all the git magic behind the scenes.</li>
+</ul>
+</section>
+<section id="section-4" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
 <div style="margin-top: 80px;" ,="" size="16">
-Exercise 1a:
+Exercise 1, creating a git repository:
 <br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:
 </div>
 <div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
@@ -420,11 +442,61 @@ $ git init
 </div>
 </div>
 </section>
-<section id="section-3" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-5" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="18">
+What is a Git commit?
+</div>
+<ul>
+<li class="fragment">You can think of a commit as a snapshot of your work at a particular time</li>
+<li class="fragment">You can navigate between commits easily with git</li>
+<li class="fragment">This allows you to switch easily between different versions of your work</li>
+<li class="fragment">When you commit, rather than saving all the files in a project every time, git is efficient and only stores the files which have been changed between the previous commit and your current one</li>
+<li class="fragment">The commit also stores a reference to its parent commit</li>
+</ul>
+</section>
+<section id="section-6" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="18">
+Commiting is a three part process:
+</div>
+<ol type="1">
+<li class="fragment">Modify: change the file in your working tree, ie go in and edit the file as usual</li>
+<li class="fragment">Stage: Tell git that you would like this file to be included in your next commit</li>
+<li class="fragment">Commit: Tell git to take a snapshot of the files you staged</li>
+</ol>
+</section>
+<section id="section-7" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="18">
+At each step in the process, the file is stored in a different area:
+</div>
+
+<img data-src="images/show_different_file_states.png" class="r-stretch"></section>
+<section id="section-8" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="18">
+This means that Git has four main states that your files can be in:
+</div>
+<ul>
+<li class="fragment">Untracked: You’ve created a new file and not told git to keep track of it.</li>
+<li class="fragment">Modified: You’ve changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.</li>
+<li class="fragment">Staged: You’ve told git to include the file next time you do a commit. We say these files are in the staging area.</li>
+<li class="fragment">Committed: The file is saved in it’s present state in the most recent commit.</li>
+</ul>
+</section>
+<section id="section-9" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 85px;" ,="" size="16">
-Exercise 1b:
-<br>- Create a new file and save it in git.
+Exercise 2a, create an untracked file:
+</div>
+
+<img data-src="images/create_untracked_file.png" class="r-stretch"></section>
+<section id="section-10" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Exercise 2a, create an untracked file:
+<br>- Create a new file in your repository.
 </div>
 <div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -439,9 +511,9 @@ $ git status
 </code></pre>
 </div>
 </section>
-<section id="section-4" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-11" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
 
@@ -473,28 +545,35 @@ nothing added to commit but untracked files present (use "git add" to track)
 </div>
 </div>
 </section>
-<section id="section-5" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-12" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 80px;" ,="" size="16">
-Exercise 2:
+Exercise 2b, add the untracked file to the staging area:
+</div>
+
+<img data-src="images/add_to_staging_area.png" class="r-stretch"></section>
+<section id="section-13" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Exercise 2b, add the untracked file to the staging area:
 <br> Try these commands...
 </div>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git add .
 </code></pre>
 </div>
 <br>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
 
 </code></pre>
 </div>
 </section>
-<section id="section-6" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-14" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
 
@@ -525,13 +604,20 @@ Changes to be committed:
 </div>
 </div>
 </section>
-<section id="section-7" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-15" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
-<div style="margin-top: 85px;" ,="" size="16">
-Exercise 3:
+<div style="margin-top: 100px;" ,="" size="16">
+Exercise 2c, commiting your changes:
+</div>
+
+<img data-src="images/commit_to_repository.png" class="r-stretch"></section>
+<section id="section-16" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Exercise 2c, commiting your changes:
 <br>- Commit your file to the local git repo
 </div>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git commit -m "Created new.txt"
 
@@ -539,9 +625,9 @@ $ git commit -m "Created new.txt"
 </div>
 <p>‘git commit’ &gt;&gt;&gt;&gt; tells git you want to commit <br> <br>‘-m “Comment”’ &gt;&gt;&gt;&gt; adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.</p>
 </section>
-<section id="section-8" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-17" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git commit -m "Created new.txt"
 
@@ -551,7 +637,7 @@ $ git commit -m "Created new.txt"
 
 </code></pre>
 </div>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
 
@@ -561,9 +647,9 @@ nothing to commit, working tree clean
 </code></pre>
 </div>
 </section>
-<section id="section-9" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-18" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
-<div style="margin-top: 85px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git log
 
@@ -592,34 +678,87 @@ Date:   Tues May 27 09:51:46 2024 -0400
 </div>
 </div>
 </section>
-<section id="section-10" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-19" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
-<div style="margin-top: 85px;" ,="" size="16">
-Working with your own github repo
+<div style="margin-top: 100px;" ,="" size="18">
+What is a Git branch?
 </div>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<ul>
+<li class="fragment">A branch is a pointer to a git commit</li>
+<li class="fragment">It says “I want to include the work of this commit and all of its parent commits.”</li>
+<li class="fragment">We can use the <code>checkout</code> command to switch between different branches and commits <img data-src="images/git_branching_illustration.png"></li>
+</ul>
+</section>
+<section id="section-20" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Exercise 3, creating a git branch, checking it out and commiting
 </div>
-<p><strong>Warning</strong></p>
+
+<img data-src="images/creating_branch_and_checking_out.png" class="r-stretch"></section>
+<section id="section-21" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Exercise 3, creating a git branch and checking it out
 </div>
-<div class="callout-content">
-<p>You must have already created a github account and connected your local git repo to it before you can do these exercises</p>
+<ul>
+<li class="fragment">Create a new branch using: <code>git branch my-shiny-new-branch</code></li>
+<li class="fragment">Checkout the branch using: <code>git checkout my-shiny-new-branch</code></li>
+<li class="fragment">Make a change in your new branch by editing new.txt and committing the changes.</li>
+</ul>
+<p>Note: you can combine the first two steps into one using <code>git checkout -b my-shiny-new-branch</code></p>
+</section>
+<section id="section-22" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Exercise 4, switching between branches
 </div>
+
+<img data-src="images/switching_between_branches.png" class="r-stretch"></section>
+<section id="section-23" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Exercise 4, switching between branches
 </div>
+<ul>
+<li class="fragment">return to the main branch using <code>git checkout main</code></li>
+<li class="fragment">open the new.txt file, what’s inside?</li>
+<li class="fragment">make a new file, <code>new_2.txt</code></li>
+<li class="fragment">commit this new file to the main branch</li>
+<li class="fragment">switch back to your other branch and inspect the files again</li>
+</ul>
+<p>Note: you can use <code>git checkout -</code> as a shortcut for returning to the previous branch you checked out.</p>
+</section>
+<section id="section-24" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Ways of working with a remote repository
+</div>
+<div>
+<p>A remote repository is one stored in the cloud. We will be using GitHub to do this today.<br>
+There are two different ways to copy a remote repository so that you can work on it locally:</p>
+</div>
+<ul>
+<li class="fragment">clone: This is only recommended when you are the owner of the repo. This makes a copy which is closely linked to the remote version.</li>
+<li class="fragment">fork: This makes another separate version of the repo remotely that you own, which you can then clone.</li>
+</ul>
+</section>
+<section id="section-25" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Working with remote repositories
+</div>
+
+<img data-src="images/fork_vs_clone.png" class="r-stretch"></section>
+<section id="section-26" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<h2></h2>
+<div style="margin-top: 100px;" ,="" size="16">
+Exercise 5, forking a repo from GitHub
 </div>
 </section>
-<section id="section-11" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-27" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
-<div style="margin-top: 85px;" ,="" size="16">
-Exercise 4
-</div>
-</section>
-<section id="section-12" class="slide level2" data-background-image="images/ICCS_content_slide.png">
-<h2></h2>
-<div style="margin-top: 85px;" ,="" size="16">
+<div style="margin-top: 100px;" ,="" size="16">
 Collaborative git with GitHub
 </div>
 <div class="callout callout-warning callout-titled callout-style-default">
@@ -635,14 +774,14 @@ Collaborative git with GitHub
 </div>
 </div>
 </div>
-<p>Navigate to www.github.com/j-emberton and find the ‘Intro-to-Github’ repo</p>
-<p>We will fork this repo to our local computers, make edits and then try merging these back into the original repo.</p>
+<p>Navigate to https://github.com/Cambridge-ICCS and find the ‘git-intro-iccs-summer-school-2024’ repo</p>
+<p>We will fork this repo, clone the fork to our local computers, make edits and then try merging these back into the original repo.</p>
 </section>
-<section id="section-13" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-28" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
-Exercise 5:
-<br> - From Github, Fork j-emberton/Intro-to-Github
+Exercise 6:
+<br> - From Github, Cambridge-ICCS/git-intro-iccs-summer-school-2024
 </div>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -662,7 +801,7 @@ Exercise 5:
 </div>
 </div>
 </section>
-<section id="section-14" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-29" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 Your forked repo only exists in Github. To work on it locally it needs to be copied to your local computer.
@@ -688,7 +827,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 </div>
 <p>Choose/create a file to edit, and then commit, and then push the changes to your remote github repo.</p>
 </section>
-<section id="section-15" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-30" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div style="margin-top: 100px;" ,="" size="18">
 The final step is to put in a pull request (PR) to the original repo that we forked from.
@@ -703,7 +842,7 @@ Depending on the code and the repo, you may not be able to merge directly.
 <br>Pass testing
 </div>
 </section>
-<section id="section-16" class="slide level2" data-background-image="images/ICCS_content_slide.png">
+<section id="section-31" class="slide level2" data-background-image="images/ICCS_content_slide.png">
 <h2></h2>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -715,19 +854,19 @@ Depending on the code and the repo, you may not be able to merge directly.
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="Into_To_Git_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="Into_To_Git_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="Into_To_Git_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="Into_To_Git_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="Into_To_Git_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="Into_To_Git_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="Into_To_Git_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="Into_To_Git_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="Into_To_Git_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="Into_To_Git_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Intro_To_Git_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -742,7 +881,7 @@ Depending on the code and the repo, you may not be able to merge directly.
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': false,
+'smaller': true,
  
         // Display controls in the bottom right corner
         controls: false,
