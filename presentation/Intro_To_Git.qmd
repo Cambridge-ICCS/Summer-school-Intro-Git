@@ -389,7 +389,7 @@ We will fork this repo, clone the fork to our local computers, make edits and th
 ## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
-Exercise 6:
+Exercise 5:
 <br> - From Github, Cambridge-ICCS/git-intro-iccs-summer-school-2024
 </div>
 
