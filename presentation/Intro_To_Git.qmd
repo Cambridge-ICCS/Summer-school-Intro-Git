@@ -465,5 +465,8 @@ Learning Outcomes
 :::
 
 ## {data-background-image=../images/ICCS_content_slide.png}
-
+<div style="margin-top: 100px;", size = "18">
+Anything you'd like to re-visit or build on from today?
+</div>
+Please come and visit us at a code clinic.
 
