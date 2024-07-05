@@ -371,6 +371,19 @@ which you can then clone.
 ## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
+To clone or to fork?
+</div>
+- clone:
+cons
+You need to be
+pros
+You can easily access the latest changes made by others to the central repository
+- fork: When you want complete control over the newly copied codebase without external contributions
+
+
+## {data-background-image=../images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "16">
 Working with remote repositories
 </div>
 ![](../images/fork_vs_clone.png)
@@ -468,5 +481,13 @@ Learning Outcomes
 <div style="margin-top: 100px;", size = "18">
 Anything you'd like to revisit or build on from today?
 </div>
-Please come and visit us at a code clinic.
+Please come and visit us at a code clinic. \
+
+Book a slot in our "ICCS Summer School Code Clinic spreadsheet",
+which is linked in the online agenda here: \
+
+https://cambridge-iccs.github.io/summerschool24 \
+
+The intermediate git course will also be made available on YouTube.
+
 
