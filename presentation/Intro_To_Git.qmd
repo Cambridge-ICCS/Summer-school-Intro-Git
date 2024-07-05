@@ -5,14 +5,25 @@ author: "<span style='color: white;'>James Emberton, Amy Pike and Marion Weinzie
 format:
     revealjs:
         title-slide-attributes: 
-            data-background-image: images/ICCS_title_slide.png
+            data-background-image: ../images/ICCS_title_slide.png
         incremental: true
         auto-stretch: true
-        data-background-image: images/ICCS_content_slide.png
+        data-background-image: ../images/ICCS_content_slide.png
         smaller: true
 ---
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
+<div style="margin-top: 100px;", size = "18">
+Learning Outcomes
+</div>
+::: {.incremental}
+- Be familiar with the building blocks of git: repositories, commits and branches
+- Get started with using git locally on your own projects
+- Get started with collaborating on code projects using GitHub
+- Gain an appreciation for how useful git can be
+:::
+
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 First! A few questions about Git and Github
@@ -31,7 +42,7 @@ Tools like Git and Github exist as solutions to the problem of how to save, shar
 Useful whether you are working alone or in a team!
 :::
 :::
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 Why Git?
@@ -45,8 +56,7 @@ Why Git?
 - Fine grained control over committing, viewing history and reverting
 :::
 
-## {data-background-image=images/ICCS_content_slide.png}
-
+## {data-background-image=../images/ICCS_content_slide.png}
 <div style="margin-top: 100px;", size = "18">
 In today's course we will:
 </div>
@@ -55,15 +65,14 @@ In today's course we will:
 - Create a git branch in your repository
 - Fork a remote repository and check it out on your local machine
 
-## {data-background-image=images/ICCS_content_slide.png}
-
+## {data-background-image=../images/ICCS_content_slide.png}
 <div style="margin-top: 100px;", size = "18">
 What is a Git repository?
 </div>
  - A place where you can store your code, your files, and each file's revision history.
  - Contains a .git folder at the root which does all the git magic behind the scenes.
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 80px;", size = "16">
 Exercise 1, creating a git repository:
@@ -86,7 +95,7 @@ $ git init
 A hidden ".git" folder has been created in your folder. This contains everything Git needs to work.
 :::
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 What is a Git commit?
@@ -98,7 +107,7 @@ What is a Git commit?
 and only stores the files which have been changed between the previous commit and your current one
 - The commit also stores a reference to its parent commit
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 Commiting is a three part process:
@@ -107,14 +116,14 @@ Commiting is a three part process:
 2. Stage: Tell git that you would like this file to be included in your next commit
 3. Commit: Tell git to take a snapshot of the files you staged
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 At each step in the process, the file is stored in a different area:
 </div>
-![](images/show_different_file_states.png)
+![](../images/show_different_file_states.png)
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 This means that Git has four main states that your files can be in:
@@ -127,14 +136,14 @@ We say these files are in the working tree.
 We say these files are in the staging area.
 - Committed: The file is saved in it's present state in the most recent commit.
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 85px;", size = "16">
 Exercise 2a, create an untracked file:
 </div>
-![](images/create_untracked_file.png)
+![](../images/create_untracked_file.png)
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Exercise 2a, create an untracked file:
@@ -155,7 +164,7 @@ $ git status
 </code></pre>
 </div>
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 <div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git status
@@ -180,14 +189,14 @@ Highlights your working branch -> main
 <br>Proposes adding these to git with 'git add'
 :::
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 80px;", size = "16">
 Exercise 2b, add the untracked file to the staging area:
 </div>
-![](images/add_to_staging_area.png)
+![](../images/add_to_staging_area.png)
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Exercise 2b, add the untracked file to the staging area:
@@ -206,7 +215,7 @@ $ git status
 </code></pre>
 </div>
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -229,14 +238,14 @@ Moves file(s) into "Staging area" ready for commit
 <br>
 :::
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Exercise 2c, commiting your changes:
 </div>
-![](images/commit_to_repository.png)
+![](../images/commit_to_repository.png)
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Exercise 2c, commiting your changes:
@@ -253,7 +262,7 @@ $ git commit -m "Created new.txt"
 <br>
 <br>'-m "Comment"' >>>> adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -276,7 +285,7 @@ nothing to commit, working tree clean
 </code></pre>
 </div>
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -297,7 +306,7 @@ Displays commits in reverse chronological order.
 Includes full identifier, author and date
 :::
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 What is a Git branch?
@@ -305,16 +314,16 @@ What is a Git branch?
 - A branch is a pointer to a git commit
 - It says "I want to include the work of this commit and all of its parent commits."
 - We can use the `checkout` command to switch between different branches and commits
-![](images/git_branching_illustration.png)
+![](../images/git_branching_illustration.png)
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Exercise 3, creating a git branch, checking it out and commiting
 </div>
-![](images/creating_branch_and_checking_out.png)
+![](../images/creating_branch_and_checking_out.png)
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Exercise 3, creating a git branch and checking it out
@@ -323,16 +332,16 @@ Exercise 3, creating a git branch and checking it out
 - Checkout the branch using: `git checkout my-shiny-new-branch`
 - Make a change in your new branch by editing new.txt and committing the changes.
 
-Note: you can combine the first two steps into one using `git checkout -b my-shiny-new-branch`
+- Note: you can combine the first two steps into one using `git checkout -b my-shiny-new-branch`
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Exercise 4, switching between branches
 </div>
-![](images/switching_between_branches.png)
+![](../images/switching_between_branches.png)
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Exercise 4, switching between branches
@@ -343,9 +352,9 @@ Exercise 4, switching between branches
 - commit this new file to the main branch
 - switch back to your other branch and inspect the files again
 
-Note: you can use `git checkout -` as a shortcut for returning to the previous branch you checked out.
+- Note: you can use `git checkout -` as a shortcut for returning to the previous branch you checked out.
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Ways of working with a remote repository
@@ -354,25 +363,58 @@ Ways of working with a remote repository
 A remote repository is one stored in the cloud. We will be using GitHub to do this today. \
 There are two different ways to copy a remote repository so that you can work on it locally:
 </div>
-- clone: This is only recommended when you are the owner of the repo. This makes a copy
-which is closely linked to the remote version.
-- fork: This makes another separate version of the repo remotely that you own,
-which you can then clone.
+- clone:  This makes a copy locally which is closely linked to the remote version.
+Your local branches can be synced to branches in the original.
+- fork: This makes another separate version of the repo remotely that you own. Once you
+have forked a repo remotely, you can then clone it to your local machine.
+Branches created locally can't be synced to branches in the original repo,
+they are synced to your forked repo instead. You can still open pull requests to the
+original if you would like to make a contribution to it.
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "16">
+To clone or to fork?
+</div>
+Use a clone when:
+
+- You are collaborating directly and actively with the owner of the repo (e.g. it is your research team, or you)
+OR all of the following is true:
+
+- It is owned by someone else and you are happy not to have ownership of the codebase
+- You have permission to push branches up to the repo
+- You want easy access to the latest changes made by others to the central repository
+- You want the main branch in the repo to be updated and edited by others working on the project
+
+## {data-background-image=../images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "16">
+To clone or to fork?
+</div>
+Use a fork when:
+
+- The owner of the repo is not someone you are actively collaborating with
+- You want to take the development of the code in a different direction from the original owner of the repo
+- You want full ownership over your version of the codebase
+- You want complete control over other's contributions to the codebase
+- You do not want the main branch to receive updates from those editing the existing repo
+- Or you do not have permission to push branches directly to the original repo
+
+
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Working with remote repositories
 </div>
-![](images/fork_vs_clone.png)
+![](../images/fork_vs_clone.png)
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Exercise 5, forking a repo from GitHub
 </div>
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 Collaborative git with GitHub
@@ -386,27 +428,27 @@ Navigate to https://github.com/Cambridge-ICCS and find the 'git-intro-iccs-summe
 
 We will fork this repo, clone the fork to our local computers, make edits and then try merging these back into the original repo.
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
-Exercise 6:
+Exercise 5:
 <br> - From Github, Cambridge-ICCS/git-intro-iccs-summer-school-2024
 </div>
 
 :::: {.columns}
 
 ::: {.column width="40%"}
-![Github Fork option](images/Github%20fork.png)
+![Github Fork option](../images/Github%20fork.png)
 :::
 
 ::: {.column width="60%"}
-![Fork menu](images/Fork%20menu.png)
+![Fork menu](../images/Fork%20menu.png)
 :::
 
 ::::
 
-## {data-background-image=images/ICCS_content_slide.png}
-<div style="margin-top: 100px;", size = "18">
+## {data-background-image=../images/ICCS_content_slide.png}
+<div style="margin-top: 100px;", size = "16">
 Your forked repo only exists in Github. To work on it locally it needs to be copied to your local computer.
 </div>
 
@@ -422,9 +464,15 @@ Clone repo to a new working folder.
 Do not clone into an existing local git repo.
 :::
 
-Choose/create a file to edit, and then commit, and then push the changes to your remote github repo.
+::: {style="font-size: 90%;"}
+- Choose/create a file to edit, and then commit. \
+- Next `push` the changes up to the remote repo. \
+- The first time you do this on a new branch, you will need to set up a remote one to track it: \
+- `git push --set-upstream origin your-branch-name` \
+- For any commits after that on the branch you can use `git push` on it's own when you are on the branch you want to push.
+:::
 
-## {data-background-image=images/ICCS_content_slide.png}
+## {data-background-image=../images/ICCS_content_slide.png}
 <div style="margin-top: 100px;", size = "18">
 The final step is to put in a pull request (PR) to the original repo that we forked from.
 <br>
@@ -438,9 +486,32 @@ Depending on the code and the repo, you may not be able to merge directly.
 <br>Pass testing
 </div>
 
+## {data-background-image=../images/ICCS_content_slide.png}
+<div style="margin-top: 100px;", size = "18">
+Learning Outcomes
+</div>
+::: {.incremental}
+- Be familiar with the building blocks of git: repositories, commits and branches
+- Get started with using git locally on your own projects
+- Get started with collaborating on code projects using GitHub
+- Gain an appreciation for how useful git can be
+:::
 
+## {data-background-image=../images/ICCS_content_slide.png}
+<div style="margin-top: 100px;", size = "18">
+Anything you'd like to revisit or build on from today?
+</div>
+Please come and visit us at a code clinic. \
 
+Book a slot in our "ICCS Summer School Code Clinic spreadsheet",
+which is linked in the online agenda here: \
 
-## {data-background-image=images/ICCS_content_slide.png}
+https://cambridge-iccs.github.io/summerschool24 \
+
+This course and the intermediate git course will also be made available on YouTube.
+
+This is also a nice visual resource for learning git: \
+
+https://learngitbranching.js.org/
 
 
