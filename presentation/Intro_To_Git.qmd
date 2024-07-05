@@ -363,22 +363,33 @@ Ways of working with a remote repository
 A remote repository is one stored in the cloud. We will be using GitHub to do this today. \
 There are two different ways to copy a remote repository so that you can work on it locally:
 </div>
-- clone: This is only recommended when you are the owner of the repo. This makes a copy
-which is closely linked to the remote version.
-- fork: This makes another separate version of the repo remotely that you own,
-which you can then clone.
+- clone:  This makes a copy locally which is closely linked to the remote version.
+Your local branches can be synced to branches in the original.
+- fork: This makes another separate version of the repo remotely that you own. Once you
+have forked a repo remotely, you can then clone it to your local machine.
+Branches created locally can't be synced to branches in the original repo,
+they are synced to your forked repo instead.
 
 ## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 To clone or to fork?
 </div>
-- clone:
-cons
-You need to be
-pros
-You can easily access the latest changes made by others to the central repository
-- fork: When you want complete control over the newly copied codebase without external contributions
+Use a clone of a repo when:
+- You are collaborating directly and actively with the owner of the repo (e.g. it is your research team, or you)
+OR
+- It is owned by someone else and you are happy not to have ownership of the codebase
+- You have permission to push branches up to the repo
+- You want easy access to the latest changes made by others to the central repository
+- You want the main branch in the repo to be updated and edited by others working on the project
+
+Use a fork repo when:
+- The owner of the repo is not someone you are actively collaborating with
+- You want to take the development of the code in a different direction from the original owner of the repo
+- You want full ownership over your version of the codebase
+- You want complete control over other's contributions to the codebase
+- You do not want the main branch to receive updates from those editing the existing repo
+- Or you do not have permission to push branches directly to the original repo
 
 
 ## {data-background-image=../images/ICCS_content_slide.png}
