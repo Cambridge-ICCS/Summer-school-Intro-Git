@@ -510,4 +510,8 @@ https://cambridge-iccs.github.io/summerschool24 \
 
 This course and the intermediate git course will also be made available on YouTube.
 
+This is also a nice visual resource for learning git: \
+
+https://learngitbranching.js.org/
+
 
