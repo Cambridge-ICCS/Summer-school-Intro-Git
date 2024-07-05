@@ -13,6 +13,17 @@ format:
 ---
 
 ## {data-background-image=images/ICCS_content_slide.png}
+<div style="margin-top: 100px;", size = "18">
+Learning Outcomes
+</div>
+::: {.incremental}
+- Be familiar with the building blocks of git: repositories, commits and branches
+- Get started with using git locally on your own projects
+- Get started with collaborating on code projects using GitHub
+- Gain an appreciation for how useful git can be
+:::
+
+## {data-background-image=images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "18">
 First! A few questions about Git and Github
@@ -438,8 +449,16 @@ Depending on the code and the repo, you may not be able to merge directly.
 <br>Pass testing
 </div>
 
-
-
+## {data-background-image=images/ICCS_content_slide.png}
+<div style="margin-top: 100px;", size = "18">
+Learning Outcomes
+</div>
+::: {.incremental}
+- Be familiar with the building blocks of git: repositories, commits and branches
+- Get started with using git locally on your own projects
+- Get started with collaborating on code projects using GitHub
+- Gain an appreciation for how useful git can be
+:::
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
