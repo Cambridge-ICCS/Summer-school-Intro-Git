@@ -368,22 +368,31 @@ Your local branches can be synced to branches in the original.
 - fork: This makes another separate version of the repo remotely that you own. Once you
 have forked a repo remotely, you can then clone it to your local machine.
 Branches created locally can't be synced to branches in the original repo,
-they are synced to your forked repo instead.
+they are synced to your forked repo instead. You can still open pull requests to the
+original if you would like to make a contribution to it.
 
 ## {data-background-image=../images/ICCS_content_slide.png}
 
 <div style="margin-top: 100px;", size = "16">
 To clone or to fork?
 </div>
-Use a clone of a repo when:
+Use a clone when:
+
 - You are collaborating directly and actively with the owner of the repo (e.g. it is your research team, or you)
-OR
+OR all of the following is true:
+
 - It is owned by someone else and you are happy not to have ownership of the codebase
 - You have permission to push branches up to the repo
 - You want easy access to the latest changes made by others to the central repository
 - You want the main branch in the repo to be updated and edited by others working on the project
 
-Use a fork repo when:
+## {data-background-image=../images/ICCS_content_slide.png}
+
+<div style="margin-top: 100px;", size = "16">
+To clone or to fork?
+</div>
+Use a fork when:
+
 - The owner of the repo is not someone you are actively collaborating with
 - You want to take the development of the code in a different direction from the original owner of the repo
 - You want full ownership over your version of the codebase
