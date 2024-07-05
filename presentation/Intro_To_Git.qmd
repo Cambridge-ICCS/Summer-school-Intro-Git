@@ -488,6 +488,6 @@ which is linked in the online agenda here: \
 
 https://cambridge-iccs.github.io/summerschool24 \
 
-The intermediate git course will also be made available on YouTube.
+This course and the intermediate git course will also be made available on YouTube.
 
 
