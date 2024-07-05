@@ -334,7 +334,7 @@ Exercise 3, creating a git branch and checking it out
 - Checkout the branch using: `git checkout my-shiny-new-branch`
 - Make a change in your new branch by editing new.txt and committing the changes.
 
-Note: you can combine the first two steps into one using `git checkout -b my-shiny-new-branch`
+- Note: you can combine the first two steps into one using `git checkout -b my-shiny-new-branch`
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
@@ -354,7 +354,7 @@ Exercise 4, switching between branches
 - commit this new file to the main branch
 - switch back to your other branch and inspect the files again
 
-Note: you can use `git checkout -` as a shortcut for returning to the previous branch you checked out.
+- Note: you can use `git checkout -` as a shortcut for returning to the previous branch you checked out.
 
 ## {data-background-image=images/ICCS_content_slide.png}
 
@@ -417,7 +417,7 @@ Exercise 5:
 ::::
 
 ## {data-background-image=images/ICCS_content_slide.png}
-<div style="margin-top: 100px;", size = "18">
+<div style="margin-top: 100px;", size = "16">
 Your forked repo only exists in Github. To work on it locally it needs to be copied to your local computer.
 </div>
 
@@ -433,7 +433,13 @@ Clone repo to a new working folder.
 Do not clone into an existing local git repo.
 :::
 
-Choose/create a file to edit, and then commit, and then push the changes to your remote github repo.
+::: {style="font-size: 90%;"}
+- Choose/create a file to edit, and then commit. \
+- Next `push` the changes up to the remote repo. \
+- The first time you do this on a new branch, you will need to set up a remote one to track it: \
+- `git push --set-upstream origin your-branch-name` \
+- For any commits after that on the branch you can use `git push` on it's own when you are on the branch you want to push.
+:::
 
 ## {data-background-image=images/ICCS_content_slide.png}
 <div style="margin-top: 100px;", size = "18">
