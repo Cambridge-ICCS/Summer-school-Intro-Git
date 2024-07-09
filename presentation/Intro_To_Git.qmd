@@ -73,6 +73,7 @@ Useful whether you are working alone or in a team!
 - Create a git commit in your repository
 - Create a git branch in your repository
 - Fork a remote repository and check it out on your local machine
+- Put in a PR to have our changes merged back to the remote repo
 
 ## What is a Git repository?
  - A place where you can store your code, your files, and each file's revision history.
