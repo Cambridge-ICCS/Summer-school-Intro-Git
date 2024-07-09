@@ -220,6 +220,7 @@ Moves file(s) into "Staging area" ready for commit
 ![](images/commit_to_repository.png)
 
 ## Exercise 2c, commiting your changes:
+
 - Commit your file to the local git repo
 <div style="margin-top: 0px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -284,7 +285,7 @@ Includes full identifier, author and date
 
 ## Exercise 3, creating a git branch:
 
-![](images/creating_branch_and_checking_out.png)
+![](images/creating_branch_and_checking_out.png){width=40%}
 
 ## Exercise 3, creating a git branch and checking it out
 
@@ -296,7 +297,7 @@ Includes full identifier, author and date
 
 ## Exercise 4, switching between branches
 <br>
-![creating branch and checking out](images/creating_branch_and_checking_out.png)
+![creating branch and checking out](images/creating_branch_and_checking_out.png){width=35%}
 
 ## Exercise 4, switching between branches
 
@@ -313,11 +314,14 @@ Includes full identifier, author and date
 A remote repository is one stored in the cloud. We will be using GitHub to do this today. \
 There are two different ways to copy a remote repository so that you can work on it locally:
 <br>
+<br>
 - clone:  This makes a copy locally which is closely linked to the remote version.
 Your local branches can be synced to branches in the original.
 <br>
+<br>
 - fork: This makes another separate version of the repo remotely that you own. Once you
 have forked a repo remotely, you can then clone it to your local machine.
+<br>
 <br>
 Branches created locally can't be synced to branches in the original repo,
 they are synced to your forked repo instead. You can still open pull requests to the
@@ -349,7 +353,7 @@ Use a fork when:
 
 ## Working with remote repositories
 
-![](images/fork_vs_clone.png)
+![](images/fork_vs_clone.png){width=50%}
 
 ## Collaborative git with GitHub
 
@@ -378,10 +382,10 @@ We will fork this repo, clone the fork to our local computers, make edits and th
 
 ::::
 
-## {data-background-image=../images/ICCS_content_slide.png}
-<div style="margin-top: 100px;", size = "16">
+## Cloning from GitHub
+
 Your forked repo only exists in Github. To work on it locally it needs to be copied to your local computer.
-</div>
+
 
 <div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -403,24 +407,21 @@ Do not clone into an existing local git repo.
 - For any commits after that on the branch you can use `git push` on it's own when you are on the branch you want to push.
 :::
 
-## {data-background-image=../images/ICCS_content_slide.png}
-<div style="margin-top: 100px;", size = "18">
+## Pull requests
+
 The final step is to put in a pull request (PR) to the original repo that we forked from.
 <br>
-A pull request is how we signal to the repo owner that we want to merge in our changes.
-
 <br>
-
+A pull request is how we signal to the repo owner that we want to merge in our changes.
+<br>
 <br>
 Depending on the code and the repo, you may not be able to merge directly.
-<br>Reviews by one or more developers who may suggest/require edits to you code
-<br>Pass testing
-</div>
+- Reviews by one or more developers who may suggest/require edits to you code
+- Pass testing
 
-## {data-background-image=../images/ICCS_content_slide.png}
-<div style="margin-top: 100px;", size = "18">
-Learning Outcomes
-</div>
+
+## Learning Outcomes
+
 ::: {.incremental}
 - Be familiar with the building blocks of git: repositories, commits and branches
 - Get started with using git locally on your own projects
@@ -428,10 +429,9 @@ Learning Outcomes
 - Gain an appreciation for how useful git can be
 :::
 
-## {data-background-image=../images/ICCS_content_slide.png}
-<div style="margin-top: 100px;", size = "18">
+## Final thoughts?
 Anything you'd like to revisit or build on from today?
-</div>
+
 Please come and visit us at a code clinic. \
 
 Book a slot in our "ICCS Summer School Code Clinic spreadsheet",
