@@ -51,3 +51,9 @@
 .reveal .slides > section:not(#title-slide) {
   padding-top: 50px; /* Adjust the value as needed */
 }
+
+section:not(.title-slide) {
+  background: url('https://iccs.cam.ac.uk/sites/iccs.cam.ac.uk/files/iccs_ucam_combined_reverse_colour.png') no-repeat top right;
+  background-size: 100px; /* Adjust the size as needed */
+}
+
