@@ -4,13 +4,14 @@ title: Introduction to git and GitHub
 authors:
   - name: James Emberton
     affiliations: ICCS - University of Cambridge
-    orcid:
-  - name: Jack Atkinson
-    orcid: 0000-0001-5001-4812
+  - name: Amy Pike
     affiliations: ICCS - University of Cambridge
+  - name: Marion Weinzerl
+    affiliations: ICCS - University of Cambridge
+
 format: 
   revealjs:
-    title-slide-attributes: 
+    title-slide-attributes:
       data-background-image: images/ICCS_title_slide.png
     theme: custom_theme.scss
     embed-resources: false

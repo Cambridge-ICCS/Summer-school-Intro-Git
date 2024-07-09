@@ -3,15 +3,7 @@
 
 // title and headings
 
-.reveal .slide-logo {
-  top: 0;
-  left: 0;
-  background: #32aebf;
-  padding: 12px;
-  padding-left: 10px;
-  padding-right: 100px;
-  margin: 0;
-}
+
 
 #title-slide {
   text-align: center;
@@ -52,8 +44,4 @@
   padding-top: 50px; /* Adjust the value as needed */
 }
 
-section:not(.title-slide) {
-  background: url('https://iccs.cam.ac.uk/sites/iccs.cam.ac.uk/files/iccs_ucam_combined_reverse_colour.png') no-repeat top right;
-  background-size: 100px; /* Adjust the size as needed */
-}
 
