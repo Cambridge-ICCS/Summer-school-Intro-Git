@@ -1,0 +1,53 @@
+
+/*-- scss:rules --*/
+
+// title and headings
+
+.reveal .slide-logo {
+  top: 0;
+  left: 0;
+  background: #32aebf;
+  padding: 12px;
+  padding-left: 10px;
+  padding-right: 100px;
+  margin: 0;
+}
+
+#title-slide {
+  text-align: center;
+
+  .title {
+    color: #fffae6;
+    font-weight: 350;
+    //line-height: 0;
+  }
+
+  .subtitle {
+    color: #fffae6;
+    font-style: italic;
+  }
+
+  .author, .quarto-title-author-name, .quarto-title-authors {
+    color: #fffae6;
+    font-size: 1.2em;
+  }
+
+}
+
+#title-slide .slide-logo{
+  top: 200px;
+  background: #ffffff;
+}
+
+/*-- vertically center columns (or any container) --*/
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+/*-- standard offset for text on content slides --*/
+.reveal .slides > section:not(#title-slide) {
+  padding-top: 50px; /* Adjust the value as needed */
+}
