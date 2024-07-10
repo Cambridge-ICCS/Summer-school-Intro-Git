@@ -5,7 +5,7 @@
 # ICCS Scientific visualisation
 
 ![GitHub](https://img.shields.io/github/license/Cambridge-ICCS/summer-school-scientific-vis)
-[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
  
 This material was originally prepared for the [ICCS](https://iccs.cam.ac.uk/events/iccs-summer-school-2024) 2024 summer school.  
 All materials, including slides and workbooks, are available such that individuals can cover the course in their own time.
