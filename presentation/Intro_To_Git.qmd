@@ -26,7 +26,6 @@ format:
     # parallax-background-size: 110%
     # parallax-background-horizontal: 0
     # margin: 0.25
-    logo: https://iccs.cam.ac.uk/sites/iccs.cam.ac.uk/files/iccs_ucam_combined_reverse_colour.png
 jupyter: python3
 ---
 
@@ -432,17 +431,17 @@ Depending on the code and the repo, you may not be able to merge directly.
 ## Final thoughts?
 Anything you'd like to revisit or build on from today?
 
-Please come and visit us at a code clinic. \
+Please come and visit us at a **code clinic**. \
 
-Book a slot in our "ICCS Summer School Code Clinic spreadsheet",
+Book a slot in our "**ICCS Summer School Code Clinic spreadsheet**",
 which is linked in the online agenda here: \
 
-https://cambridge-iccs.github.io/summerschool24 \
+[https://cambridge-iccs.github.io/summerschool24](https://cambridge-iccs.github.io/summerschool24) \
 
 This course and the intermediate git course will also be made available on YouTube.
 
 This is also a nice visual resource for learning git: \
 
-https://learngitbranching.js.org/
+[https://learngitbranching.js.org](https://learngitbranching.js.org)/
 
 
