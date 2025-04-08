@@ -2,11 +2,9 @@
 
 <br><br><br><br><br>
 
-# ICCS Scientific visualisation
+# ICCS Summer School - Introduction to Git and Github for Beginners
 
-![GitHub](https://img.shields.io/github/license/Cambridge-ICCS/summer-school-scientific-vis)
 
- 
 This material was originally prepared for the [ICCS](https://iccs.cam.ac.uk/events/iccs-summer-school-2024) 2024 summer school.  
 All materials, including slides and workbooks, are available such that individuals can cover the course in their own time.
 
