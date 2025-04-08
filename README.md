@@ -1,7 +1,3 @@
-<img src="https://iccs.cam.ac.uk/sites/iccs.cam.ac.uk/files/logo2_1.png"  width="355" align="left">
-
-<br><br><br><br><br>
-
 # ICCS Summer School - Introduction to Git and Github for Beginners
 
 
