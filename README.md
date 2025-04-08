@@ -5,20 +5,20 @@ This material was originally prepared for the [ICCS](https://iccs.cam.ac.uk/even
 All materials, including slides and workbooks, are available such that individuals can cover the course in their own time.
 
 
-##How to use these files
+# How to use these files
 
-#Setup Quarto
- - Install quarto to your machine
+## Setup Quarto
+ - [Install quarto to your machine](https://quarto.org/docs/get-started/)
  - Install any quarto plugins you might want for your IDE/editor
 
-#Edit presentation
+## Edit presentation
 - make edits using markdown and revealjs syntax
-- images should be stored in /images
+- images should be stored in `/images`
 
-#Generate html from .qmd
+## Generate html from .qmd
 - In command line run:
-  quarto render the_file.qmd
-- This will generate the_file.html
+  `quarto render the_file.qmd`
+- This will generate `the_file.html`
 
 
 
