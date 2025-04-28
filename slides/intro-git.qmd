@@ -2,12 +2,15 @@
 output-file: index
 title: Introduction to git and GitHub
 authors:
-  - name: James Emberton
-    affiliations: ICCS - University of Cambridge
-  - name: Amy Pike
-    affiliations: ICCS - University of Cambridge
   - name: Marion Weinzerl
+    orcid: 0000-0002-2302-5476
     affiliations: ICCS - University of Cambridge
+  - name: Sam Avis
+    orcid: 0000-0001-9637-9489
+    affiliations: ICCS - University of Cambridge
+  - name: Niccolò Zanotti
+    orcid: 0009-0003-6450-3184
+    affiliations: University of Bologna
 
 format: 
   revealjs:
@@ -26,7 +29,6 @@ format:
     # parallax-background-size: 110%
     # parallax-background-horizontal: 0
     # margin: 0.25
-jupyter: python3
 ---
 
 ## Learning Outcomes
