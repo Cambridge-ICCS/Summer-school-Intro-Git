@@ -1,0 +1,43 @@
+name: Build and deploy slides
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  push:
+    branches: [ "main" ]
+
+  # Allows manual run
+  workflow_dispatch:
+
+jobs:
+  # Builds slides with quarto and deploys them to a branch
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      
+      - name: Render Quarto Project
+        run: |
+          cd slides
+          quarto render intro-git.qmd
+          cd ../
+
+      - name: Test pages build
+        if: github.ref != 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: test-pages
+          folder: slides
+          dry-run: true
+
+      - name: Deploy pages for main
+        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: slides
