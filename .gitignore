@@ -64,3 +64,5 @@ uv.lock
 /_site/
 /.quarto/
 *_files/
+**.html
+/*.qmd
