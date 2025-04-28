@@ -8,7 +8,7 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 
-This repository contains the material for the [ICCS Summer School 2025](https://cambridge-iccs.github.io/summerschool25) course "**Introduction to Git and GitHub for Beginners**".
+This repository contains the material for the [ICCS Summer School 2025](https://cambridge-iccs.github.io/summerschool25) course "**Introduction to Git and GitHub for Beginners**" delivered by [Marion Weinzierl](mailto:mw925@cam.ac.uk), [Sam Avis](mailto:sa2329@cam.ac.uk) and [Niccolò Zanotti](mailto:niccolo.zanotti@studio.unibo.it).
 
 This material was originally prepared and delivered at the [2024 ICCS Summer School](https://cambridge-iccs.github.io/summerschool24).
 You can download the material from the 2024 session from [here](https://github.com/Cambridge-ICCS/Summer-school-Intro-Git/releases/tag/ss2024) and you can watch the recording on the ICCS [YouTube channel](https://youtu.be/RSWxNaAqpQc).
