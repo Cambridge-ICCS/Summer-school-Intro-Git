@@ -33,8 +33,9 @@ All materials, including slides and workbooks, are available such that individua
 
 ### Slides
 
-The slides are generated from markdown using [quarto](https://quarto.org/).
-The relevant files can be found in the [slides](slides/README.md) directory.
+The slides for this course are available on the repo [github page](https://cambridge-iccs.github.io/Summer-school-Intro-Git).
+
+The relevant source files, along with instructions on how to generate them (using [quarto](https://quarto.org/)) are available in [slides](./slides/) directory.
 
 ### Videos
 
