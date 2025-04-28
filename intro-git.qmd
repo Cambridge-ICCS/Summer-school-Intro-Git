@@ -1,0 +1,449 @@
+---
+output-file: index
+title: Introduction to git and GitHub
+authors:
+  - name: Marion Weinzerl
+    orcid: 0000-0002-2302-5476
+    affiliations: ICCS - University of Cambridge
+  - name: Sam Avis
+    orcid: 0000-0001-9637-9489
+    affiliations: ICCS - University of Cambridge
+  - name: Niccolò Zanotti
+    orcid: 0009-0003-6450-3184
+    affiliations: University of Bologna
+
+format: 
+  revealjs:
+    title-slide-attributes:
+      data-background-image: images/ICCS_title_slide.png
+    theme: custom_theme.scss
+    embed-resources: false
+    incremental: true
+    history: false
+    smaller: true
+    highlight-style: a11y
+    code-line-numbers: false
+    scrollable: false
+    auto-stretch: false
+    # parallax-background-image: images/ICCS_content_slide.png
+    # parallax-background-size: 110%
+    # parallax-background-horizontal: 0
+    # margin: 0.25
+---
+
+## Learning Outcomes
+
+::: {.incremental}
+- Be familiar with the building blocks of git: repositories, commits and branches
+- Get started with using git locally on your own projects
+- Get started with collaborating on code projects using GitHub
+- Gain an appreciation for how useful git can be
+:::
+
+## First! A few questions about Git and Github
+
+::: {.incremental}
+- Who has used any sort of code version control before?
+- Who has used Git or Github
+- Who wants to do better version control in their projects?
+:::
+
+::: {.fragment}
+
+::: {.callout-tip title="Version Control"}
+Tools like Git and Github exist as solutions to the problem of how to save, share, and collaborate in a structured and safe way.
+
+Useful whether you are working alone or in a team!
+:::
+:::
+
+## Why Git?
+
+::: {.incremental}
+- Distributed version control
+- Lightweight but powerful branching and merging
+- High performance/Scalable
+- Excellent data integrity protection
+- Open source with a rich ecosystem, flexible and customisable
+- Fine grained control over committing, viewing history and reverting
+:::
+
+## In today's course we will:
+
+- Create a local git repository
+- Create a git commit in your repository
+- Create a git branch in your repository
+- Fork a remote repository and check it out on your local machine
+- Put in a PR to have our changes merged back to the remote repo
+
+## What is a Git repository?
+ - A place where you can store your code, your files, and each file's revision history.
+ - Contains a .git folder at the root which does all the git magic behind the scenes.
+
+## Exercise 1, creating a git repository:
+<br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:
+
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ cd your_dir
+$ mkdir your_folder
+$ cd your_folder
+</code></pre>
+</div>
+Then initialise the folder
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git init
+</code></pre>
+</div>
+::: {.callout-tip title=".git"}
+A hidden ".git" folder has been created in your folder. This contains everything Git needs to work.
+:::
+
+## What is a Git commit?
+- You can think of a commit as a snapshot of your work at a particular time
+- You can navigate between commits easily with git
+- This allows you to switch easily between different versions of your work
+- When you commit, rather than saving all the files in a project every time, git is efficient
+and only stores the files which have been changed between the previous commit and your current one
+- The commit also stores a reference to its parent commit
+
+## Commiting is a three part process:
+
+1. Modify: change the file in your working tree, ie go in and edit the file as usual
+2. Stage: Tell git that you would like this file to be included in your next commit
+3. Commit: Tell git to take a snapshot of the files you staged
+
+## At each step in the process, the file is stored in a different area:
+
+![](images/show_different_file_states.png)
+
+## git commit
+
+This means that Git has four main states that your files can be in:
+
+- Untracked: You've created a new file and not told git to keep track of it.
+- Modified: You've changed a file that git already has a record of, but have not told
+git to include these changes in your next commit.
+We say these files are in the working tree.
+- Staged: You've told git to include the file next time you do a commit.
+We say these files are in the staging area.
+- Committed: The file is saved in it's present state in the most recent commit.
+
+## Exercise 2a, create an untracked file:
+
+![](images/create_untracked_file.png)
+
+## Exercise 2a, create an untracked file:
+<br>- Create a new file in your repository.
+
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ touch new.txt
+$ code new.txt
+</code></pre>
+</div>
+<br>
+Lets check what git can see...
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+</code></pre>
+</div>
+
+## git status
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+
+No commits yet
+
+Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+
+	new.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+</code></pre>
+</div>
+
+::: {.callout-tip title="git status"}
+Highlights your working branch -> main
+<br> Reports commit status -> none yet
+<br>Highlights untracked files -> new.txt
+<br>Proposes adding these to git with 'git add'
+:::
+
+## Exercise 2b, add the untracked file to the staging area:
+
+![](images/add_to_staging_area.png)
+
+## Exercise 2b, add the untracked file to the staging area:
+
+<br> Try these commands...
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git add .
+</code></pre>
+</div>
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+</code></pre>
+</div>
+
+## git add
+
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   new.txt
+
+</code></pre>
+</div>
+
+::: {.callout-tip title="git add"}
+Moves file(s) into "Staging area" ready for commit
+:::
+
+## Exercise 2c, commiting your changes:
+
+![](images/commit_to_repository.png)
+
+## Exercise 2c, commiting your changes:
+
+Commit your file to the local git repo
+<div style="margin-top: 0px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git commit -m "Created new.txt"
+</code></pre>
+</div>
+
+<br>
+'git commit' >>>> tells git you want to commit
+<br>
+<br>'-m "Comment"' >>>> adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.
+
+## git commit
+
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git commit -m "Created new.txt"
+
+[main (root-commit) f22b25e] Created new.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+
+</code></pre>
+</div>
+
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+nothing to commit, working tree clean
+
+</code></pre>
+</div>
+
+## git log
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git log
+
+commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
+Author: James Emberton <je484@cam.ac.uk>
+Date:   Tues May 27 09:51:46 2024 -0400
+
+    Create new.txt
+
+</code></pre>
+</div>
+
+::: {.callout-tip title="git log"}
+Displays commits in reverse chronological order.
+
+Includes full identifier, author and date
+:::
+
+## What is a Git branch?
+
+- A branch is a pointer to a git commit
+- It says "I want to include the work of this commit and all of its parent commits."
+- We can use the `checkout` command to switch between different branches and commits
+![](images/git_branching_illustration.png)
+
+## Exercise 3, creating a git branch:
+
+![](images/creating_branch_and_checking_out.png){width=40%}
+
+## Exercise 3, creating a git branch and checking it out
+
+- Create a new branch using: `git branch my-shiny-new-branch`
+- Checkout the branch using: `git checkout my-shiny-new-branch`
+- Make a change in your new branch by editing new.txt and committing the changes.
+
+- Note: you can combine the first two steps into one using `git checkout -b my-shiny-new-branch`
+
+## Exercise 4, switching between branches
+<br>
+![creating branch and checking out](images/creating_branch_and_checking_out.png){width=35%}
+
+## Exercise 4, switching between branches
+
+- return to the main branch using `git checkout main`
+- open the new.txt file, what's inside?
+- make a new file, `new_2.txt`
+- commit this new file to the main branch
+- switch back to your other branch and inspect the files again
+
+- Note: you can use `git checkout -` as a shortcut for returning to the previous branch you checked out.
+
+## Ways of working with a remote repository
+
+A remote repository is one stored in the cloud. We will be using GitHub to do this today. \
+There are two different ways to copy a remote repository so that you can work on it locally:
+<br>
+<br>
+- clone:  This makes a copy locally which is closely linked to the remote version.
+Your local branches can be synced to branches in the original.
+<br>
+<br>
+- fork: This makes another separate version of the repo remotely that you own. Once you
+have forked a repo remotely, you can then clone it to your local machine.
+<br>
+<br>
+Branches created locally can't be synced to branches in the original repo,
+they are synced to your forked repo instead. You can still open pull requests to the
+original if you would like to make a contribution to it.
+
+## To clone or to fork?
+
+Use a clone when:
+
+- You are collaborating directly and actively with the owner of the repo (e.g. it is your research team, or you)
+OR all of the following is true:
+
+- It is owned by someone else and you are happy not to have ownership of the codebase
+- You have permission to push branches up to the repo
+- You want easy access to the latest changes made by others to the central repository
+- You want the main branch in the repo to be updated and edited by others working on the project
+
+## To clone or to fork?
+
+Use a fork when:
+
+- The owner of the repo is not someone you are actively collaborating with
+- You want to take the development of the code in a different direction from the original owner of the repo
+- You want full ownership over your version of the codebase
+- You want complete control over other's contributions to the codebase
+- You do not want the main branch to receive updates from those editing the existing repo
+- Or you do not have permission to push branches directly to the original repo
+
+
+## Working with remote repositories
+
+![](images/fork_vs_clone.png){width=50%}
+
+## Collaborative git with GitHub
+
+::: {.callout-warning}
+You must have already created a github account and connected your local git repo to it before you can do these exercises
+:::
+
+Navigate to https://github.com/Cambridge-ICCS and find the 'git-intro-iccs-summer-school-2024' repo
+
+We will fork this repo, clone the fork to our local computers, make edits and then try merging these back into the original repo.
+
+## Exercise 5:
+
+<br> - From Github, Cambridge-ICCS/git-intro-iccs-summer-school-2024
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![Github Fork option](images/Github%20fork.png)
+:::
+
+::: {.column width="60%"}
+![Fork menu](images/Fork%20menu.png)
+:::
+
+::::
+
+## Cloning from GitHub
+
+Your forked repo only exists in Github. To work on it locally it needs to be copied to your local computer.
+
+
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+</code></pre>
+</div>
+
+::: {.callout-warning}
+Clone repo to a new working folder.
+
+Do not clone into an existing local git repo.
+:::
+
+::: {style="font-size: 90%;"}
+- Choose/create a file to edit, and then commit. \
+- Next `push` the changes up to the remote repo. \
+- The first time you do this on a new branch, you will need to set up a remote one to track it: \
+- `git push --set-upstream origin your-branch-name` \
+- For any commits after that on the branch you can use `git push` on it's own when you are on the branch you want to push.
+:::
+
+## Pull requests
+
+The final step is to put in a pull request (PR) to the original repo that we forked from.
+<br>
+<br>
+A pull request is how we signal to the repo owner that we want to merge in our changes.
+<br>
+<br>
+Depending on the code and the repo, you may not be able to merge directly.
+- Reviews by one or more developers who may suggest/require edits to you code
+- Pass testing
+
+
+## Learning Outcomes
+
+::: {.incremental}
+- Be familiar with the building blocks of git: repositories, commits and branches
+- Get started with using git locally on your own projects
+- Get started with collaborating on code projects using GitHub
+- Gain an appreciation for how useful git can be
+:::
+
+## Final thoughts?
+Anything you'd like to revisit or build on from today?
+
+Please come and visit us at a **code clinic**. \
+
+Book a slot in our "**ICCS Summer School Code Clinic spreadsheet**",
+which is linked in the online agenda here: \
+
+[https://cambridge-iccs.github.io/summerschool24](https://cambridge-iccs.github.io/summerschool24) \
+
+This course and the intermediate git course will also be made available on YouTube.
+
+This is also a nice visual resource for learning git: \
+
+[https://learngitbranching.js.org](https://learngitbranching.js.org)/
+
+
