@@ -9,6 +9,6 @@ At this point, you can simply run
 ```shell
 quarto render intro-git.qmd
 ```
-which will output the slide deck (in `html` form) with a root file `index.html` along with auxiliary files located into a directory `intro-git_files`. 
+from the `slides` directory, which will output the slide deck (in `html` form) with a root file `index.html` along with auxiliary files located into a directory `intro-git_files`. 
 
 You can now view the deck in your browser by opening `index.html`.
