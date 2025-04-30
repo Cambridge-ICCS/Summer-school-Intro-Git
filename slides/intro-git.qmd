@@ -36,7 +36,10 @@ format:
 Slides: [https://cambridge-iccs.github.io/Summer-school-Intro-Git](https://cambridge-iccs.github.io/Summer-school-Intro-Git)
 
 Repo: [https://github.com/Cambridge-ICCS/Summer-school-Intro-Git](https://github.com/Cambridge-ICCS/Summer-school-Intro-Git)
-![](images/bit.ly_ICCS-Summer-School-Intro-Git.png){width=30%}
+
+::: {.column-margin style="text-align: left;"}
+{{< qrcode https://github.com/Cambridge-ICCS/Summer-School-Intro-Git qr7dekity9 width=200 height=200 >}}
+:::
 
 ## Learning Outcomes
 
@@ -372,7 +375,9 @@ You must have already created a GitHub account and connected your local git repo
 
 [https://github.com/Cambridge-ICCS/Summer-School-Intro-Git-Practice](https://github.com/Cambridge-ICCS/Summer-School-Intro-Git-Practice)
 
-![](images/bit.ly_ICCS-Summer-School-Intro-Git-Practice.png){width=30%}
+::: {.column-margin style="text-align: left;"}
+{{< qrcode https://github.com/Cambridge-ICCS/Summer-School-Intro-Git-Practice qr7dekity9 width=200 height=200 >}}
+:::
 
 
 ## Forking:
