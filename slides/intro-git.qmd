@@ -328,12 +328,9 @@ Your local branches can be synced to branches in the original.
 <br>
 <br>
 - fork: This makes another separate version of the repo remotely that you own. Once you
-have forked a repo remotely, you can then clone it to your local machine.
+have forked a repo remotely, you can then clone it to your local machine. You can still contribute to the original repository through a pull request.
 <br>
 <br>
-Branches created locally can't be synced to branches in the original repo,
-they are synced to your forked repo instead. You can still open pull requests to the
-original if you would like to make a contribution to it.
 
 ## To clone or to fork?
 
