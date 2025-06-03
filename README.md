@@ -26,7 +26,7 @@ All materials, including slides and workbooks, are available such that individua
 
 ## Learning Objectives
 
-This course is teaching the general concept of version control, basic git commands such as `git init`, `git add`, `git status` and `git commit`. It also gives an introduction into using remote repositories on Github, `git clone` (and when to prefer `git fork`, pushing new content to the remote with `git push`, and how to create a pull request.
+This course is teaching the general concept of version control as well as basic git commands such as `git init`, `git add`, `git status` and `git commit`. It also gives an introduction into using remote repositories on Github, `git clone` (and when to prefer `git fork`), pushing new content to the remote with `git push`, and how to create a pull request.
 
 ## Teaching Material
 
