@@ -1,0 +1,238 @@
+## First! A few questions about Git and Github
+
+::: {.incremental}
+- Who has used any sort of code version control before?
+- Who has used Git or Github
+- Who wants to do better version control in their projects?
+:::
+
+::: {.fragment}
+
+::: {.callout-tip title="Version Control"}
+Tools like Git and Github exist as solutions to the problem of how to save, share, and collaborate in a structured and safe way.
+
+Useful whether you are working alone or in a team!
+:::
+:::
+
+## Why Git?
+
+::: {.incremental}
+- Distributed version control
+- Lightweight but powerful branching and merging
+- High performance/Scalable
+- Excellent data integrity protection
+- Open source with a rich ecosystem, flexible and customisable
+- Fine grained control over committing, viewing history and reverting
+:::
+
+## In today's course we will learn how to:
+
+- Create a local git repository
+- Create a git commit in your repository
+- Create a git branch in your repository
+- Fork a remote repository and check it out on your local machine
+- Put in a PR to have our changes merged back to the remote repo
+
+## What is a Git repository?
+ - A place where you can store your code, your files, and each file's revision history.
+ - Contains a .git folder at the root which does all the git magic behind the scenes.
+
+## Creating a git repository
+<br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:
+
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ cd your_dir
+$ mkdir your_folder
+$ cd your_folder
+</code></pre>
+</div>
+Then initialise the folder
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git init
+</code></pre>
+</div>
+::: {.callout-tip title=".git"}
+A hidden ".git" folder has been created in your folder. This contains everything Git needs to work.
+:::
+
+## What is a Git commit?
+- You can think of a commit as a snapshot of your work at a particular time
+- You can navigate between commits easily with git
+- This allows you to switch easily between different versions of your work
+- When you commit, rather than saving all the files in a project every time, git is efficient
+and only stores the files which have been changed between the previous commit and your current one
+- The commit also stores a reference to its parent commit
+
+## Committing is a three part process:
+
+1. Modify: change the file in your working tree, i.e., go in and edit the file as usual
+2. Stage: Tell git that you would like this file to be included in your next commit
+3. Commit: Tell git to take a snapshot of the files you staged
+
+## At each step in the process, the file is stored in a different area:
+
+![](images/show_different_file_states.png)
+
+## git commit
+
+This means that Git has four main states that your files can be in:
+
+- Untracked: You've created a new file and not told git to keep track of it.
+- Modified: You've changed a file that git already has a record of, but have not told
+git to include these changes in your next commit.
+We say these files are in the working tree.
+- Staged: You've told git to include the file next time you do a commit.
+We say these files are in the staging area.
+- Committed: The file is saved in it's present state in the most recent commit.
+
+## Create an untracked file:
+
+![](images/create_untracked_file.png)
+
+## Create an untracked file:
+<br>- Create a new file in your repository.
+
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ touch new.txt
+$ code new.txt
+</code></pre>
+</div>
+<br>
+Lets check what git can see...
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+</code></pre>
+</div>
+
+## git status
+<div style="margin-top: 20px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+
+No commits yet
+
+Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+
+	new.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+</code></pre>
+</div>
+
+::: {.callout-tip title="git status"}
+Highlights your working branch -> main
+<br> Reports commit status -> none yet
+<br>Highlights untracked files -> new.txt
+<br>Proposes adding these to git with 'git add'
+:::
+
+## Add the untracked file to the staging area:
+
+![](images/add_to_staging_area.png)
+
+## Add the untracked file to the staging area:
+
+<br> Try these commands...
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git add .
+</code></pre>
+</div>
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+</code></pre>
+</div>
+
+## git add
+
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   new.txt
+
+</code></pre>
+</div>
+
+::: {.callout-tip title="git add"}
+Moves file(s) into "Staging area" ready for commit
+:::
+
+## Committing your changes:
+
+![](images/commit_to_repository.png)
+
+## Committing your changes:
+
+Commit your file to the local git repo
+<div style="margin-top: 0px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git commit -m "Created new.txt"
+</code></pre>
+</div>
+
+<br>
+'git commit' >>>> tells git you want to commit
+<br>
+<br>'-m "Comment"' >>>> adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.
+
+## git commit
+
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git commit -m "Created new.txt"
+
+[main (root-commit) f22b25e] Created new.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+
+</code></pre>
+</div>
+
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git status
+
+On branch main
+nothing to commit, working tree clean
+
+</code></pre>
+</div>
+
+## git log
+<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+<pre><code>
+$ git log
+
+commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
+Author: Jane Doe <jmd123@cam.ac.uk>
+Date:   Tues May 27 09:51:46 2025 -0400
+
+    Create new.txt
+
+</code></pre>
+</div>
+
+::: {.callout-tip title="git log"}
+Displays commits in reverse chronological order.
+
+Includes full identifier, author and date
+:::
+
+
