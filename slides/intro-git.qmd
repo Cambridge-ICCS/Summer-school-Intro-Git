@@ -36,13 +36,13 @@ format:
 {{< include _intro.qmd >}}
 
 <!-- introduction, status, add, commit, log  -->
-{{< include _first_part.qmd >}}
+{{< include _basics.qmd >}}
 
 <!-- branching  -->
-{{< include _second_part.qmd >}}
+{{< include _branching.qmd >}}
 
-<!-- cloning, forking  -->
-{{< include _third_part.qmd >}}
+<!-- cloning  -->
+{{< include _cloning.qmd >}}
 
 <!-- outcomes, final thoughts, additional material  -->
 {{< include _closing.qmd >}}
