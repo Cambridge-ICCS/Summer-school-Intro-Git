@@ -223,18 +223,18 @@ Niccolò Zanotti <a href="https://orcid.org/0009-0003-6450-3184" class="quarto-t
 <section id="in-todays-course-we-will-learn-how-to" class="slide level2">
 <h2>In today’s course we will learn how to:</h2>
 <ul>
-<li class="fragment">Create a local git repository</li>
-<li class="fragment">Create a git commit in your repository</li>
-<li class="fragment">Create a git branch in your repository</li>
-<li class="fragment">Fork a remote repository and check it out on your local machine</li>
-<li class="fragment">Put in a PR to have our changes merged back to the remote repo</li>
+<li>Create a local git repository</li>
+<li>Create a git commit in your repository</li>
+<li>Create a git branch in your repository</li>
+<li>Fork a remote repository and check it out on your local machine</li>
+<li>Put in a PR to have our changes merged back to the remote repo</li>
 </ul>
 </section>
 <section id="what-is-a-git-repository" class="slide level2">
 <h2>What is a Git repository?</h2>
 <ul>
-<li class="fragment">A place where you can store your code, your files, and each file’s revision history.</li>
-<li class="fragment">Contains a .git folder at the root which does all the git magic behind the scenes.</li>
+<li>A place where you can store your code, your files, and each file’s revision history.</li>
+<li>Contains a .git folder at the root which does all the git magic behind the scenes.</li>
 </ul>
 </section>
 <section id="creating-a-git-repository" class="slide level2">
@@ -272,19 +272,19 @@ $ git init
 <section id="what-is-a-git-commit" class="slide level2">
 <h2>What is a Git commit?</h2>
 <ul>
-<li class="fragment">You can think of a commit as a snapshot of your work at a particular time</li>
-<li class="fragment">You can navigate between commits easily with git</li>
-<li class="fragment">This allows you to switch easily between different versions of your work</li>
-<li class="fragment">When you commit, rather than saving all the files in a project every time, git is efficient and only stores the files which have been changed between the previous commit and your current one</li>
-<li class="fragment">The commit also stores a reference to its parent commit</li>
+<li>You can think of a commit as a snapshot of your work at a particular time</li>
+<li>You can navigate between commits easily with git</li>
+<li>This allows you to switch easily between different versions of your work</li>
+<li>When you commit, rather than saving all the files in a project every time, git is efficient and only stores the files which have been changed between the previous commit and your current one</li>
+<li>The commit also stores a reference to its parent commit</li>
 </ul>
 </section>
 <section id="committing-is-a-three-part-process" class="slide level2">
 <h2>Committing is a three part process:</h2>
 <ol type="1">
-<li class="fragment">Modify: change the file in your working tree, i.e., go in and edit the file as usual</li>
-<li class="fragment">Stage: Tell git that you would like this file to be included in your next commit</li>
-<li class="fragment">Commit: Tell git to take a snapshot of the files you staged</li>
+<li>Modify: change the file in your working tree, i.e., go in and edit the file as usual</li>
+<li>Stage: Tell git that you would like this file to be included in your next commit</li>
+<li>Commit: Tell git to take a snapshot of the files you staged</li>
 </ol>
 </section>
 <section id="at-each-step-in-the-process-the-file-is-stored-in-a-different-area" class="slide level2">
@@ -295,10 +295,10 @@ $ git init
 <h2>git commit</h2>
 <p>This means that Git has four main states that your files can be in:</p>
 <ul>
-<li class="fragment">Untracked: You’ve created a new file and not told git to keep track of it.</li>
-<li class="fragment">Modified: You’ve changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.</li>
-<li class="fragment">Staged: You’ve told git to include the file next time you do a commit. We say these files are in the staging area.</li>
-<li class="fragment">Committed: The file is saved in it’s present state in the most recent commit.</li>
+<li>Untracked: You’ve created a new file and not told git to keep track of it.</li>
+<li>Modified: You’ve changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.</li>
+<li>Staged: You’ve told git to include the file next time you do a commit. We say these files are in the staging area.</li>
+<li>Committed: The file is saved in it’s present state in the most recent commit.</li>
 </ul>
 </section>
 <section id="create-an-untracked-file" class="slide level2">
@@ -476,9 +476,9 @@ Date:   Tues May 27 09:51:46 2025 -0400
 <section id="what-is-a-git-branch" class="slide level2">
 <h2>What is a Git branch?</h2>
 <ul>
-<li class="fragment">A branch is a pointer to a git commit</li>
-<li class="fragment">It says “I want to include the work of this commit and all of its parent commits.”</li>
-<li class="fragment">We can use the <code>checkout</code> command to switch between different branches and commits <img data-src="images/git_branching_illustration.png"></li>
+<li>A branch is a pointer to a git commit</li>
+<li>It says “I want to include the work of this commit and all of its parent commits.”</li>
+<li>We can use the <code>checkout</code> command to switch between different branches and commits <img data-src="images/git_branching_illustration.png"></li>
 </ul>
 </section>
 <section id="creating-a-git-branch" class="slide level2">
@@ -488,10 +488,10 @@ Date:   Tues May 27 09:51:46 2025 -0400
 <section id="creating-a-git-branch-and-checking-it-out" class="slide level2">
 <h2>Creating a git branch and checking it out</h2>
 <ul>
-<li class="fragment"><p>Create a new branch using: <code>git branch my-shiny-new-branch</code></p></li>
-<li class="fragment"><p>Checkout the branch using: <code>git checkout my-shiny-new-branch</code></p></li>
-<li class="fragment"><p>Make a change in your new branch by editing new.txt and committing the changes.</p></li>
-<li class="fragment"><p>Note: you can combine the first two steps into one using <code>git checkout -b my-shiny-new-branch</code></p></li>
+<li><p>Create a new branch using: <code>git branch my-shiny-new-branch</code></p></li>
+<li><p>Checkout the branch using: <code>git checkout my-shiny-new-branch</code></p></li>
+<li><p>Make a change in your new branch by editing new.txt and committing the changes.</p></li>
+<li><p>Note: you can combine the first two steps into one using <code>git checkout -b my-shiny-new-branch</code></p></li>
 </ul>
 </section>
 <section id="switching-between-branches" class="slide level2">
@@ -501,12 +501,12 @@ Date:   Tues May 27 09:51:46 2025 -0400
 <section id="switching-between-branches-1" class="slide level2">
 <h2>Switching between branches</h2>
 <ul>
-<li class="fragment"><p>return to the main branch using <code>git checkout main</code></p></li>
-<li class="fragment"><p>open the new.txt file, what’s inside?</p></li>
-<li class="fragment"><p>make a new file, <code>new_2.txt</code></p></li>
-<li class="fragment"><p>commit this new file to the main branch</p></li>
-<li class="fragment"><p>switch back to your other branch and inspect the files again</p></li>
-<li class="fragment"><p>Note: you can use <code>git checkout -</code> as a shortcut for returning to the previous branch you checked out.</p></li>
+<li><p>return to the main branch using <code>git checkout main</code></p></li>
+<li><p>open the new.txt file, what’s inside?</p></li>
+<li><p>make a new file, <code>new_2.txt</code></p></li>
+<li><p>commit this new file to the main branch</p></li>
+<li><p>switch back to your other branch and inspect the files again</p></li>
+<li><p>Note: you can use <code>git checkout -</code> as a shortcut for returning to the previous branch you checked out.</p></li>
 </ul>
 </section>
 <section id="ways-of-working-with-a-remote-repository" class="slide level2">
@@ -518,23 +518,23 @@ There are two different ways to copy a remote repository so that you can work on
 <h2>To clone or to fork?</h2>
 <p>Use a clone when:</p>
 <ul>
-<li class="fragment"><p>You are collaborating directly and actively with the owner of the repo (e.g.&nbsp;it is your research team, or you) OR all of the following is true:</p></li>
-<li class="fragment"><p>It is owned by someone else and you are happy not to have ownership of the codebase</p></li>
-<li class="fragment"><p>You have permission to push branches up to the repo</p></li>
-<li class="fragment"><p>You want easy access to the latest changes made by others to the central repository</p></li>
-<li class="fragment"><p>You want the main branch in the repo to be updated and edited by others working on the project</p></li>
+<li><p>You are collaborating directly and actively with the owner of the repo (e.g.&nbsp;it is your research team, or you) OR all of the following is true:</p></li>
+<li><p>It is owned by someone else and you are happy not to have ownership of the codebase</p></li>
+<li><p>You have permission to push branches up to the repo</p></li>
+<li><p>You want easy access to the latest changes made by others to the central repository</p></li>
+<li><p>You want the main branch in the repo to be updated and edited by others working on the project</p></li>
 </ul>
 </section>
 <section id="to-clone-or-to-fork-1" class="slide level2">
 <h2>To clone or to fork?</h2>
 <p>Use a fork when:</p>
 <ul>
-<li class="fragment">The owner of the repo is not someone you are actively collaborating with</li>
-<li class="fragment">You want to take the development of the code in a different direction from the original owner of the repo</li>
-<li class="fragment">You want full ownership over your version of the codebase</li>
-<li class="fragment">You want complete control over other’s contributions to the codebase</li>
-<li class="fragment">You do not want the main branch to receive updates from those editing the existing repo</li>
-<li class="fragment">Or you do not have permission to push branches directly to the original repo</li>
+<li>The owner of the repo is not someone you are actively collaborating with</li>
+<li>You want to take the development of the code in a different direction from the original owner of the repo</li>
+<li>You want full ownership over your version of the codebase</li>
+<li>You want complete control over other’s contributions to the codebase</li>
+<li>You do not want the main branch to receive updates from those editing the original repo</li>
+<li>Or you do not have permission to push branches directly to the original repo</li>
 </ul>
 </section>
 <section id="working-with-remote-repositories" class="slide level2">
@@ -552,7 +552,7 @@ There are two different ways to copy a remote repository so that you can work on
 <p><strong>Warning</strong></p>
 </div>
 <div class="callout-content">
-<p>You must have already created a GitHub account and connected your local git repo to it before you can do these exercises</p>
+<p>You must have already created a GitHub account before you can do these exercises</p>
 </div>
 </div>
 </div>
@@ -572,8 +572,8 @@ There are two different ways to copy a remote repository so that you can work on
     
 </div>
 </section>
-<section id="forking" class="slide level2">
-<h2>Forking:</h2>
+<section id="forking-demo-only-not-necessary-for-this-exercise" class="slide level2">
+<h2>Forking (demo only, not necessary for this exercise):</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
@@ -589,7 +589,7 @@ There are two different ways to copy a remote repository so that you can work on
 <figcaption>Fork menu</figcaption>
 </figure>
 </div>
-</div><p>Your forked repo only exists in GitHub. To work on it locally it needs to be copied (“cloned”) to your local computer.</p>
+</div><p>At this point, the forked repo only exists in GitHub. To work on it locally it needs to be copied (“cloned”) to your local computer.</p>
 </div>
 </section>
 <section id="cloning-from-github" class="slide level2">
@@ -623,21 +623,21 @@ $ git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git
 <h2>Cloning from GitHub</h2>
 <div style="font-size: 90%;">
 <ul>
-<li class="fragment">Choose/create a file to edit, and then <code>commit</code>.<br>
+<li>Choose/create a file to edit, and then <code>commit</code>.<br>
 </li>
-<li class="fragment">Next <code>push</code> the changes up to the remote repo.<br>
+<li>Next <code>push</code> the changes up to the remote repo.<br>
 </li>
-<li class="fragment">The first time you do this on a new branch, you will need to set up a remote one to track it:<br>
+<li>The first time you do this on a new branch, you will need to set up a remote one to track it:<br>
 </li>
-<li class="fragment"><code>git push --set-upstream origin your-branch-name</code><br>
+<li><code>git push --set-upstream origin your-branch-name</code><br>
 </li>
-<li class="fragment">For any commits after that on the branch you can use <code>git push</code> on its own when you are on the branch you want to push.</li>
+<li>For any commits after that on the branch you can use <code>git push</code> on its own when you are on the branch you want to push.</li>
 </ul>
 </div>
 </section>
 <section id="pull-requests" class="slide level2">
 <h2>Pull requests</h2>
-<p>The final step is to put in a pull request (PR) to the original repo that we forked from. <br> <br> A pull request is how we signal to the repo owner that we want to merge in our changes. <br> <br> Depending on the code and the repo, you may not be able to merge directly.<br>
+<p>The final step is to put in a pull request (PR) to the remote repository. <br> <br> A pull request is how we signal to the repo owner that we want to merge in our changes. <br> <br> Depending on the code and the repo, you may not be able to merge directly.<br>
 <br> -&gt; Branches can be set up so that you can only merge after a review by one or more developers who may suggest/require edits to you code.<br>
 <br> -&gt; Additionally, you can set up Continuous Integration so that the code has to pass tests before it can be merged.</p>
 </section>
