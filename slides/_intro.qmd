@@ -1,0 +1,19 @@
+## Course material
+
+Slides: [https://cambridge-iccs.github.io/Summer-school-Intro-Git](https://cambridge-iccs.github.io/Summer-school-Intro-Git)
+
+Repo: [https://github.com/Cambridge-ICCS/Summer-school-Intro-Git](https://github.com/Cambridge-ICCS/Summer-school-Intro-Git)
+
+::: {.column-margin style="text-align: left;"}
+{{< qrcode https://github.com/Cambridge-ICCS/Summer-School-Intro-Git qr7dekity9 width=200 height=200 >}}
+:::
+
+## Learning Outcomes
+
+::: %{.incremental}
+- Be familiar with the building blocks of git: repositories, commits and branches
+- Get started with using git locally on your own projects
+- Get started with collaborating on code projects using GitHub
+- Gain an appreciation for how useful git can be
+:::
+
