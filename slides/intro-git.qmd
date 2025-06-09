@@ -2,7 +2,7 @@
 output-file: index
 title: Introduction to git and GitHub
 subtitle: ICCS Summer School 2025
-footer: SummerSchool25
+footer: ICCS Summer School 25
 
 authors:
   - name: Marion Weinzierl
