@@ -43,7 +43,7 @@ Repo: [https://github.com/Cambridge-ICCS/Summer-school-Intro-Git](https://github
 
 ## Learning Outcomes
 
-::: {.incremental}
+::: %{.incremental}
 - Be familiar with the building blocks of git: repositories, commits and branches
 - Get started with using git locally on your own projects
 - Get started with collaborating on code projects using GitHub
@@ -52,7 +52,7 @@ Repo: [https://github.com/Cambridge-ICCS/Summer-school-Intro-Git](https://github
 
 ## First! A few questions about Git and Github
 
-::: {.incremental}
+::: %{.incremental}
 - Who has used any sort of code version control before?
 - Who has used Git or Github
 - Who wants to do better version control in their projects?
@@ -69,7 +69,7 @@ Useful whether you are working alone or in a team!
 
 ## Why Git?
 
-::: {.incremental}
+::: %{.incremental}
 - Distributed version control
 - Lightweight but powerful branching and merging
 - High performance/Scalable
@@ -440,7 +440,7 @@ Depending on the code and the repo, you may not be able to merge directly. \
 
 ## Hopefully you now...
 
-::: {.incremental}
+::: %{.incremental}
 - ...are familiar with the building blocks of git: repositories, commits and branches
 - ...able to use git locally on your own projects
 - ...know how to get started with collaborating on code projects using GitHub
