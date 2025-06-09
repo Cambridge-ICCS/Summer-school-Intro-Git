@@ -18,7 +18,7 @@ format:
       data-background-image: images/ICCS_title_slide.png
     theme: custom_theme.scss
     embed-resources: false
-    incremental: true
+    incremental: false
     history: false
     smaller: true
     highlight-style: a11y
@@ -382,7 +382,6 @@ You must have already created a GitHub account and connected your local git repo
 
 ## Forking:
 
-
 :::: {.columns}
 
 ::: {.column width="40%"}
@@ -392,7 +391,7 @@ You must have already created a GitHub account and connected your local git repo
 ::: {.column width="60%"}
 ![Fork menu](images/Fork%20menu.png)
 :::
-Your forked repo only exists in GitHub. To work on it locally it needs to be copied ("cloned") to your local computer.
+At this point, the forked repo only exists in GitHub. To work on it locally it needs to be copied ("cloned") to your local computer.
 
 ::::
 
@@ -425,7 +424,7 @@ Do not clone into an existing local git repo.
 
 ## Pull requests
 
-The final step is to put in a pull request (PR) to the original repo that we forked from.
+The final step is to put in a pull request (PR) to the remote repository.
 <br>
 <br>
 A pull request is how we signal to the repo owner that we want to merge in our changes.
