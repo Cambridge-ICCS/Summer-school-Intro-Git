@@ -20,14 +20,13 @@ All materials, including slides and workbooks, are available such that individua
 - [Learning Objectives](#learning-objectives)
 - [Teaching material](#teaching-material)
 - [Preparation and prerequisites](#preparation-and-prerequisites)
-- [Installation and setup](#installation-and-setup)
 - [License information](#license)
 - [Contribution Guidelines and Support](#contribution-guidelines-and-support)
 
 
 ## Learning Objectives
 
-#todo
+This course is teaching the general concept of version control as well as basic git commands such as `git init`, `git add`, `git status` and `git commit`. It also gives an introduction into using remote repositories on Github, `git clone` (and when to prefer `git fork`), pushing new content to the remote with `git push`, and how to create a pull request.
 
 ## Teaching Material
 
@@ -51,12 +50,7 @@ In order to follow along with the course the following has to be set up beforeha
 
 ### Preparation 
 
-A short guide on how to fill out the prerequisites can be found at the [PREPARATION](./PREPARATION.md) page.
-
-
-## Installation and setup
-
-#todo
+A short guide on how to fulfill the prerequisites can be found at the [PREPARATION](./PREPARATION.md) page.
 
 ## License
 

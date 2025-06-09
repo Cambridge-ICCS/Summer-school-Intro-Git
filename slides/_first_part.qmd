@@ -1,6 +1,6 @@
 ## First! A few questions about Git and Github
 
-::: {.incremental}
+::: %{.incremental}
 - Who has used any sort of code version control before?
 - Who has used Git or Github
 - Who wants to do better version control in their projects?
@@ -17,7 +17,7 @@ Useful whether you are working alone or in a team!
 
 ## Why Git?
 
-::: {.incremental}
+::: %{.incremental}
 - Distributed version control
 - Lightweight but powerful branching and merging
 - High performance/Scalable

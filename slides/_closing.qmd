@@ -1,6 +1,6 @@
 ## Hopefully you now...
 
-::: {.incremental}
+::: %{.incremental}
 - ...are familiar with the building blocks of git: repositories, commits and branches
 - ...able to use git locally on your own projects
 - ...know how to get started with collaborating on code projects using GitHub

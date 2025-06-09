@@ -21,24 +21,18 @@ format:
     logo: images/ucam_institute_of_computing_for_climate_science_h_col.jpg
     theme: [default, custom.scss]
     embed-resources: false
-    incremental: true
+
+    smaller: true
     slide-number: false
+    incremental: false
+    history: false
     chalkboard: false
     preview-links: auto
-    history: false
 
     highlight-style: a11y
     code-overflow: wrap
     code-line-numbers: false
-
-    smaller: true
-
-# revealjs-plugins:
-#    - attribution
-
-# from: markdown+emoji # for emojis
 ---
-<!-- course material, learning outcomes  -->
 {{< include _intro.qmd >}}
 
 <!-- introduction, status, add, commit, log  -->

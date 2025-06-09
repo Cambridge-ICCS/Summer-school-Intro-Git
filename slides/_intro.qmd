@@ -10,7 +10,7 @@ Repo: [https://github.com/Cambridge-ICCS/Summer-school-Intro-Git](https://github
 
 ## Learning Outcomes
 
-::: {.incremental}
+::: %{.incremental}
 - Be familiar with the building blocks of git: repositories, commits and branches
 - Get started with using git locally on your own projects
 - Get started with collaborating on code projects using GitHub
