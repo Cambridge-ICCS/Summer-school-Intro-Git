@@ -10,6 +10,7 @@
 <script src="intro-git_files/libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.31">
 
+  <meta name="dcterms.date" content="2025-07-07">
   <title>Introduction to git and GitHub</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="intro-git_files/libs/revealjs/dist/theme/quarto-15469fe8666e77838cf3f74704102351.css">
+  <link rel="stylesheet" href="intro-git_files/libs/revealjs/dist/theme/quarto-08020f112957b6580494b137df730132.css">
   <link href="intro-git_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="intro-git_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="intro-git_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -126,8 +127,9 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="images/ICCS_title_slide.png" class="quarto-title-block center">
+<section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Introduction to git and GitHub</h1>
+  <p class="subtitle">ICCS Summer School 2025</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -156,6 +158,7 @@ Niccolò Zanotti <a href="https://orcid.org/0009-0003-6450-3184" class="quarto-t
     </div>
 </div>
 
+  <p class="date">2025-07-07</p>
 </section>
 <section id="course-material" class="slide level2">
 <h2>Course material</h2>
@@ -184,6 +187,7 @@ Niccolò Zanotti <a href="https://orcid.org/0009-0003-6450-3184" class="quarto-t
 <li>Gain an appreciation for how useful git can be</li>
 </ul>
 </div>
+<!-- introduction, status, add, commit, log  -->
 </section>
 <section id="first-a-few-questions-about-git-and-github" class="slide level2">
 <h2>First! A few questions about Git and Github</h2>
@@ -295,8 +299,8 @@ $ git init
 </section>
 <section id="at-each-step-in-the-process-the-file-is-stored-in-a-different-area" class="slide level2">
 <h2>At each step in the process, the file is stored in a different area:</h2>
-<p><img data-src="images/show_different_file_states.png"></p>
-</section>
+
+<img data-src="images/show_different_file_states.png" class="r-stretch"></section>
 <section id="git-commit" class="slide level2">
 <h2>git commit</h2>
 <p>This means that Git has four main states that your files can be in:</p>
@@ -309,8 +313,8 @@ $ git init
 </section>
 <section id="create-an-untracked-file" class="slide level2">
 <h2>Create an untracked file:</h2>
-<p><img data-src="images/create_untracked_file.png"></p>
-</section>
+
+<img data-src="images/create_untracked_file.png" class="r-stretch"></section>
 <section id="create-an-untracked-file-1" class="slide level2">
 <h2>Create an untracked file:</h2>
 <p><br>- Create a new file in your repository.</p>
@@ -363,8 +367,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 </section>
 <section id="add-the-untracked-file-to-the-staging-area" class="slide level2">
 <h2>Add the untracked file to the staging area:</h2>
-<p><img data-src="images/add_to_staging_area.png"></p>
-</section>
+
+<img data-src="images/add_to_staging_area.png" class="r-stretch"></section>
 <section id="add-the-untracked-file-to-the-staging-area-1" class="slide level2">
 <h2>Add the untracked file to the staging area:</h2>
 <br> Try these commands…
@@ -414,8 +418,8 @@ Changes to be committed:
 </section>
 <section id="committing-your-changes" class="slide level2">
 <h2>Committing your changes:</h2>
-<p><img data-src="images/commit_to_repository.png"></p>
-</section>
+
+<img data-src="images/commit_to_repository.png" class="r-stretch"></section>
 <section id="committing-your-changes-1" class="slide level2">
 <h2>Committing your changes:</h2>
 Commit your file to the local git repo
@@ -478,6 +482,7 @@ Date:   Tues May 27 09:51:46 2025 -0400
 </div>
 </div>
 </div>
+<!-- branching  -->
 </section>
 <section id="what-is-a-git-branch" class="slide level2">
 <h2>What is a Git branch?</h2>
@@ -489,8 +494,8 @@ Date:   Tues May 27 09:51:46 2025 -0400
 </section>
 <section id="creating-a-git-branch" class="slide level2">
 <h2>Creating a git branch:</h2>
-<p><img data-src="images/creating_branch_and_checking_out.png" style="width:40.0%"></p>
-</section>
+
+<img data-src="images/creating_branch_and_checking_out.png" style="width:40.0%" class="r-stretch"></section>
 <section id="creating-a-git-branch-and-checking-it-out" class="slide level2">
 <h2>Creating a git branch and checking it out</h2>
 <ul>
@@ -530,6 +535,7 @@ There are two different ways to copy a remote repository so that you can work on
 <li><p>You want easy access to the latest changes made by others to the central repository</p></li>
 <li><p>You want the main branch in the repo to be updated and edited by others working on the project</p></li>
 </ul>
+<!-- cloning  -->
 </section>
 <section id="to-clone-or-to-fork-1" class="slide level2">
 <h2>To clone or to fork?</h2>
@@ -539,14 +545,14 @@ There are two different ways to copy a remote repository so that you can work on
 <li>You want to take the development of the code in a different direction from the original owner of the repo</li>
 <li>You want full ownership over your version of the codebase</li>
 <li>You want complete control over other’s contributions to the codebase</li>
-<li>You do not want the main branch to receive updates from those editing the original repo</li>
+<li>You do not want the main branch to receive updates from those editing the existing repo</li>
 <li>Or you do not have permission to push branches directly to the original repo</li>
 </ul>
 </section>
 <section id="working-with-remote-repositories" class="slide level2">
 <h2>Working with remote repositories</h2>
-<p><img data-src="images/fork_vs_clone.png" style="width:50.0%"></p>
-</section>
+
+<img data-src="images/fork_vs_clone.png" style="width:50.0%" class="r-stretch"></section>
 <section id="collaborative-git-with-github" class="slide level2">
 <h2>Collaborative git with GitHub</h2>
 <div class="callout callout-warning callout-titled callout-style-default">
@@ -558,7 +564,7 @@ There are two different ways to copy a remote repository so that you can work on
 <p><strong>Warning</strong></p>
 </div>
 <div class="callout-content">
-<p>You must have already created a GitHub account before you can do these exercises</p>
+<p>You must have already created a GitHub account and connected your local git repo to it before you can do these exercises</p>
 </div>
 </div>
 </div>
@@ -578,8 +584,8 @@ There are two different ways to copy a remote repository so that you can work on
     
 </div>
 </section>
-<section id="forking-demo-only-not-necessary-for-this-exercise" class="slide level2">
-<h2>Forking (demo only, not necessary for this exercise):</h2>
+<section id="forking" class="slide level2">
+<h2>Forking:</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
@@ -595,17 +601,13 @@ There are two different ways to copy a remote repository so that you can work on
 <figcaption>Fork menu</figcaption>
 </figure>
 </div>
-</div><p>At this point, the forked repo only exists in GitHub. To work on it locally it needs to be copied (“cloned”) to your local computer.</p>
+</div><p>Your forked repo only exists in GitHub. To work on it locally it needs to be copied (“cloned”) to your local computer.</p>
 </div>
 </section>
 <section id="cloning-from-github" class="slide level2">
 <h2>Cloning from GitHub</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/github_clone_menu.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
-</figure>
-</div>
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
+
+<img data-src="images/github_clone_menu.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
 $ git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git
 </code></pre>
@@ -643,9 +645,10 @@ $ git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git
 </section>
 <section id="pull-requests" class="slide level2">
 <h2>Pull requests</h2>
-<p>The final step is to put in a pull request (PR) to the remote repository. <br> <br> A pull request is how we signal to the repo owner that we want to merge in our changes. <br> <br> Depending on the code and the repo, you may not be able to merge directly.<br>
+<p>The final step is to put in a pull request (PR) to the original repo that we forked from. <br> <br> A pull request is how we signal to the repo owner that we want to merge in our changes. <br> <br> Depending on the code and the repo, you may not be able to merge directly.<br>
 <br> -&gt; Branches can be set up so that you can only merge after a review by one or more developers who may suggest/require edits to you code.<br>
 <br> -&gt; Additionally, you can set up Continuous Integration so that the code has to pass tests before it can be merged.</p>
+<!-- outcomes, final thoughts, additional material  -->
 </section>
 <section id="hopefully-you-now" class="slide level2">
 <h2>Hopefully you now…</h2>
@@ -691,8 +694,9 @@ $ git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/ucam_institute_of_computing_for_climate_science_h_col.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>ICCS Summer School 25</p>
 </div>
 </div></div>
 
@@ -718,7 +722,7 @@ $ git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': false,
+'previewLinksAuto': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,

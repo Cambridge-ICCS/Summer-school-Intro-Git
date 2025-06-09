@@ -1,0 +1,52 @@
+## Hopefully you now...
+
+::: %{.incremental}
+- ...are familiar with the building blocks of git: repositories, commits and branches
+- ...able to use git locally on your own projects
+- ...know how to get started with collaborating on code projects using GitHub
+- ...can continue from here and learn more about version control as needed
+:::
+
+
+## Final thoughts?
+
+<br>
+
+Anything you'd like to revisit or build on from today?
+
+<br>
+
+Please come and visit us in a **study room** session this week. \
+
+<br>
+
+Book a **Code Clinic** session anytime during the year: \
+
+[https://iccs.cam.ac.uk/resources-vesri-members/climate-code-clinic](https://iccs.cam.ac.uk/resources-vesri-members/climate-code-clinic)
+
+<br>
+
+This course and the intermediate git course will also be made available on YouTube.
+
+
+## Additional material
+
+This is a nice visual resource for learning git: \
+
+[https://learngitbranching.js.org](https://learngitbranching.js.org)/
+
+<br>
+
+Git documentation: \
+[https://git-scm.com/docs](https://git-scm.com/docs)
+
+<br>
+
+GUIs for git:\
+[https://git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
+
+<br>
+
+More git courses:\
+[https://swcarpentry.github.io/git-novice/](https://swcarpentry.github.io/git-novice/)\
+[https://www.w3schools.com/git/](https://www.w3schools.com/git/)

@@ -1,0 +1,111 @@
+/*-- scss:defaults --*/
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+$presentation-heading-font: 'Montserrat', sans-serif;
+
+$accent: #0c4e8a;
+/*-- scss:rules --*/
+
+// Title and headings styling
+#title-slide {
+  text-align: center;
+
+  .title {
+    font-family: $presentation-heading-font;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: #0c4e8a;
+  }
+
+  .subtitle {
+    color: $accent;
+    font-style: italic;
+  }
+
+  .author,
+  .quarto-title-author-name {
+    color: $body-color;
+    font-size: 1.2em;
+  }
+
+  .quarto-title-authors {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; // Ensure horizontal layout
+    flex-wrap: wrap;
+    gap: 2em; // Space between authors
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: auto; // Allow variable width based on content
+      max-width: 30%; // Limit width so multiple fit on one row
+      flex: 0 0 auto; // Don't grow or shrink
+    }
+  }
+
+  .institute,
+  .quarto-title-affiliation,
+  .quarto-title-author-email {
+    font-style: italic;
+    font-size: 80%;
+    // color: #fffafa;
+  }
+  
+  .date {
+    font-weight: 400; // Set your desired font weight (100-900)
+    font-size: 1em;   // Optionally adjust the size
+    color: $body-color; // Use the default text color or set your own
+    margin-top: 1em;  // Add some space above the date
+  }
+
+
+}
+
+// Control heading size and weight for non-title slides
+.reveal h1:not(#title-slide h1) {
+  font-size: 2.0em;
+  font-weight: 600;
+}
+
+.reveal h2:not(#title-slide h2) {
+  font-size: 1.7em;
+  font-weight: 550;
+}
+
+.reveal h3:not(#title-slide h3) {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+/*-- Logo --*/
+.reveal .slide-logo {
+  max-width: unset !important;
+  max-height: 8% !important;
+}
+
+/*-- vertically center columns (or any container) --*/
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+/*-- Get rid of column margins - quarto revealjs has strange behaviour --*/
+.reveal .columns> {
+
+  .column,
+  .column:last-child {
+
+    > :not(ul, ol) {
+
+      margin-left: 0em;
+      margin-right: 0em;
+    }
+  }
+}
