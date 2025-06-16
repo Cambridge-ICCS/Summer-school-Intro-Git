@@ -31,6 +31,44 @@
 
 - Note: you can use `git checkout -` as a shortcut for returning to the previous branch you checked out.
 
+## Why and when to use branches?
+
+*Feature branching*
+
+```{mermaid}
+%%{init: { 'theme': 'dark',
+  'gitGraph': { 'showCommitLabel': false, 'mainBranchOrder': 2, 'parallelCommits': true}
+} }%%
+gitGraph
+    commit
+    commit
+    branch feature order: 1
+    commit
+    commit
+    checkout main
+    commit
+    branch bugfix order: 3
+    commit
+    commit
+    commit
+    checkout feature
+    commit
+    checkout main
+    merge feature
+    merge bugfix
+    commit
+```
+
+- Enables collaborative working.
+- Keeps main branch bug-free.
+- Can regularly commit smaller changes without worry.
+
+::: {.fragment}
+::: {.callout-tip}
+Keep branches short-lived. Long branches with large changes become harder and harder to merge.
+:::
+:::
+
 ## Ways of working with a remote repository
 
 A remote repository is one stored in the cloud. We will be using GitHub to do this today. \
