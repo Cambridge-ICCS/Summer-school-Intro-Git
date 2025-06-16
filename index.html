@@ -122,6 +122,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="intro-git_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="intro-git_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="intro-git_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -499,26 +502,87 @@ Date:   Tues May 27 09:51:46 2025 -0400
 <section id="creating-a-git-branch-and-checking-it-out" class="slide level2">
 <h2>Creating a git branch and checking it out</h2>
 <ul>
-<li><p>Create a new branch using: <code>git branch my-shiny-new-branch</code></p></li>
-<li><p>Checkout the branch using: <code>git checkout my-shiny-new-branch</code></p></li>
-<li><p>Make a change in your new branch by editing new.txt and committing the changes.</p></li>
-<li><p>Note: you can combine the first two steps into one using <code>git checkout -b my-shiny-new-branch</code></p></li>
+<li>Create a new branch using: <code>git branch my-shiny-new-branch</code></li>
+<li>Checkout the branch using: <code>git checkout my-shiny-new-branch</code>
+<ul>
+<li>Note: these can be combined using <code>git checkout -b my-shiny-new-branch</code></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li>Make a change in your new branch by editing new.txt and committing the changes.</li>
 </ul>
 </section>
 <section id="switching-between-branches" class="slide level2">
 <h2>Switching between branches</h2>
-<p><br> <img data-src="images/creating_branch_and_checking_out.png" style="width:35.0%" alt="creating branch and checking out"></p>
-</section>
-<section id="switching-between-branches-1" class="slide level2">
-<h2>Switching between branches</h2>
 <ul>
-<li><p>return to the main branch using <code>git checkout main</code></p></li>
-<li><p>open the new.txt file, what’s inside?</p></li>
-<li><p>make a new file, <code>new_2.txt</code></p></li>
-<li><p>commit this new file to the main branch</p></li>
-<li><p>switch back to your other branch and inspect the files again</p></li>
-<li><p>Note: you can use <code>git checkout -</code> as a shortcut for returning to the previous branch you checked out.</p></li>
+<li>Return to the main branch using <code>git checkout main</code></li>
+<li>Open the new.txt file, what’s inside?</li>
+<li>Make a new file, <code>new_2.txt</code></li>
+<li>Commit this new file to the main branch</li>
+<li>Switch back to your other branch and inspect the files again</li>
 </ul>
+<p><br></p>
+<ul>
+<li>Note: you can use <code>git checkout -</code> as a shortcut for returning to the previous branch you checked out.</li>
+</ul>
+</section>
+<section id="why-and-when-to-use-branches" class="slide level2">
+<h2>Why and when to use branches?</h2>
+<p><em>Feature branching</em></p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: { 'theme': 'dark',
+  'gitGraph': { 'showCommitLabel': false, 'mainBranchOrder': 2, 'parallelCommits': true}
+} }%%
+gitGraph
+    commit
+    commit
+    branch feature order: 1
+    commit
+    commit
+    checkout main
+    commit
+    branch bugfix order: 3
+    commit
+    commit
+    commit
+    checkout feature
+    commit
+    checkout main
+    merge feature
+    merge bugfix
+    commit
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>Enables collaborative working.</li>
+<li>Keeps main branch bug-free.</li>
+<li>Can regularly commit smaller changes without worry.</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Keep branches short-lived. Long branches with large changes become harder and harder to merge.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- cloning  -->
 </section>
 <section id="ways-of-working-with-a-remote-repository" class="slide level2">
 <h2>Ways of working with a remote repository</h2>
@@ -535,7 +599,6 @@ There are two different ways to copy a remote repository so that you can work on
 <li><p>You want easy access to the latest changes made by others to the central repository</p></li>
 <li><p>You want the main branch in the repo to be updated and edited by others working on the project</p></li>
 </ul>
-<!-- cloning  -->
 </section>
 <section id="to-clone-or-to-fork-1" class="slide level2">
 <h2>To clone or to fork?</h2>
