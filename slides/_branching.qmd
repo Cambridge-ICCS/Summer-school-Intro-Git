@@ -68,32 +68,3 @@ gitGraph
 Keep branches short-lived. Long branches with large changes become harder and harder to merge.
 :::
 :::
-
-## Ways of working with a remote repository
-
-A remote repository is one stored in the cloud. We will be using GitHub to do this today. \
-There are two different ways to copy a remote repository so that you can work on it locally:
-<br>
-<br>
-- clone:  This makes a copy locally which is linked to the remote version.
-Your local branches can be synced to branches in the original.
-<br>
-<br>
-- fork: This makes another separate version of the repo remotely that you own. Once you
-have forked a repo remotely, you can then clone it to your local machine. You can still contribute to the original repository through a pull request.
-<br>
-<br>
-
-## To clone or to fork?
-
-Use a clone when:
-
-- You are collaborating directly and actively with the owner of the repo (e.g. it is your research team, or you)
-OR all of the following is true:
-
-- It is owned by someone else and you are happy not to have ownership of the codebase
-- You have permission to push branches up to the repo
-- You want easy access to the latest changes made by others to the central repository
-- You want the main branch in the repo to be updated and edited by others working on the project
-
-
