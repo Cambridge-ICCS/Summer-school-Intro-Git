@@ -39,23 +39,20 @@ Useful whether you are working alone or in a team!
  - Contains a .git folder at the root which does all the git magic behind the scenes.
 
 ## Creating a git repository
-<br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:
 
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+- Navigate to a folder you want to work in, and create a new folder to contain your repository:
+
+```bash
 $ cd your_dir
 $ mkdir your_folder
 $ cd your_folder
-</code></pre>
-</div>
+```
 Then initialise the folder
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+```bash
 $ git init
-</code></pre>
-</div>
+```
 ::: {.callout-tip title=".git"}
-A hidden ".git" folder has been created in your folder. This contains everything Git needs to work.
+A hidden `.git` folder has been created in your folder. This contains everything Git needs to work.
 :::
 
 ## What is a Git commit?
@@ -93,25 +90,25 @@ We say these files are in the staging area.
 ![](images/create_untracked_file.png)
 
 ## Create an untracked file:
-<br>- Create a new file in your repository.
 
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+::: {style="margin-top: 3em;"}
+Create a new file in your repository.
+
+```bash
 $ touch new.txt
 $ code new.txt
-</code></pre>
-</div>
+```
 <br>
 Lets check what git can see...
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+
+```bash
 $ git status
-</code></pre>
-</div>
+```
+:::
 
 ## git status
-<div style="margin-top: 20px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+
+```bash
 $ git status
 
 On branch main
@@ -124,9 +121,7 @@ Untracked files:
 	new.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
-</code></pre>
-</div>
-
+```
 ::: {.callout-tip title="git status"}
 Highlights your working branch -> main
 <br> Reports commit status -> none yet
@@ -141,21 +136,16 @@ Highlights your working branch -> main
 ## Add the untracked file to the staging area:
 
 <br> Try these commands...
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+```bash
 $ git add .
-</code></pre>
-</div>
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+```
+```bash
 $ git status
-</code></pre>
-</div>
+```
 
 ## git add
 
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+```bash
 $ git status
 
 On branch main
@@ -166,9 +156,7 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
 	new file:   new.txt
-
-</code></pre>
-</div>
+```
 
 ::: {.callout-tip title="git add"}
 Moves file(s) into "Staging area" ready for commit
@@ -181,11 +169,10 @@ Moves file(s) into "Staging area" ready for commit
 ## Committing your changes:
 
 Commit your file to the local git repo
-<div style="margin-top: 0px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+
+```bash
 $ git commit -m "Created new.txt"
-</code></pre>
-</div>
+```
 
 <br>
 'git commit' >>>> tells git you want to commit
@@ -194,40 +181,33 @@ $ git commit -m "Created new.txt"
 
 ## git commit
 
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+```bash
 $ git commit -m "Created new.txt"
 
 [main (root-commit) f22b25e] Created new.txt
  1 file changed, 1 insertion(+)
  create mode 100644 new.txt
+```
 
-</code></pre>
-</div>
-
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+```bash
 $ git status
 
 On branch main
 nothing to commit, working tree clean
-
-</code></pre>
-</div>
+```
 
 ## git log
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+
+```bash
 $ git log
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
 Author: Jane Doe <jmd123@cam.ac.uk>
-Date:   Tues May 27 09:51:46 2025 -0400
+Date:   Monday July 7 09:51:46 2025 -0400
 
     Create new.txt
+```
 
-</code></pre>
-</div>
 
 ::: {.callout-tip title="git log"}
 Displays commits in reverse chronological order.
