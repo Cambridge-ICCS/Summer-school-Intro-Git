@@ -7,6 +7,19 @@ git --version
 ```
 in a terminal session. If it is not installed on your system install it (see e.g. [here](https://swcarpentry.github.io/git-novice/#installing-git)).
 
+In order to add the proper metadata to your `git` commits you should configure `git` by running
+```bash
+git config --global user.name "Your Name"
+git config --global user.email your_email@example.com
+```
+which will write the following to a `~/.gitconfig` file
+```
+[user]
+        name = Your Name
+        email = your_email@example.com
+```
+There are a lot of additional options available that you might want to configure (e.g. git editor, gpg signing key, etc...). Check out [here](https://git-scm.com/book/ms/v2/Customizing-Git-Git-Configuration) for a good reference on those.
+
 ## Set up your GitHub account
 [Sign up](https://github.com/signup) for a GitHub account if you don't have one.
 
