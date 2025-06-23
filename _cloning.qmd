@@ -80,11 +80,9 @@ Your forked repo only exists in GitHub. To work on it locally it needs to be cop
 
 ![](images/github_clone_menu.png){fig-align="center" width=50%}
 
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
+```bash
 $ git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git
-</code></pre>
-</div>
+```
 
 ::: {.callout-warning}
 Clone repo to a new working folder.

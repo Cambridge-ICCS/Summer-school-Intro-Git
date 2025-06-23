@@ -6,9 +6,9 @@
 <script src="intro-git_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="intro-git_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="intro-git_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="intro-git_files/libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="intro-git_files/libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="intro-git_files/libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.31">
+  <meta name="generator" content="quarto-1.7.32">
 
   <meta name="dcterms.date" content="2025-07-07">
   <title>Introduction to git and GitHub</title>
@@ -29,8 +29,74 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="intro-git_files/libs/revealjs/dist/theme/quarto-08020f112957b6580494b137df730132.css">
+  <link rel="stylesheet" href="intro-git_files/libs/revealjs/dist/theme/quarto-07302d69c9cb5f8fe286967acc9de2fe.css">
   <link href="intro-git_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="intro-git_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="intro-git_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -165,6 +231,7 @@ Niccolò Zanotti <a href="https://orcid.org/0009-0003-6450-3184" class="quarto-t
 </section>
 <section id="course-material" class="slide level2">
 <h2>Course material</h2>
+<div style="margin-top: 3em;">
 <p>Slides: <a href="https://cambridge-iccs.github.io/Summer-school-Intro-Git">https://cambridge-iccs.github.io/Summer-school-Intro-Git</a></p>
 <p>Repo: <a href="https://github.com/Cambridge-ICCS/Summer-school-Intro-Git">https://github.com/Cambridge-ICCS/Summer-school-Intro-Git</a></p>
 <div class="column-margin" style="text-align: left;">
@@ -179,12 +246,13 @@ Niccolò Zanotti <a href="https://orcid.org/0009-0003-6450-3184" class="quarto-t
 </script>
     
 </div>
+</div>
 </section>
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
 <div class="%{.incremental}">
 <ul>
-<li>Be familiar with the building blocks of git: repositories, commits and branches</li>
+<li>Be familiar with the building blocks of <code>git</code>: repositories, commits and branches</li>
 <li>Get started with using git locally on your own projects</li>
 <li>Get started with collaborating on code projects using GitHub</li>
 <li>Gain an appreciation for how useful git can be</li>
@@ -252,20 +320,14 @@ Niccolò Zanotti <a href="https://orcid.org/0009-0003-6450-3184" class="quarto-t
 </section>
 <section id="creating-a-git-repository" class="slide level2">
 <h2>Creating a git repository</h2>
-<p><br>- Navigate to a folder you want to work in, and create a new folder to contain your repository:</p>
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ cd your_dir
-$ mkdir your_folder
-$ cd your_folder
-</code></pre>
-</div>
-Then initialise the folder
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git init
-</code></pre>
-</div>
+<ul>
+<li>Navigate to a folder you want to work in, and create a new folder to contain your repository:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd your_dir</span>
+<span id="cb1-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> mkdir your_folder</span>
+<span id="cb1-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd your_folder</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then initialise the folder</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div title=".git">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -276,7 +338,7 @@ $ git init
 <p><strong>.git</strong></p>
 </div>
 <div class="callout-content">
-<p>A hidden “.git” folder has been created in your folder. This contains everything Git needs to work.</p>
+<p>A hidden <code>.git</code> folder has been created in your folder. This contains everything Git needs to work.</p>
 </div>
 </div>
 </div>
@@ -320,38 +382,28 @@ $ git init
 <img data-src="images/create_untracked_file.png" class="r-stretch"></section>
 <section id="create-an-untracked-file-1" class="slide level2">
 <h2>Create an untracked file:</h2>
-<p><br>- Create a new file in your repository.</p>
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ touch new.txt
-$ code new.txt
-</code></pre>
-</div>
-<br> Lets check what git can see…
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git status
-</code></pre>
+<div style="margin-top: 3em;">
+<p>Create a new file in your repository.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> touch new.txt</span>
+<span id="cb3-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> code new.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br> Lets check what git can see…</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="git-status" class="slide level2">
 <h2>git status</h2>
-<div style="margin-top: 20px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git status
-
-On branch main
-
-No commits yet
-
-Untracked files:
-   (use "git add <file>..." to include in what will be committed)
-
-    new.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-</file></code></pre>
-</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span>
+<span id="cb5-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">On</span> branch main</span>
+<span id="cb5-4"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">No</span> commits yet</span>
+<span id="cb5-6"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">Untracked</span> files:</span>
+<span id="cb5-8"><a href="" aria-hidden="true" tabindex="-1"></a>   <span class="kw">(</span><span class="ex">use</span> <span class="st">"git add &lt;file&gt;..."</span> to include in what will be committed<span class="kw">)</span></span>
+<span id="cb5-9"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="ex">new.txt</span></span>
+<span id="cb5-11"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">nothing</span> added to commit but untracked files present <span class="er">(</span><span class="ex">use</span> <span class="st">"git add"</span> to track<span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div title="git status">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -374,35 +426,22 @@ nothing added to commit but untracked files present (use "git add" to track)
 <img data-src="images/add_to_staging_area.png" class="r-stretch"></section>
 <section id="add-the-untracked-file-to-the-staging-area-1" class="slide level2">
 <h2>Add the untracked file to the staging area:</h2>
-<br> Try these commands…
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git add .
-</code></pre>
-</div>
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git status
-</code></pre>
-</div>
+<p><br> Try these commands…</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="git-add" class="slide level2">
 <h2>git add</h2>
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git status
-
-On branch main
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-
-    new file:   new.txt
-
-</file></code></pre>
-</div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span>
+<span id="cb8-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">On</span> branch main</span>
+<span id="cb8-4"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">No</span> commits yet</span>
+<span id="cb8-6"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">Changes</span> to be committed:</span>
+<span id="cb8-8"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="kw">(</span><span class="ex">use</span> <span class="st">"git rm --cached &lt;file&gt;..."</span> to unstage<span class="kw">)</span></span>
+<span id="cb8-9"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="ex">new</span> file:   new.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div title="git add">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -425,50 +464,31 @@ Changes to be committed:
 <img data-src="images/commit_to_repository.png" class="r-stretch"></section>
 <section id="committing-your-changes-1" class="slide level2">
 <h2>Committing your changes:</h2>
-Commit your file to the local git repo
-<div style="margin-top: 0px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git commit -m "Created new.txt"
-</code></pre>
-</div>
+<p>Commit your file to the local git repo</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Created new.txt"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br> ‘git commit’ &gt;&gt;&gt;&gt; tells git you want to commit <br> <br>‘-m “Comment”’ &gt;&gt;&gt;&gt; adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.</p>
 </section>
 <section id="git-commit-1" class="slide level2">
 <h2>git commit</h2>
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git commit -m "Created new.txt"
-
-[main (root-commit) f22b25e] Created new.txt
- 1 file changed, 1 insertion(+)
- create mode 100644 new.txt
-
-</code></pre>
-</div>
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git status
-
-On branch main
-nothing to commit, working tree clean
-
-</code></pre>
-</div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Created new.txt"</span></span>
+<span id="cb10-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">[main</span> <span class="er">(</span><span class="ex">root-commit</span><span class="kw">)</span> <span class="ex">f22b25e]</span> Created new.txt</span>
+<span id="cb10-4"><a href="" aria-hidden="true" tabindex="-1"></a> <span class="ex">1</span> file changed, 1 insertion<span class="er">(</span><span class="ex">+</span><span class="kw">)</span></span>
+<span id="cb10-5"><a href="" aria-hidden="true" tabindex="-1"></a> <span class="ex">create</span> mode 100644 new.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span>
+<span id="cb11-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">On</span> branch main</span>
+<span id="cb11-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">nothing</span> to commit, working tree clean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="git-log" class="slide level2">
 <h2>git log</h2>
-<div style="margin-top: 100px; background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git log
-
-commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Jane Doe <jmd123@cam.ac.uk>
-Date:   Tues May 27 09:51:46 2025 -0400
-
-    Create new.txt
-
-</jmd123@cam.ac.uk></code></pre>
-</div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git log</span>
+<span id="cb12-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">commit</span> f22b25e3233b4645dabd0d81e651fe074bd8e73b</span>
+<span id="cb12-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">Author:</span> Jane Doe <span class="op">&lt;</span>jmd123@cam.ac.uk<span class="op">&gt;</span></span>
+<span id="cb12-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">Date:</span>   Monday July 7 09:51:46 2025 <span class="at">-0400</span></span>
+<span id="cb12-6"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Create</span> new.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div title="git log">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -670,11 +690,7 @@ There are two different ways to copy a remote repository so that you can work on
 <section id="cloning-from-github" class="slide level2">
 <h2>Cloning from GitHub</h2>
 
-<img data-src="images/github_clone_menu.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
-<pre><code>
-$ git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git
-</code></pre>
-</div>
+<img data-src="images/github_clone_menu.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">

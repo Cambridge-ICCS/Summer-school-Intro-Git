@@ -29,9 +29,10 @@ format:
     chalkboard: false
     preview-links: auto
 
-    highlight-style: a11y
-    code-overflow: wrap
+    highlight-style: github
+    code-overflow: scroll
     code-line-numbers: false
+
 ---
 {{< include _intro.qmd >}}
 
