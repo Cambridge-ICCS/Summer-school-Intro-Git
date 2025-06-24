@@ -34,7 +34,7 @@ Use a fork when:
 - You want to take the development of the code in a different direction from the original owner of the repo
 - You want full ownership over your version of the codebase
 - You want complete control over other's contributions to the codebase
-- You do not want the main branch to receive updates from those editing the existing repo
+- You do not want the main branch to receive updates from those editing the original repo
 - Or you do not have permission to push branches directly to the original repo
 
 
@@ -45,7 +45,7 @@ Use a fork when:
 ## Collaborative git with GitHub
 
 ::: {.callout-warning}
-You must have already created a GitHub account and connected your local git repo to it before you can do these exercises
+You must have already created a GitHub account before you can do these exercises
 :::
 
 </br>
@@ -59,7 +59,7 @@ You must have already created a GitHub account and connected your local git repo
 :::
 
 
-## Forking:
+## Forking (demo only, not necessary for this exercise):
 
 
 :::: {.columns}
@@ -71,7 +71,7 @@ You must have already created a GitHub account and connected your local git repo
 ::: {.column width="60%"}
 ![Fork menu](images/Fork%20menu.png)
 :::
-Your forked repo only exists in GitHub. To work on it locally it needs to be copied ("cloned") to your local computer.
+At this point, the forked repo only exists in GitHub. To work on it locally it needs to be copied ("cloned") to your local computer.
 
 ::::
 
@@ -102,7 +102,7 @@ Do not clone into an existing local git repo.
 
 ## Pull requests
 
-The final step is to put in a pull request (PR) to the original repo that we forked from.
+The final step is to put in a pull request (PR) to the remote repository.
 <br>
 <br>
 A pull request is how we signal to the repo owner that we want to merge in our changes.
