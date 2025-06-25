@@ -2,33 +2,19 @@
 
 A remote repository is one stored in the cloud. We will be using GitHub to do this today. \
 There are two different ways to copy a remote repository so that you can work on it locally:
-<br>
-<br>
-- clone:  This makes a copy locally which is linked to the remote version.
+
+- **clone**:  This makes a copy locally which is linked to the remote version.
 Your local branches can be synced to branches in the original.
-<br>
-<br>
-- fork: This makes another separate version of the repo remotely that you own. Once you
+
+- **fork**: This makes another separate version of the repo remotely that you own. Once you
 have forked a repo remotely, you can then clone it to your local machine. You can still contribute to the original repository through a pull request.
-<br>
-<br>
-
-## To clone or to fork?
-
-Use a clone when:
-
-- You are collaborating directly and actively with the owner of the repo (e.g. it is your research team, or you)
-OR all of the following is true:
-
-- It is owned by someone else and you are happy not to have ownership of the codebase
-- You have permission to push branches up to the repo
-- You want easy access to the latest changes made by others to the central repository
-- You want the main branch in the repo to be updated and edited by others working on the project
 
 
 ## To clone or to fork?
 
-Use a fork when:
+
+
+## Use a fork when:
 
 - The owner of the repo is not someone you are actively collaborating with
 - You want to take the development of the code in a different direction from the original owner of the repo
@@ -36,6 +22,18 @@ Use a fork when:
 - You want complete control over other's contributions to the codebase
 - You do not want the main branch to receive updates from those editing the original repo
 - Or you do not have permission to push branches directly to the original repo
+
+
+## Use a clone when:
+
+- You are collaborating directly and actively with the owner of the repo (e.g. it is your research team, or you)
+
+OR all of the following is true:
+
+- It is owned by someone else and you are happy not to have ownership of the codebase
+- You have permission to push branches up to the repo
+- You want easy access to the latest changes made by others to the central repository
+- You want the main branch in the repo to be updated and edited by others working on the project
 
 
 ## Working with remote repositories
@@ -59,7 +57,7 @@ You must have already created a GitHub account before you can do these exercises
 :::
 
 
-## Forking (demo only, not necessary for this exercise):
+## Forking (demo only, not necessary for this exercise)
 
 
 :::: {.columns}
@@ -71,9 +69,16 @@ You must have already created a GitHub account before you can do these exercises
 ::: {.column width="60%"}
 ![Fork menu](images/Fork%20menu.png)
 :::
-At this point, the forked repo only exists in GitHub. To work on it locally it needs to be copied ("cloned") to your local computer.
+
 
 ::::
+
+## Forking 
+
+<br>
+<br>
+
+At this point, the forked repo only exists in GitHub. To work on it locally it needs to be copied ("cloned") to your local computer.
 
 
 ## Cloning from GitHub
@@ -93,6 +98,7 @@ Do not clone into an existing local git repo.
 ## Cloning from GitHub
 
 ::: {style="font-size: 90%;"}
+- Create a new branch with a unique name. \
 - Choose/create a file to edit, and then `commit`. \
 - Next `push` the changes up to the remote repo. \
 - The first time you do this on a new branch, you will need to set up a remote one to track it: \
