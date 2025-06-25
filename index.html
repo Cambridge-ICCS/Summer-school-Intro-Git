@@ -607,22 +607,17 @@ gitGraph
 <section id="ways-of-working-with-a-remote-repository" class="slide level2">
 <h2>Ways of working with a remote repository</h2>
 <p>A remote repository is one stored in the cloud. We will be using GitHub to do this today.<br>
-There are two different ways to copy a remote repository so that you can work on it locally: <br> <br> - clone: This makes a copy locally which is linked to the remote version. Your local branches can be synced to branches in the original. <br> <br> - fork: This makes another separate version of the repo remotely that you own. Once you have forked a repo remotely, you can then clone it to your local machine. You can still contribute to the original repository through a pull request. <br> <br></p>
+There are two different ways to copy a remote repository so that you can work on it locally:</p>
+<ul>
+<li><p><strong>clone</strong>: This makes a copy locally which is linked to the remote version. Your local branches can be synced to branches in the original.</p></li>
+<li><p><strong>fork</strong>: This makes another separate version of the repo remotely that you own. Once you have forked a repo remotely, you can then clone it to your local machine. You can still contribute to the original repository through a pull request.</p></li>
+</ul>
 </section>
 <section id="to-clone-or-to-fork" class="slide level2">
 <h2>To clone or to fork?</h2>
-<p>Use a clone when:</p>
-<ul>
-<li><p>You are collaborating directly and actively with the owner of the repo (e.g.&nbsp;it is your research team, or you) OR all of the following is true:</p></li>
-<li><p>It is owned by someone else and you are happy not to have ownership of the codebase</p></li>
-<li><p>You have permission to push branches up to the repo</p></li>
-<li><p>You want easy access to the latest changes made by others to the central repository</p></li>
-<li><p>You want the main branch in the repo to be updated and edited by others working on the project</p></li>
-</ul>
 </section>
-<section id="to-clone-or-to-fork-1" class="slide level2">
-<h2>To clone or to fork?</h2>
-<p>Use a fork when:</p>
+<section id="use-a-fork-when" class="slide level2">
+<h2>Use a fork when:</h2>
 <ul>
 <li>The owner of the repo is not someone you are actively collaborating with</li>
 <li>You want to take the development of the code in a different direction from the original owner of the repo</li>
@@ -630,6 +625,19 @@ There are two different ways to copy a remote repository so that you can work on
 <li>You want complete control over other’s contributions to the codebase</li>
 <li>You do not want the main branch to receive updates from those editing the original repo</li>
 <li>Or you do not have permission to push branches directly to the original repo</li>
+</ul>
+</section>
+<section id="use-a-clone-when" class="slide level2">
+<h2>Use a clone when:</h2>
+<ul>
+<li>You are collaborating directly and actively with the owner of the repo (e.g.&nbsp;it is your research team, or you)</li>
+</ul>
+<p>OR all of the following is true:</p>
+<ul>
+<li>It is owned by someone else and you are happy not to have ownership of the codebase</li>
+<li>You have permission to push branches up to the repo</li>
+<li>You want easy access to the latest changes made by others to the central repository</li>
+<li>You want the main branch in the repo to be updated and edited by others working on the project</li>
 </ul>
 </section>
 <section id="working-with-remote-repositories" class="slide level2">
@@ -668,7 +676,7 @@ There are two different ways to copy a remote repository so that you can work on
 </div>
 </section>
 <section id="forking-demo-only-not-necessary-for-this-exercise" class="slide level2">
-<h2>Forking (demo only, not necessary for this exercise):</h2>
+<h2>Forking (demo only, not necessary for this exercise)</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
@@ -684,8 +692,12 @@ There are two different ways to copy a remote repository so that you can work on
 <figcaption>Fork menu</figcaption>
 </figure>
 </div>
-</div><p>At this point, the forked repo only exists in GitHub. To work on it locally it needs to be copied (“cloned”) to your local computer.</p>
-</div>
+</div></div>
+</section>
+<section id="forking" class="slide level2">
+<h2>Forking</h2>
+<p><br> <br></p>
+<p>At this point, the forked repo only exists in GitHub. To work on it locally it needs to be copied (“cloned”) to your local computer.</p>
 </section>
 <section id="cloning-from-github" class="slide level2">
 <h2>Cloning from GitHub</h2>
@@ -710,6 +722,8 @@ There are two different ways to copy a remote repository so that you can work on
 <h2>Cloning from GitHub</h2>
 <div style="font-size: 90%;">
 <ul>
+<li>Create a new branch with a unique name.<br>
+</li>
 <li>Choose/create a file to edit, and then <code>commit</code>.<br>
 </li>
 <li>Next <code>push</code> the changes up to the remote repo.<br>
