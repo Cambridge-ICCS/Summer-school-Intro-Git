@@ -7,17 +7,26 @@ git --version
 ```
 in a terminal session. If it is not installed on your system install it (see e.g. [here](https://swcarpentry.github.io/git-novice/#installing-git)).
 
-In order to add the proper metadata to your `git` commits you should configure `git` by running
+In order to properly configure `git` behavior, you should use the `git config` command.
+A simple working configuration to add your name and email to your commits is achieved by running:
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email your_email@example.com
+git config --local user.name "Your Name"
+git config --local user.email your_email@example.com
 ```
-which will write the following to a `~/.gitconfig` file
+which will write the following to a `.git/config` file
 ```
 [user]
         name = Your Name
         email = your_email@example.com
 ```
+Note: These options are local to the current repository and override the system-wide and global ones. 
+You can pass `--global` instead of `--local` to effectively write the options to the `~/.gitconfig` file.
+At any point you can run
+```bash
+git config --list
+```
+to list all the config options active for the current repository.
+
 There are a lot of additional options available that you might want to configure (e.g. git editor, gpg signing key, etc...). Check out [here](https://git-scm.com/book/ms/v2/Customizing-Git-Git-Configuration) for a good reference on those.
 
 ## Set up your GitHub account
