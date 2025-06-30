@@ -510,9 +510,9 @@ Niccolò Zanotti <a href="https://orcid.org/0009-0003-6450-3184" class="quarto-t
 <section id="what-is-a-git-branch" class="slide level2">
 <h2>What is a Git branch?</h2>
 <ul>
-<li>A branch is a pointer to a git commit</li>
-<li>It says “I want to include the work of this commit and all of its parent commits.”</li>
-<li>We can use the <code>checkout</code> command to switch between different branches and commits <img data-src="images/git_branching_illustration.png"></li>
+<li>A branch is a pointer to a commit, and updates as new commits are made.</li>
+<li>The work done so far has been on the <code>main</code> branch.</li>
+<li>Using multiple branches enable collaborative work in parallel without interfering with the changes of others. <img data-src="images/git_branching_illustration.png"></li>
 </ul>
 </section>
 <section id="creating-a-git-branch" class="slide level2">
@@ -522,30 +522,58 @@ Niccolò Zanotti <a href="https://orcid.org/0009-0003-6450-3184" class="quarto-t
 <section id="creating-a-git-branch-and-checking-it-out" class="slide level2">
 <h2>Creating a git branch and checking it out</h2>
 <ul>
-<li>Create a new branch using: <code>git branch my-shiny-new-branch</code></li>
-<li>Checkout the branch using: <code>git checkout my-shiny-new-branch</code>
-<ul>
-<li>Note: these can be combined using <code>git checkout -b my-shiny-new-branch</code></li>
-</ul></li>
+<li>Create a new branch using <code>git branch my-new-branch</code></li>
+<li>Switch to the branch using <code>git switch my-new-branch</code></li>
+<li>Or, more conveniently, we can combine these actions into one:</li>
 </ul>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git switch <span class="at">-c</span> my-new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 <ul>
 <li>Make a change in your new branch by editing new.txt and committing the changes.</li>
 </ul>
+<p><br></p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Older versions of git may need to use <code>checkout (-b)</code> instead of <code>switch (-c)</code></p>
+</div>
+</div>
+</div>
 </section>
-<section id="switching-between-branches" class="slide level2">
-<h2>Switching between branches</h2>
+<section id="switching-and-merging-branches" class="slide level2">
+<h2>Switching and merging branches</h2>
 <ul>
-<li>Return to the main branch using <code>git checkout main</code></li>
+<li>Return to the main branch:</li>
+</ul>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git switch main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
 <li>Open the new.txt file, what’s inside?</li>
-<li>Make a new file, <code>new_2.txt</code></li>
-<li>Commit this new file to the main branch</li>
-<li>Switch back to your other branch and inspect the files again</li>
 </ul>
 <p><br></p>
 <ul>
-<li>Note: you can use <code>git checkout -</code> as a shortcut for returning to the previous branch you checked out.</li>
+<li>Now merge the new branch into main:</li>
 </ul>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git merge my-new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>You can use <code>git switch -</code> as a shortcut for returning to the previous branch.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="why-and-when-to-use-branches" class="slide level2">
 <h2>Why and when to use branches?</h2>
@@ -555,7 +583,7 @@ Niccolò Zanotti <a href="https://orcid.org/0009-0003-6450-3184" class="quarto-t
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<pre class="mermaid mermaid-js">%%{init: { 'theme': 'dark',
+<pre class="mermaid mermaid-js">%%{init: { 'theme': 'base',
   'gitGraph': { 'showCommitLabel': false, 'mainBranchOrder': 2, 'parallelCommits': true}
 } }%%
 gitGraph
@@ -583,8 +611,8 @@ gitGraph
 </div>
 </div>
 <ul>
-<li>Enables collaborative working.</li>
-<li>Keeps main branch bug-free.</li>
+<li>Enables working on multiple tasks concurrently.</li>
+<li>Keeps work-in-progress code out of the main branch.</li>
 <li>Can regularly commit smaller changes without worry.</li>
 </ul>
 <div class="fragment">
@@ -702,7 +730,7 @@ There are two different ways to copy a remote repository so that you can work on
 <section id="cloning-from-github" class="slide level2">
 <h2>Cloning from GitHub</h2>
 
-<img data-src="images/github_clone_menu.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<img data-src="images/github_clone_menu.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone git@github.com:Cambridge-ICCS/Summer-School-Intro-Git-Practice.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
