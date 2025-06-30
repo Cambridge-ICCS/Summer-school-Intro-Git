@@ -78,7 +78,7 @@ gitGraph
 ```
 
 - Enables working on multiple tasks concurrently.
-- Keeps non-working code out of the main branch.
+- Keeps work-in-progress code out of the main branch.
 - Can regularly commit smaller changes without worry.
 
 ::: {.fragment}
