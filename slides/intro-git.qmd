@@ -13,7 +13,7 @@ authors:
     affiliations: ICCS - University of Cambridge
   - name: Niccolò Zanotti
     orcid: 0009-0003-6450-3184
-    affiliations: University of Bologna
+    affiliations: SASIP (VESRI)<br>University of Bologna
 date: "2025-07-07"
 
 format:
