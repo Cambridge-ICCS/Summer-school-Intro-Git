@@ -33,6 +33,8 @@ format:
     code-overflow: scroll
     code-line-numbers: false
 
+revealjs-plugins:
+   - attribution
 ---
 {{< include _intro.qmd >}}
 
