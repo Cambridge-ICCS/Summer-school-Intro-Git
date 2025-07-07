@@ -1,10 +1,9 @@
-## First! A few questions about Git and Github
+## Motivation
 
-::: %{.incremental}
-- Who has used any sort of code version control before?
-- Who has used Git or Github
-- Who wants to do better version control in their projects?
-:::
+:::: {.columns}
+::: {.column width="60%"}
+::: {style="margin-top: 3em;"}
+- Relatable experience when writing your software/documents?
 
 ::: {.fragment}
 
@@ -14,29 +13,130 @@ Tools like Git and Github exist as solutions to the problem of how to save, shar
 Useful whether you are working alone or in a team!
 :::
 :::
+:::
+
+:::
+
+::: {.column width="40%"}
+![]( http://www.phdcomics.com/comics/archive/phd101212s.gif ){.absolute top=10.5% right=0 width=38%}
+
+:::
+
+::::
+
+::: {.attribution}
+[Piled Higher and Depper](https://phdcomics.com/comics/archive.php?comicid=1531)
+by [Jorge Cham](https://jorgecham.com)
+:::
+
+
+## What are Version Control Systems (VCSs)?
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+::: {style="margin-top: 3em;"}
+- Tools to track changes to code
+- Maintain a history of changes as a series of *snapshots*
+    - Allow to go back in time to a previous state
+- Facilitate *collaboration*
+- Require very little overhead for a huge benefit
+:::
+
+:::
+
+::: {.column width="30%"}
+
+![]( https://upload.wikimedia.org/wikipedia/commons/2/22/Apache_Subversion_logo.svg ){.absolute top=13.5% right=0% width=13%}
+![]( https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png ){.absolute top=35.5% right=0 width=19%}
+![]( https://www.mercurial-scm.org/hg-logo/logo-droplets.svg ){.absolute bottom=25.5% right=0% width=11%}
+:::
+
+
+::::
+
+::: {.attribution}
+[Git](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png) by Jason Long under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+
+[Subversion](https://upload.wikimedia.org/wikipedia/commons/2/22/Apache_Subversion_logo.svg) under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+[Mercurial](https://www.mercurial-scm.org/hg-logo/logo-droplets.svg) under [GPLv2+](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+:::
 
 ## Why Git?
 
-::: %{.incremental}
-- Distributed version control
-- Lightweight but powerful branching and merging
+:::: {.columns}
+
+::: {.column width="60%"}
+::: {style="margin-top: 1.5em;"}
+- De facto standard for VC in the open source community
+    - Git is open source itself!
+    - Has a rich ecosystem around
+- Distributed VC approach (vs centralized)
+- Supports non-linear development (branching)
+- Gives fine-grained control
 - High performance/Scalable
-- Excellent data integrity protection
-- Open source with a rich ecosystem, flexible and customisable
-- Fine grained control over committing, viewing history and reverting
+:::
 :::
 
-## In today's course we will learn how to:
+::: {.column width="60%"}
+![]( https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png ){.absolute top=35.5% right=0 width=19%}
+:::
+::::
+::: {.attribution}
+[Git](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png) by Jason Long under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+:::
 
-- Create a local git repository
-- Create a git commit in your repository
-- Create a git branch in your repository
-- Fork a remote repository and check it out on your local machine
-- Put in a PR to have our changes merged back to the remote repo
 
+## Github: Hosting and collaboration
+
+![]( images/github-mark.svg ){.absolute top=30% right=0% width=13%}
+
+::: {style="margin-top: 3em;"}
+- Code hosting platform
+- Most widely used to host open source software
+- Eases the development with tools
+    - Pull Requests (PRs)
+    - Issues and Discussions
+    - More advance features like Continuous Integration, Automated Testing
+:::
+
+## In today's course we will practice how to:
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+::: {style="margin-top: 3em;"}
+- create a local git repository
+- create a git commit in your repository
+- create a git branch in your repository
+- fork a remote repository and check it out on your local machine
+- put in a pr to have our changes merged back to the remote repo
+:::
+
+:::
+
+::: {.column width="40%"}
+![]( https://imgs.xkcd.com/comics/git_2x.png ){.absolute top=14.5% right=0 width=30%}
+
+:::
+
+::::
+
+::: {.attribution}
+[git](https://xkcd.com/1597/)
+by [xkcd](https://xkcd.com)
+used under [cc by-nc 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
+:::
 ## What is a Git repository?
+
+::: {style="margin-top: 3em;"}
  - A place where you can store your code, your files, and each file's revision history.
- - Contains a .git folder at the root which does all the git magic behind the scenes.
+ - Contains a `.git` folder at the root which does all the git magic behind the scenes.
+:::
 
 ## Creating a git repository
 
@@ -44,12 +144,12 @@ Useful whether you are working alone or in a team!
 
 ```bash
 $ cd your_dir
-$ mkdir your_folder
-$ cd your_folder
+$ mkdir intro-repo
+$ cd intro-repo
 ```
 Then initialise the folder
 ```bash
-$ git init
+$ git init -b main
 ```
 ::: {.callout-tip title=".git"}
 A hidden `.git` folder has been created in your folder. This contains everything Git needs to work.
@@ -65,25 +165,27 @@ and only stores the files which have been changed between the previous commit an
 
 ## Committing is a three part process:
 
-1. Modify: change the file in your working tree, i.e., go in and edit the file as usual
-2. Stage: Tell git that you would like this file to be included in your next commit
-3. Commit: Tell git to take a snapshot of the files you staged
+::: {style="margin-top: 3em;"}
+1. **Modify**: change the file in your working tree, i.e., go in and edit the file as usual
+2. **Stage**: Tell git that you would like this file to be included in your next commit
+3. **Commit**: Tell git to take a snapshot of the files you staged
+:::
 
 ## At each step in the process, the file is stored in a different area:
 
 ![](images/show_different_file_states.png)
 
-## git commit
+## Git States
 
-This means that Git has four main states that your files can be in:
+`git` has four main states that your files can be in:
 
-- Untracked: You've created a new file and not told git to keep track of it.
-- Modified: You've changed a file that git already has a record of, but have not told
+- **Untracked**: You've created a new file and not told git to keep track of it.
+- **Modified**: You've changed a file that git already has a record of, but have not told
 git to include these changes in your next commit.
 We say these files are in the working tree.
-- Staged: You've told git to include the file next time you do a commit.
+- **Staged**: You've told git to include the file next time you do a commit.
 We say these files are in the staging area.
-- Committed: The file is saved in it's present state in the most recent commit.
+- **Committed**: The file is saved in it's present state in the most recent commit.
 
 ## Create an untracked file:
 
@@ -96,7 +198,7 @@ Create a new file in your repository.
 
 ```bash
 $ touch new.txt
-$ code new.txt
+$ vim new.txt
 ```
 <br>
 Lets check what git can see...
@@ -106,7 +208,7 @@ $ git status
 ```
 :::
 
-## git status
+## `git status`
 
 ```bash
 $ git status
@@ -123,27 +225,17 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 ::: {.callout-tip title="git status"}
-Highlights your working branch -> main
+Highlights your working branch -> `main`
 <br> Reports commit status -> none yet
-<br>Highlights untracked files -> new.txt
-<br>Proposes adding these to git with 'git add'
+<br>Highlights untracked files -> `new.txt`
+<br>Proposes adding these to git with `git add`
 :::
 
 ## Add the untracked file to the staging area:
 
 ![](images/add_to_staging_area.png)
 
-## Add the untracked file to the staging area:
-
-<br> Try these commands...
-```bash
-$ git add .
-```
-```bash
-$ git status
-```
-
-## git add
+## `git add`
 
 ```bash
 $ git status
@@ -168,19 +260,25 @@ Moves file(s) into "Staging area" ready for commit
 
 ## Committing your changes:
 
+
+::: {style="margin-top: 3em;"}
 Commit your file to the local git repo
 
 ```bash
-$ git commit -m "Created new.txt"
+$ git commit -m "Commit message"
 ```
 
-<br>
-'git commit' >>>> tells git you want to commit
-<br>
-<br>'-m "Comment"' >>>> adds a description to the log for this commit. This is important as it tells you and others what the commit intent is.
+- `git commit`:  tells git you want to commit
+- `-m "Commit message"`: adds a human-readable description to the `log` of this commit. This is important as it tells you and others what the commit intent is.
 
-## git commit
+::: {.callout-tip title="Writing meaningful commit message"}
+There are many conventions and good practices to write good commit messages. Based on scope of the project and other factors particular conventions are chosen.
+:::
+:::
 
+## Commit the staged file
+
+::: {style="margin-top: 3em;"}
 ```bash
 $ git commit -m "Created new.txt"
 
@@ -195,6 +293,7 @@ $ git status
 On branch main
 nothing to commit, working tree clean
 ```
+:::
 
 ## git log
 
@@ -214,5 +313,8 @@ Displays commits in reverse chronological order.
 
 Includes full identifier, author and date
 :::
+
+- `git log --graph` shows the dependencies of commits in graph view
+    - especially useful in non-linear development
 
 
