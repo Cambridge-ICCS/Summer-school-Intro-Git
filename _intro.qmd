@@ -1,6 +1,8 @@
 ## Course material
 
+
 ::: {style="margin-top: 3em;"}
+
 Slides: [https://cambridge-iccs.github.io/Summer-school-Intro-Git](https://cambridge-iccs.github.io/Summer-school-Intro-Git)
 
 Repo: [https://github.com/Cambridge-ICCS/Summer-school-Intro-Git](https://github.com/Cambridge-ICCS/Summer-school-Intro-Git)
@@ -9,14 +11,21 @@ Repo: [https://github.com/Cambridge-ICCS/Summer-school-Intro-Git](https://github
 {{< qrcode https://github.com/Cambridge-ICCS/Summer-School-Intro-Git qr7dekity9 width=200 height=200 >}}
 :::
 
+::: {.callout-warning}
+We assume you have gone through the [preparation](https://github.com/Cambridge-ICCS/Summer-school-Intro-Git/blob/main/PREPARATION.md)
+:::
+
 :::
 
 ## Learning Outcomes
 
+::: {style="margin-top: 3em;"}
+
 ::: %{.incremental}
 - Be familiar with the building blocks of `git`: repositories, commits and branches
-- Get started with using git locally on your own projects
+- Get started with using `git` locally on your own projects
 - Get started with collaborating on code projects using GitHub
-- Gain an appreciation for how useful git can be
+- Gain an appreciation for how useful Version Control is
 :::
 
+:::
