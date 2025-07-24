@@ -13,7 +13,7 @@ This repository contains the material for the [ICCS Summer School 2025](https://
 This material was originally prepared and delivered at the [2024 ICCS Summer School](https://cambridge-iccs.github.io/summerschool24).
 You can download the material from the 2024 session from [here](https://github.com/Cambridge-ICCS/Summer-school-Intro-Git/releases/tag/ss2024) and you can watch the recording on the ICCS [YouTube channel](https://youtu.be/RSWxNaAqpQc).
 
-All materials, including slides and workbooks, are available such that individuals can cover the course in their own time.
+All materials, including slides and workbooks, are available such that individuals can cover the course in their own time. The recording of the 2025 session is available on the ICCS [YouTube channel](https://youtu.be/dP4wljuajho).
 
 ## Contents
 
@@ -38,7 +38,7 @@ The relevant source files, along with instructions on how to generate them (usin
 
 ### Videos
 
-Watch the previous year [session](https://youtu.be/RSWxNaAqpQc).
+The session has been recorded and is available on the ICCS [YouTube channel](https://youtu.be/dP4wljuajho).
 
 
 ## Preparation and prerequisites
