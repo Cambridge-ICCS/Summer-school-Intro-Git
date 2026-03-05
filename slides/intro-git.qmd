@@ -2,7 +2,7 @@
 output-file: index
 title: Introduction to git and GitHub
 subtitle: ICCS Summer School 2026
-footer: ICCS Summer School 26
+footer: ICCS Summer School 2026
 
 authors:
   - name: Marion Weinzierl
@@ -15,7 +15,7 @@ date: "2025-07-13"
 
 format:
   revealjs:
-    logo: images/ucam_institute_of_computing_for_climate_science_h_col.jpg
+    logo: images/logo_cu_iccs.png
     theme: [default, custom.scss]
     embed-resources: false
 
