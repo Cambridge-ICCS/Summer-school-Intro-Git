@@ -8,11 +8,11 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 
-This repository contains the material for the [ICCS Summer School 2025](https://cambridge-iccs.github.io/summerschool25) course "**Introduction to Git and GitHub for Beginners**" delivered by [Marion Weinzierl](mailto:mw925@cam.ac.uk), [Sam Avis](mailto:sa2329@cam.ac.uk) and [Niccolò Zanotti](mailto:niccolo.zanotti@studio.unibo.it).
+This repository contains the material for the [ICCS Summer School 2026](https://iccs.cam.ac.uk/events/institute-computing-climate-science-annual-summer-school-2026) course "**Introduction to Git and GitHub for Beginners**" delivered by [Marion Weinzierl](mailto:mw925@cam.ac.uk) and [Sam Avis](mailto:sa2329@cam.ac.uk).
 
-This material was originally prepared and delivered at the [2024 ICCS Summer School](https://cambridge-iccs.github.io/summerschool24).
-You can download the material from the 2024 session from [here](https://github.com/Cambridge-ICCS/Summer-school-Intro-Git/releases/tag/ss2024) and you can watch the recording on the ICCS [YouTube channel](https://youtu.be/RSWxNaAqpQc).
-The recording of the 2025 session is [also available](https://youtu.be/dP4wljuajho).
+This material was also delivered at the [2024](https://cambridge-iccs.github.io/summerschool24) and [2025](https://cambridge-iccs.github.io/summerschool25) ICCS summer schools. \
+The material from the previous sessions can be downloaded here: [2024](https://github.com/Cambridge-ICCS/Summer-school-Intro-Git/releases/tag/ss2024), [2025](https://github.com/Cambridge-ICCS/Summer-school-Intro-Git/releases/tag/ss2025) \
+The recordings of the previous sessions are also available on the ICCS youtube channel: [2024](https://youtu.be/RSWxNaAqpQc), [2025](https://youtu.be/dP4wljuajho)
 
 All materials, including slides and workbooks, are available such that individuals can cover the course in their own time. 
 
