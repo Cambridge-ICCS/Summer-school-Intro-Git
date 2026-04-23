@@ -47,3 +47,12 @@ revealjs-plugins:
 <!-- outcomes, final thoughts, additional material  -->
 {{< include _closing.qmd >}}
 
+## Exercise for Self-study: Forking
+
+<br>
+<br>
+
+You can work through the following exercise in your own time. If you do this in the Miniprojects slot on Thursday we will be around to answer questions.
+
+<!-- forking  -->
+{{< include _forking.qmd >}}
