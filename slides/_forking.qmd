@@ -82,6 +82,13 @@ But what if you want to contribute your changes back to the original repository 
 
 ## Sync local repo
 
+<br>
+<br>
+
+You can also merge in new changes from the remote repository
+
+## Sync local repo
+
 ![](images/Forking_Sync1.png){width=80%}
 
 ## Sync local repo
