@@ -57,30 +57,6 @@ You must have already created a GitHub account before you can do these exercises
 :::
 
 
-## Forking (demo only, not necessary for this exercise)
-
-
-:::: {.columns}
-
-::: {.column width="40%"}
-![Github Fork option](images/Github%20fork.png)
-:::
-
-::: {.column width="60%"}
-![Fork menu](images/Fork%20menu.png)
-:::
-
-
-::::
-
-## Forking 
-
-<br>
-<br>
-
-At this point, the forked repo only exists in GitHub. To work on it locally it needs to be copied ("cloned") to your local computer.
-
-
 ## Cloning from GitHub
 
 ![](images/github_clone_menu.png){fig-align="center" width=50%}
