@@ -6,9 +6,9 @@
 <script src="intro-git_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="intro-git_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="intro-git_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="intro-git_files/libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="intro-git_files/libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="intro-git_files/libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+  <meta name="generator" content="quarto-1.9.38">
 
   <meta name="dcterms.date" content="2026-07-13">
   <title>Introduction to git and GitHub</title>
@@ -192,9 +192,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="intro-git_files/libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="intro-git_files/libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="intro-git_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -616,13 +613,231 @@ Sam Avis <a href="https://orcid.org/0000-0001-9637-9489" class="quarto-title-aut
 <ul>
 <li>A branch is a pointer to a commit, and updates as new commits are made.</li>
 <li>The work done so far has been on the <code>main</code> branch.</li>
-<li>Using multiple branches enable collaborative work in parallel without interfering with the changes of others. <img data-src="images/git_branching_illustration.png"></li>
+<li>Using multiple branches enable collaborative work in parallel without interfering with the changes of others.</li>
 </ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg width="960" height="480" viewbox="0.00 0.00 533.00 134.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 130)">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-130 529,-130 529,4 -4,4"></polygon>
+<!-- C1 -->
+<g id="node1" class="node">
+<title>C1</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-99" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="27" y="-103.2" font-family="Times,serif" font-size="14.00">Commit</text>
+<text text-anchor="middle" x="27" y="-86.4" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- C2 -->
+<g id="node2" class="node">
+<title>C2</title>
+<ellipse fill="none" stroke="black" cx="154" cy="-99" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="154" y="-103.2" font-family="Times,serif" font-size="14.00">Commit</text>
+<text text-anchor="middle" x="154" y="-86.4" font-family="Times,serif" font-size="14.00">2</text>
+</g>
+<!-- C1&#45;&gt;C2 -->
+<g id="edge1" class="edge">
+<title>C1-&gt;C2</title>
+<path fill="none" stroke="black" d="M54.2,-99C72.37,-99 96.8,-99 116.82,-99"></path>
+<polygon fill="black" stroke="black" points="116.83,-102.5 126.83,-99 116.83,-95.5 116.83,-102.5"></polygon>
+</g>
+<!-- C5 -->
+<g id="node3" class="node">
+<title>C5</title>
+<ellipse fill="none" stroke="black" cx="281" cy="-99" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="281" y="-103.2" font-family="Times,serif" font-size="14.00">Commit</text>
+<text text-anchor="middle" x="281" y="-86.4" font-family="Times,serif" font-size="14.00">5</text>
+</g>
+<!-- C2&#45;&gt;C5 -->
+<g id="edge2" class="edge">
+<title>C2-&gt;C5</title>
+<path fill="none" stroke="black" d="M181.2,-99C199.37,-99 223.8,-99 243.82,-99"></path>
+<polygon fill="black" stroke="black" points="243.83,-102.5 253.83,-99 243.83,-95.5 243.83,-102.5"></polygon>
+</g>
+<!-- C3 -->
+<g id="node6" class="node">
+<title>C3</title>
+<ellipse fill="none" stroke="red" cx="281" cy="-27" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="281" y="-31.2" font-family="Times,serif" font-size="14.00" fill="red">Commit</text>
+<text text-anchor="middle" x="281" y="-14.4" font-family="Times,serif" font-size="14.00" fill="red">3</text>
+</g>
+<!-- C2&#45;&gt;C3 -->
+<g id="edge5" class="edge">
+<title>C2-&gt;C3</title>
+<path fill="none" stroke="red" d="M177.93,-85.79C197.66,-74.43 226.34,-57.91 248.28,-45.27"></path>
+<polygon fill="red" stroke="red" points="250.3,-48.15 257.22,-40.12 246.81,-42.08 250.3,-48.15"></polygon>
+</g>
+<!-- C6 -->
+<g id="node4" class="node">
+<title>C6</title>
+<ellipse fill="none" stroke="black" cx="408" cy="-99" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="408" y="-103.2" font-family="Times,serif" font-size="14.00">Commit</text>
+<text text-anchor="middle" x="408" y="-86.4" font-family="Times,serif" font-size="14.00">6</text>
+</g>
+<!-- C5&#45;&gt;C6 -->
+<g id="edge3" class="edge">
+<title>C5-&gt;C6</title>
+<path fill="none" stroke="black" d="M308.2,-99C326.37,-99 350.8,-99 370.82,-99"></path>
+<polygon fill="black" stroke="black" points="370.83,-102.5 380.83,-99 370.83,-95.5 370.83,-102.5"></polygon>
+</g>
+<!-- main -->
+<g id="node5" class="node">
+<title>main</title>
+<text text-anchor="middle" x="498" y="-94.8" font-family="Times,serif" font-size="14.00">main</text>
+</g>
+<!-- C6&#45;&gt;main -->
+<g id="edge4" class="edge">
+<title>C6-&gt;main</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M435.4,-99C446.64,-99 459.72,-99 470.92,-99"></path>
+</g>
+<!-- C4 -->
+<g id="node7" class="node">
+<title>C4</title>
+<ellipse fill="none" stroke="red" cx="408" cy="-27" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="408" y="-31.2" font-family="Times,serif" font-size="14.00" fill="red">Commit</text>
+<text text-anchor="middle" x="408" y="-14.4" font-family="Times,serif" font-size="14.00" fill="red">4</text>
+</g>
+<!-- C3&#45;&gt;C4 -->
+<g id="edge6" class="edge">
+<title>C3-&gt;C4</title>
+<path fill="none" stroke="red" d="M308.2,-27C326.37,-27 350.8,-27 370.82,-27"></path>
+<polygon fill="red" stroke="red" points="370.83,-30.5 380.83,-27 370.83,-23.5 370.83,-30.5"></polygon>
+</g>
+<!-- branch&#45;1 -->
+<g id="node8" class="node">
+<title>branch-1</title>
+<text text-anchor="middle" x="498" y="-22.8" font-family="Times,serif" font-size="14.00" fill="red">branch-1</text>
+</g>
+<!-- C4&#45;&gt;branch&#45;1 -->
+<g id="edge7" class="edge">
+<title>C4-&gt;branch-1</title>
+<path fill="none" stroke="red" stroke-dasharray="1,5" d="M435.4,-27C446.64,-27 459.72,-27 470.92,-27"></path>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="creating-a-git-branch" class="slide level2">
 <h2>Creating a git branch:</h2>
-
-<img data-src="images/creating_branch_and_checking_out.png" style="width:40.0%" class="r-stretch"></section>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br> 1. Initially, ‘main’ points to the most recent commit. <br><br><br><br> 2. Upon creation, ‘my-branch’ points to the same commit. <br><br><br><br> 3. As new commits are made ‘my-branch’ updates to point to these.</p>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-fig-width="50%" data-fig-height="100%" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg width="NaN" height="NaN" viewbox="0.00 0.00 242.00 287.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 283)">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-283 238,-283 238,4 -4,4"></polygon>
+<!-- C1 -->
+<g id="node1" class="node">
+<title>C1</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-252" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="27" y="-256.2" font-family="Times,serif" font-size="14.00">Commit</text>
+<text text-anchor="middle" x="27" y="-239.4" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- M1 -->
+<g id="node2" class="node">
+<title>M1</title>
+<text text-anchor="middle" x="117" y="-247.8" font-family="Times,serif" font-size="14.00">main</text>
+</g>
+<!-- C1&#45;&gt;M1 -->
+<g id="edge1" class="edge">
+<title>C1-&gt;M1</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M54,-252C65.29,-252 78.39,-252 89.71,-252"></path>
+</g>
+<!-- C2 -->
+<g id="node3" class="node">
+<title>C2</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-162" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="27" y="-166.2" font-family="Times,serif" font-size="14.00">Commit</text>
+<text text-anchor="middle" x="27" y="-149.4" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- C1&#45;&gt;C2 -->
+<!-- M2 -->
+<g id="node4" class="node">
+<title>M2</title>
+<text text-anchor="middle" x="117" y="-167.8" font-family="Times,serif" font-size="14.00">main</text>
+</g>
+<!-- C2&#45;&gt;M2 -->
+<g id="edge2" class="edge">
+<title>C2-&gt;M2</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M52.55,-172C64.19,-172 77.98,-172 89.81,-172"></path>
+</g>
+<!-- B2 -->
+<g id="node5" class="node">
+<title>B2</title>
+<text text-anchor="middle" x="117" y="-148.8" font-family="Times,serif" font-size="14.00">my-branch</text>
+</g>
+<!-- C2&#45;&gt;B2 -->
+<g id="edge3" class="edge">
+<title>C2-&gt;B2</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M52.55,-153C64.19,-153 77.98,-153 89.81,-153"></path>
+</g>
+<!-- C3 -->
+<g id="node6" class="node">
+<title>C3</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-90" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="27" y="-94.2" font-family="Times,serif" font-size="14.00">Commit</text>
+<text text-anchor="middle" x="27" y="-77.4" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- C2&#45;&gt;C3 -->
+<!-- M3 -->
+<g id="node7" class="node">
+<title>M3</title>
+<text text-anchor="middle" x="117" y="-85.8" font-family="Times,serif" font-size="14.00">main</text>
+</g>
+<!-- C3&#45;&gt;M3 -->
+<g id="edge4" class="edge">
+<title>C3-&gt;M3</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M54,-90C65.29,-90 78.39,-90 89.71,-90"></path>
+</g>
+<!-- dummy3 -->
+<!-- C3&#45;&gt;dummy3 -->
+<g id="edge6" class="edge">
+<title>C3-&gt;dummy3</title>
+<path fill="none" stroke="black" d="M27,-63C27,-50.34 27,-37.69 27,-36.15"></path>
+</g>
+<!-- C32 -->
+<g id="node8" class="node">
+<title>C32</title>
+<ellipse fill="none" stroke="black" cx="117" cy="-27" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="117" y="-31.2" font-family="Times,serif" font-size="14.00">Commit</text>
+<text text-anchor="middle" x="117" y="-14.4" font-family="Times,serif" font-size="14.00">2</text>
+</g>
+<!-- B3 -->
+<g id="node9" class="node">
+<title>B3</title>
+<text text-anchor="middle" x="207" y="-22.8" font-family="Times,serif" font-size="14.00">my-branch</text>
+</g>
+<!-- C32&#45;&gt;B3 -->
+<g id="edge5" class="edge">
+<title>C32-&gt;B3</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M144,-27C155.29,-27 168.39,-27 179.71,-27"></path>
+</g>
+<!-- dummy3&#45;&gt;C32 -->
+<g id="edge7" class="edge">
+<title>dummy3-&gt;C32</title>
+<path fill="none" stroke="black" d="M27.07,-36C27.07,-36 81.18,-36 81.18,-36"></path>
+<polygon fill="black" stroke="black" points="81.18,-39.5 91.18,-36 81.18,-32.5 81.18,-39.5"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div></div>
+</section>
 <section id="creating-a-git-branch-and-checking-it-out" class="slide level2">
 <h2>Creating a git branch and checking it out</h2>
 <ul>
@@ -682,33 +897,184 @@ Sam Avis <a href="https://orcid.org/0000-0001-9637-9489" class="quarto-title-aut
 <section id="why-and-when-to-use-branches" class="slide level2">
 <h2>Why and when to use branches?</h2>
 <p><em>Feature branching</em></p>
-<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell" data-fig-height="50%" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<pre class="mermaid mermaid-js">%%{init: { 'theme': 'base',
-  'gitGraph': { 'showCommitLabel': false, 'mainBranchOrder': 2, 'parallelCommits': true}
-} }%%
-gitGraph
-    commit
-    commit
-    branch feature order: 1
-    commit
-    commit
-    checkout main
-    commit
-    branch bugfix order: 3
-    commit
-    commit
-    commit
-    checkout feature
-    commit
-    checkout main
-    merge feature
-    merge bugfix
-    commit
-</pre>
+<svg width="960" height="NaN" viewbox="0.00 0.00 692.00 206.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 202)">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-202 688,-202 688,4 -4,4"></polygon>
+<!-- M1 -->
+<g id="node1" class="node">
+<title>M1</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-99" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="27" y="-94.8" font-family="Times,serif" font-size="14.00">Commit</text>
+</g>
+<!-- M2 -->
+<g id="node2" class="node">
+<title>M2</title>
+<ellipse fill="none" stroke="black" cx="117" cy="-99" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="117" y="-94.8" font-family="Times,serif" font-size="14.00">Commit</text>
+</g>
+<!-- M1&#45;&gt;M2 -->
+<g id="edge1" class="edge">
+<title>M1-&gt;M2</title>
+<path fill="none" stroke="black" d="M54.4,-99C62.39,-99 71.31,-99 79.82,-99"></path>
+<polygon fill="black" stroke="black" points="79.92,-102.5 89.92,-99 79.92,-95.5 79.92,-102.5"></polygon>
+</g>
+<!-- M3 -->
+<g id="node3" class="node">
+<title>M3</title>
+<ellipse fill="none" stroke="black" cx="207" cy="-99" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="207" y="-94.8" font-family="Times,serif" font-size="14.00">Commit</text>
+</g>
+<!-- M2&#45;&gt;M3 -->
+<g id="edge2" class="edge">
+<title>M2-&gt;M3</title>
+<path fill="none" stroke="black" d="M144.4,-99C152.39,-99 161.31,-99 169.82,-99"></path>
+<polygon fill="black" stroke="black" points="169.92,-102.5 179.92,-99 169.92,-95.5 169.92,-102.5"></polygon>
+</g>
+<!-- F1 -->
+<g id="node7" class="node">
+<title>F1</title>
+<ellipse fill="none" stroke="blue" cx="207" cy="-27" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="207" y="-22.8" font-family="Times,serif" font-size="14.00" fill="blue">Commit</text>
+</g>
+<!-- M2&#45;&gt;F1 -->
+<g id="edge6" class="edge">
+<title>M2-&gt;F1</title>
+<path fill="none" stroke="blue" d="M138.41,-82.3C150.07,-72.76 164.87,-60.65 177.65,-50.2"></path>
+<polygon fill="blue" stroke="blue" points="180.18,-52.65 185.7,-43.61 175.74,-47.23 180.18,-52.65"></polygon>
+</g>
+<!-- M4 -->
+<g id="node4" class="node">
+<title>M4</title>
+<ellipse fill="none" stroke="black" cx="477" cy="-99" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="477" y="-94.8" font-family="Times,serif" font-size="14.00">Merge</text>
+</g>
+<!-- M3&#45;&gt;M4 -->
+<g id="edge3" class="edge">
+<title>M3-&gt;M4</title>
+<path fill="none" stroke="black" d="M234.18,-99C282.22,-99 384.51,-99 439.39,-99"></path>
+<polygon fill="black" stroke="black" points="439.71,-102.5 449.71,-99 439.71,-95.5 439.71,-102.5"></polygon>
+</g>
+<!-- B1 -->
+<g id="node11" class="node">
+<title>B1</title>
+<ellipse fill="none" stroke="red" cx="297" cy="-162" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="297" y="-157.8" font-family="Times,serif" font-size="14.00" fill="red">Commit</text>
+</g>
+<!-- M3&#45;&gt;B1 -->
+<g id="edge11" class="edge">
+<title>M3-&gt;B1</title>
+<path fill="none" stroke="red" d="M229.3,-114.25C240.35,-122.16 254.04,-131.96 266.13,-140.61"></path>
+<polygon fill="red" stroke="red" points="264.42,-143.7 274.59,-146.67 268.5,-138 264.42,-143.7"></polygon>
+</g>
+<!-- M5 -->
+<g id="node5" class="node">
+<title>M5</title>
+<ellipse fill="none" stroke="black" cx="567" cy="-99" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="567" y="-94.8" font-family="Times,serif" font-size="14.00">Merge</text>
+</g>
+<!-- M4&#45;&gt;M5 -->
+<g id="edge4" class="edge">
+<title>M4-&gt;M5</title>
+<path fill="none" stroke="black" d="M504.4,-99C512.39,-99 521.31,-99 529.82,-99"></path>
+<polygon fill="black" stroke="black" points="529.92,-102.5 539.92,-99 529.92,-95.5 529.92,-102.5"></polygon>
+</g>
+<!-- main -->
+<g id="node6" class="node">
+<title>main</title>
+<text text-anchor="middle" x="657" y="-94.8" font-family="Times,serif" font-size="14.00">main</text>
+</g>
+<!-- M5&#45;&gt;main -->
+<g id="edge5" class="edge">
+<title>M5-&gt;main</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M594.4,-99C605.64,-99 618.72,-99 629.92,-99"></path>
+</g>
+<!-- F2 -->
+<g id="node8" class="node">
+<title>F2</title>
+<ellipse fill="none" stroke="blue" cx="297" cy="-30" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="297" y="-25.8" font-family="Times,serif" font-size="14.00" fill="blue">Commit</text>
+</g>
+<!-- F1&#45;&gt;F2 -->
+<g id="edge7" class="edge">
+<title>F1-&gt;F2</title>
+<path fill="none" stroke="blue" d="M234.4,-27.9C242.39,-28.17 251.31,-28.48 259.82,-28.77"></path>
+<polygon fill="blue" stroke="blue" points="259.81,-32.27 269.92,-29.11 260.04,-25.27 259.81,-32.27"></polygon>
+</g>
+<!-- F3 -->
+<g id="node9" class="node">
+<title>F3</title>
+<ellipse fill="none" stroke="blue" cx="387" cy="-34" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="387" y="-29.8" font-family="Times,serif" font-size="14.00" fill="blue">Commit</text>
+</g>
+<!-- F2&#45;&gt;F3 -->
+<g id="edge8" class="edge">
+<title>F2-&gt;F3</title>
+<path fill="none" stroke="blue" d="M324.4,-31.2C332.39,-31.56 341.31,-31.97 349.82,-32.36"></path>
+<polygon fill="blue" stroke="blue" points="349.77,-35.86 359.92,-32.81 350.09,-28.86 349.77,-35.86"></polygon>
+</g>
+<!-- F3&#45;&gt;M4 -->
+<g id="edge9" class="edge">
+<title>F3-&gt;M4</title>
+<path fill="none" stroke="blue" d="M409.3,-49.73C420.54,-58.04 434.51,-68.35 446.75,-77.39"></path>
+<polygon fill="blue" stroke="blue" points="444.77,-80.28 454.89,-83.41 448.93,-74.65 444.77,-80.28"></polygon>
+</g>
+<!-- feature -->
+<g id="node10" class="node">
+<title>feature</title>
+<text text-anchor="middle" x="477" y="-29.8" font-family="Times,serif" font-size="14.00" fill="blue">feature</text>
+</g>
+<!-- F3&#45;&gt;feature -->
+<g id="edge10" class="edge">
+<title>F3-&gt;feature</title>
+<path fill="none" stroke="blue" stroke-dasharray="1,5" d="M414.4,-34C425.64,-34 438.72,-34 449.92,-34"></path>
+</g>
+<!-- B2 -->
+<g id="node12" class="node">
+<title>B2</title>
+<ellipse fill="none" stroke="red" cx="387" cy="-166" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="387" y="-161.8" font-family="Times,serif" font-size="14.00" fill="red">Commit</text>
+</g>
+<!-- B1&#45;&gt;B2 -->
+<g id="edge12" class="edge">
+<title>B1-&gt;B2</title>
+<path fill="none" stroke="red" d="M324.4,-163.2C332.39,-163.56 341.31,-163.97 349.82,-164.36"></path>
+<polygon fill="red" stroke="red" points="349.77,-167.86 359.92,-164.81 350.09,-160.86 349.77,-167.86"></polygon>
+</g>
+<!-- B3 -->
+<g id="node13" class="node">
+<title>B3</title>
+<ellipse fill="none" stroke="red" cx="477" cy="-171" rx="27" ry="27"></ellipse>
+<text text-anchor="middle" x="477" y="-166.8" font-family="Times,serif" font-size="14.00" fill="red">Commit</text>
+</g>
+<!-- B2&#45;&gt;B3 -->
+<g id="edge13" class="edge">
+<title>B2-&gt;B3</title>
+<path fill="none" stroke="red" d="M414.4,-167.5C422.39,-167.95 431.31,-168.46 439.82,-168.94"></path>
+<polygon fill="red" stroke="red" points="439.74,-172.45 449.92,-169.52 440.13,-165.46 439.74,-172.45"></polygon>
+</g>
+<!-- B3&#45;&gt;M5 -->
+<g id="edge14" class="edge">
+<title>B3-&gt;M5</title>
+<path fill="none" stroke="red" d="M498.41,-154.3C510.07,-144.76 524.87,-132.65 537.65,-122.2"></path>
+<polygon fill="red" stroke="red" points="540.18,-124.65 545.7,-115.61 535.74,-119.23 540.18,-124.65"></polygon>
+</g>
+<!-- bugfix -->
+<g id="node14" class="node">
+<title>bugfix</title>
+<text text-anchor="middle" x="567" y="-166.8" font-family="Times,serif" font-size="14.00" fill="red">bugfix</text>
+</g>
+<!-- B3&#45;&gt;bugfix -->
+<g id="edge15" class="edge">
+<title>B3-&gt;bugfix</title>
+<path fill="none" stroke="red" stroke-dasharray="1,5" d="M504.4,-171C515.64,-171 528.72,-171 539.92,-171"></path>
+</g>
+</g>
+</svg>
 </div>
 <p></p></figure><p></p>
 </div>

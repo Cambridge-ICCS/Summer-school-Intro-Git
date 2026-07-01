@@ -3,11 +3,86 @@
 - A branch is a pointer to a commit, and updates as new commits are made.
 - The work done so far has been on the `main` branch.
 - Using multiple branches enable collaborative work in parallel without interfering with the changes of others.
-![](images/git_branching_illustration.png)
+
+```{dot}
+digraph {
+    rankdir=LR;
+    node [shape=circle width=0.75 fixedsize=true];
+    edge [minlen=2];
+    subgraph {
+        node [group=main];
+        C1 [label="Commit\n1"];
+        C2 [label="Commit\n2"];
+        C5 [label="Commit\n5"];
+        C6 [label="Commit\n6"];
+        C1 -> C2 -> C5 -> C6;
+        main [shape=plaintext];
+        C6 -> main [dir=none style=dotted minlen=1];
+    }
+    subgraph {
+        node [color=red fontcolor=red];
+        edge [color=red];
+        C3 [label="Commit\n3"];
+        C4 [label="Commit\n4"];
+        C2 -> C3 -> C4;
+        "branch-1" [shape=plaintext];
+        C4 -> "branch-1" [dir=none style=dotted minlen=1];
+    }
+}
+```
 
 ## Creating a git branch:
 
-![](images/creating_branch_and_checking_out.png){width=40%}
+::: {.columns}
+::: {.column width=50%}
+<br>
+1. Initially, 'main' points to the most recent commit.
+<br><br><br><br>
+2. Upon creation, 'my-branch' points to the same commit.
+<br><br><br><br>
+3. As new commits are made 'my-branch' updates to point to these.
+:::
+::: {.column width=50%}
+```{dot}
+//| fig-width: 50%
+//| fig-height: 100%
+digraph {
+    splines=ortho;
+    rankdir=LR;
+    node [shape=circle width=0.75 fixedsize=true];
+    edge [minlen=1];
+
+    C1 [label="Commit\n1"];
+    M1 [label="main" shape=plaintext];
+    C1 -> M1 [dir=none style=dotted];
+
+    C2 [label="Commit\n1"];
+    M2 [label="main" shape=plaintext height=0];
+    B2 [label="my-branch" shape=plaintext height=0];
+    C2 -> M2 [dir=none style=dotted];
+    C2 -> B2 [dir=none style=dotted];
+
+    C3 [label="Commit\n1" group=M3];
+    M3 [label="main" shape=plaintext group=M3];
+    C32 [label="Commit\n2"];
+    B3 [label="my-branch" shape=plaintext];
+    C3 -> M3 [dir=none style=dotted];
+    C32 -> B3 [dir=none style=dotted];
+    {rank=same; C3; dummy3[shape=point, width=0, style=invis];}
+    C3 -> dummy3 [dir=none];
+    dummy3 -> C32;
+
+    // Enforce correct order of the sections
+    {
+    rank=same;
+    edge [style=invis];
+    C1 -> C2 [minlen=2];
+    C2 -> C3;
+    }
+}
+```
+:::
+:::
 
 ## Creating a git branch and checking it out
 
@@ -53,28 +128,45 @@ You can use `git switch -` as a shortcut for returning to the previous branch.
 
 *Feature branching*
 
-```{mermaid}
-%%{init: { 'theme': 'base',
-  'gitGraph': { 'showCommitLabel': false, 'mainBranchOrder': 2, 'parallelCommits': true}
-} }%%
-gitGraph
-    commit
-    commit
-    branch feature order: 1
-    commit
-    commit
-    checkout main
-    commit
-    branch bugfix order: 3
-    commit
-    commit
-    commit
-    checkout feature
-    commit
-    checkout main
-    merge feature
-    merge bugfix
-    commit
+```{dot}
+//| fig-height: 50%
+digraph {
+    rankdir=LR;
+    node [shape=circle width=0.75 fixedsize=true];
+    edge [minlen=1.5];
+    subgraph {
+        node [group=main];
+        M1 [label="Commit"];
+        M2 [label="Commit"];
+        M3 [label="Commit"];
+        M4 [label="Merge"];
+        M5 [label="Merge"];
+        M1 -> M2 -> M3 -> M4 -> M5;
+        main [shape=plaintext];
+        M5 -> main [dir=none style=dotted minlen=1];
+    }
+    subgraph {
+        node [color=blue fontcolor=blue];
+        edge [color=blue];
+        F1 [label="Commit"];
+        F2 [label="Commit"];
+        F3 [label="Commit"];
+        M2 -> F1 -> F2 -> F3 -> M4;
+        feature [shape=plaintext];
+        F3 -> feature [dir=none style=dotted minlen=1];
+    }
+    subgraph {
+        node [color=red fontcolor=red];
+        edge [color=red];
+        B1 [label="Commit"];
+        B2 [label="Commit"];
+        B3 [label="Commit"];
+        M3 -> B1 -> B2 -> B3 -> M5;
+        bugfix [shape=plaintext];
+        B3 -> bugfix [dir=none style=dotted minlen=1];
+    }
+    {rank=same; F1; M3}
+}
 ```
 
 - Enables working on multiple tasks concurrently.
