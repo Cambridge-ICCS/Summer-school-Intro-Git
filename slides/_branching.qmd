@@ -129,6 +129,7 @@ You can use `git switch -` as a shortcut for returning to the previous branch.
 *Feature branching*
 
 ```{dot}
+//| fig-height: 50%
 digraph {
     rankdir=LR;
     node [shape=circle width=0.75 fixedsize=true];
