@@ -40,7 +40,7 @@ OR all of the following is true:
 
 ![](images/fork_vs_clone.png){width=50%}
 
-## Collaborative git with GitHub
+## Exercise: Collaborative git with GitHub
 
 ::: {.callout-warning}
 You must have already created a GitHub account before you can do these exercises
@@ -57,7 +57,7 @@ You must have already created a GitHub account before you can do these exercises
 :::
 
 
-## Cloning from GitHub
+## Exercise: Cloning from GitHub
 
 ![](images/github_clone_menu.png){fig-align="center" width=50%}
 
@@ -71,7 +71,7 @@ Clone repo to a new working folder.
 Do not clone into an existing local git repo.
 :::
 
-## Cloning from GitHub
+## Exercise: Pushing back to a cloned repository
 
 ::: {style="font-size: 90%;"}
 - Create a new branch with a unique name. \
