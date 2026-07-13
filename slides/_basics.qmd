@@ -113,7 +113,7 @@ by [Jorge Cham](https://jorgecham.com)
 - create a local git repository
 - create a git commit in your repository
 - create a git branch in your repository
-- fork a remote repository and check it out on your local machine
+- clone a remote repository to check it out on your local machine
 - put in a pr to have our changes merged back to the remote repo
 :::
 
