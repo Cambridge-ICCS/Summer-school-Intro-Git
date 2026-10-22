@@ -1,0 +1,72 @@
+## What are Version Control Systems (VCSs)?
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+::: {style="margin-top: 3em;"}
+- Tools to track changes to code
+- Maintain a history of changes as a series of *snapshots*
+    - Allow to go back in time to a previous state
+- Facilitate *collaboration*
+- Require very little overhead for a huge benefit
+:::
+
+:::
+
+::: {.column width="30%"}
+
+![]( https://upload.wikimedia.org/wikipedia/commons/2/22/Apache_Subversion_logo.svg ){.absolute top=13.5% right=0% width=13%}
+![]( https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png ){.absolute top=35.5% right=0 width=19%}
+![]( https://www.mercurial-scm.org/hg-logo/logo-droplets.svg ){.absolute bottom=25.5% right=0% width=11%}
+:::
+
+
+::::
+
+::: {.attribution}
+[Git](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png) by Jason Long under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+
+[Subversion](https://upload.wikimedia.org/wikipedia/commons/2/22/Apache_Subversion_logo.svg) under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+[Mercurial](https://www.mercurial-scm.org/hg-logo/logo-droplets.svg) under [GPLv2+](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+:::
+
+## Why Git?
+
+:::: {.columns}
+
+::: {.column width="60%"}
+::: {style="margin-top: 1.5em;"}
+- De facto standard for VC in the open source community
+    - Git is open source itself!
+    - Has a rich ecosystem around
+- Distributed VC approach (vs centralized)
+- Supports non-linear development (branching)
+- Gives fine-grained control
+- High performance/Scalable
+:::
+:::
+
+::: {.column width="60%"}
+![]( https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png ){.absolute top=35.5% right=0 width=19%}
+:::
+::::
+::: {.attribution}
+[Git](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png) by Jason Long under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+:::
+
+
+## Github: Hosting and collaboration
+
+![]( images/github-mark.svg ){.absolute top=30% right=0% width=13%}
+
+::: {style="margin-top: 3em;"}
+- Code hosting platform
+- Most widely used to host open source software
+- Eases the development with tools
+    - Pull Requests (PRs)
+    - Issues and Discussions
+    - More advance features like Continuous Integration, Automated Testing
+:::
+
